@@ -1,7 +1,7 @@
 
 html, body {
 	 /* _________________  Some Browser Setup  010922 ___________________  */
-	background-color: #010922 !important;   
+	background-color: #010922 !important;
     color: #fff !important;
     font-size: 16px !important;
 	letter-spacing: 1px;
@@ -9,7 +9,7 @@ html, body {
     margin: 0px;
 	width: 100%;
    	font-family: 'Raleway', sans-serif;
-	font-weight: 300 !important; 
+	font-weight: 300 !important;
 }
 
 
@@ -26,13 +26,13 @@ z-index: 888;
   visibility:hidden;
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden;
-}  
- 
+}
+
 .overlay.open {
     opacity: 1;
     visibility: visible;
     height: 100%;
-    
+
     li {
       animation: fadeInRight .5s ease forwards;
       animation-delay: .35s;
@@ -64,8 +64,8 @@ z-index: 888;
     margin: 0 auto;
     display: inline-block;
     position: relative;
-    height: 100%; 
-    
+    height: 100%;
+
     li {
       display: block;
       height: 25%;
@@ -73,20 +73,20 @@ z-index: 888;
       min-height: 50px;
       position: relative;
       opacity: 0;
-      
+
       a {
         display: block;
         position: relative;
         color: #fff;
         text-decoration: none;
         overflow: hidden;
-        
+
         &:hover:after,
          &:focus:after,
          &:active:after {
            width: 100%;
          }
-        
+
         &:after {
           content: '';
           position: absolute;
@@ -238,7 +238,7 @@ a:active {
 	color: #fff  !important;
     outline: none  !important;
 	text-decoration: none  !important;
-	
+
 }
 
 a {
@@ -272,7 +272,7 @@ ul{
   background: #e8be74;
 }
 ::-moz-selection {
-  background: #e8be74; 
+  background: #e8be74;
 }
 
 
@@ -295,14 +295,14 @@ h3 {
 	font-family: 'Montserrat', sans-serif !important;
 	text-transform: uppercase;
 	font-size: 20px !important;
-	font-weight: 700 !important; 
+	font-weight: 700 !important;
 }
 
 h4 {
 	color: #cda066 !important;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 200 !important; 
-	font-size: 33px !important; 
+	font-weight: 200 !important;
+	font-size: 33px !important;
 	text-transform: uppercase;
 }
 
@@ -460,18 +460,18 @@ h4 {
 	left: 53%;
 	top: 20%;
 	opacity: 0.2;
-} 
+}
 
 .p_pos3 {
 	left: 38%;
 	top: 21%;
-} 
+}
 
 
 .p_pos4 {
 	left: 50%;
 	top: 30%;
-} 
+}
 
 
 .panel, .button, .panel-default {
@@ -505,8 +505,8 @@ h4 {
 
 
 
-.section1 {  
-	position: relative;	
+.section1 {
+	position: relative;
     height: auto !important;
     min-height:880px;
 	width: auto;
@@ -515,7 +515,7 @@ h4 {
     background-position: center;
     background-size: cover;
 	background-image: url(images/space_bg2.jpg);
-	
+
 }
 
 .bg_about {
@@ -533,110 +533,110 @@ h4 {
 	background-color: #000;
 	height: 430px;
 	margin-bottom: 90px;
-	
+
 }
 
 
 
-.section_about {  
+.section_about {
 	text-align: left !important;
 	padding: 10px;
 	padding-top: 16px;
 	text-align: center;
-	position: relative;	
+	position: relative;
     height: auto !important;
 	width: 100%;
     overflow: hidden;
-	
+
 }
 
-.section2 {  
+.section2 {
 	padding: 10px;
 	padding-top: 16px;
 	text-align: center;
 	border-top: 6px solid;
 	border-color: #e09a36;
-	position: relative;	
+	position: relative;
     height: auto !important;
 	width: 100%;
     overflow: hidden;
-	
+
 }
 
-.section3 {  
+.section3 {
 	padding: 80px 0;
 	text-align: center;
 	border-top: 1px solid;
 	border-color: #364163;
-	position: relative;	
+	position: relative;
     height: auto !important;
     min-height:500px;
 	width: 100%;
     overflow: hidden;
-	
+
 }
 
-.section4 {  
+.section4 {
 	background-color: #768694;
 	padding: 0 !important;
 	margin-top: 0 !important;
 	text-align: center;
-	position: relative;	
+	position: relative;
     height: auto !important;
     min-height:500px;
 	width: 100%;
     overflow: hidden;
 	border: none !important;
-	color: #010922;	
+	color: #010922;
 }
 
-.section5 {  
+.section5 {
 	background-color: #768694;
 	padding: 80px 0 !important;
 	padding-bottom: 90px !important;
 	margin-top: 0 !important;
 	text-align: center;
-	position: relative;	
+	position: relative;
     height: auto !important;
     min-height:200px;
 	width: 100%;
     overflow: hidden;
-	border: none !important;	
+	border: none !important;
 }
 
-.section6 {  
+.section6 {
 	background-color: #e09a36;
 	padding-bottom: 90px !important;
 	margin-top: 0 !important;
 	text-align: center;
 
-	position: relative;	
+	position: relative;
     height: auto !important;
     min-height:150px;
 	width: 100%;
     overflow: hidden;
-	border: none !important;	
+	border: none !important;
 }
 
-.section_team {  
+.section_team {
 	min-height: 300px;
 	position: relative;
     top: 15px;
     padding-top: 75px;
 	background-color: #fff;
     overflow: hidden;
-	padding-bottom: 75px;	
+	padding-bottom: 75px;
 	color: #010922;
 }
 
-.section_faq {  
+.section_faq {
 	min-height: 300px;
 	position: relative;
     top: 15px;
     padding-top: 75px;
 	background-color: #fff;
     overflow: hidden;
-	padding-bottom: 75px;	
+	padding-bottom: 75px;
 	color: #010922;
 }
 
@@ -651,51 +651,54 @@ h4 {
 	background-color: #fff;
 	border-radius: 50% !important;
 	height: 110px;
-	width: 110px;	
+	width: 110px;
 	background-repeat: no-repeat!important;
     background-position: center !important;
     background-size: cover !important;
-	
+
 }
 
 
 
 
 .tm01 {
-	background-image: url(images/tp_01.jpg) !important;	
+	background-image: url(images/tp_01.jpg) !important;
 }
 .tm02 {
-	background-image: url(images/tp_02.jpg) !important;	
+	background-image: url(images/tp_02.jpg) !important;
 }
 .tm03 {
-	background-image: url(images/tp_03.jpg) !important;	
+	background-image: url(images/tp_03.jpg) !important;
 }
 .tm04 {
-	background-image: url(images/tp_04.jpg) !important;	
+	background-image: url(images/tp_04.jpg) !important;
 }
 .tm05 {
-	background-image: url(images/tp_05.jpg) !important;	
+	background-image: url(images/tp_05.jpg) !important;
 }
 .tm06 {
-	background-image: url(images/tp_06.jpg) !important;	
+	background-image: url(images/tp_06.jpg) !important;
 }
 .tm07 {
-	background-image: url(images/tp_07.jpg) !important;	
+	background-image: url(images/tp_07.jpg) !important;
 }
 .tm08 {
-	background-image: url(images/tp_08.jpg) !important;	
+	background-image: url(images/tp_08.jpg) !important;
 }
 .tm09 {
-	background-image: url(images/tp_09.jpg) !important;	
+	background-image: url(images/tp_09.jpg) !important;
 }
 .tm10 {
-	background-image: url(images/tp_10.jpg) !important;	
+	background-image: url(images/tp_10.jpg) !important;
 }
 .tm11 {
-	background-image: url(images/tp_11.jpg) !important;	
+	background-image: url(images/tp_11.jpg) !important;
 }
 .tm12 {
-	background-image: url(images/tp_12.jpg) !important;	
+	background-image: url(images/tp_12.jpg) !important;
+}
+.tm13 {
+	background-image: url(images/tp_13.png) !important;	
 }
 
 
@@ -703,7 +706,7 @@ h4 {
 
 
 .team_text {
-	min-height: 220px;	
+	min-height: 220px;
 	padding-left: 10px;
 	padding-right: 10px;
 	color: #66666d;
@@ -716,7 +719,7 @@ h4 {
     color: #000 !important;
     font-weight: 200 !important;
 	font-size: 23px;
-	
+
 }
 
 .title_text {
@@ -724,33 +727,33 @@ h4 {
 	text-transform: uppercase;
     color: #000 !important;
     font-family: 'Montserrat', sans-serif !important;
-	
+
 }
 
 
 
-.section7 {  
+.section7 {
 	background-color: #fff;
 	color: #060615;
 	padding-bottom: 50px !important;
 	margin-top: 0 !important;
 	text-align: center;
-	position: relative;	
+	position: relative;
     height: auto !important;
     min-height:150px;
 	width: 100%;
     overflow: hidden;
-	border: none !important;	
+	border: none !important;
 }
 
-.section8 {  
+.section8 {
 	background-color: #fff;
 	color: #060615;
 	padding-top: 50px !important;
 	padding-bottom: 90px !important;
 	margin-top: 0 !important;
 	text-align: center;
-	position: relative;	
+	position: relative;
     height: auto !important;
     min-height:150px;
 	width: 100%;
@@ -801,7 +804,7 @@ h4 {
 }
 
 
-.text_header {	
+.text_header {
 	float: right;
 	text-align: right;
 	position: absolute;
@@ -809,7 +812,7 @@ h4 {
 	width: 90%;
 }
 
-.text_header_about {	
+.text_header_about {
 	float: none;
 	text-align: center;
 	padding-top: 35% !important;
@@ -817,7 +820,7 @@ h4 {
 	margin: auto;
 }
 
-.text_header_small {	
+.text_header_small {
 	float: none;
 	text-align: center;
 	padding-top: 330px !important;
@@ -875,7 +878,7 @@ h4 {
 	padding-left: 15px;
 	content: "\f178" !important;
 	font-family: FontAwesome;
-	color: #fff !important;	
+	color: #fff !important;
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -885,7 +888,7 @@ h4 {
 
 .btn0:hover:after {
 	padding-left: 5px;
-	color: #e09a36 !important;	
+	color: #e09a36 !important;
 
 }
 
@@ -898,7 +901,7 @@ h4 {
 	text-transform: uppercase;
     color: #fff !important;
     font-family: 'Montserrat', sans-serif !important;
-	
+
 }
 
 
@@ -911,22 +914,22 @@ h4 {
 	font-family: FontAwesome !important;
 	text-align: center;
 	color: #fff;
-	font-size: 50px;	
-	
+	font-size: 50px;
+
 }
 
 .circle02 {
 	text-align: center !important;
 	margin: auto;
 	padding-top: 20px;
-	border: solid; 
+	border: solid;
 	border-radius: 50% !important;
 	height: 115px;
 	width: 115px;
 	font-family: FontAwesome !important;
 	text-align: center;
 	color: #fff;
-	font-size: 47px;	
+	font-size: 47px;
 	border-color: #e09a36;
 	border-width: 2px;
 }
@@ -973,8 +976,8 @@ h4 {
     -o-transition: color 0.5s ease-in-out;
 }
 
-.btn_slack {  
-	position: relative;	
+.btn_slack {
+	position: relative;
     height:61px;
 	width: 300px;
 	margin: auto;
@@ -985,7 +988,7 @@ h4 {
 	background-image: url(images/slack.gif);
 	border-radius: 30px;
 	background-color: #fff;
-	
+
 }
 
 .btn_social1:hover, .btn_social2:hover {
@@ -1010,12 +1013,12 @@ h4 {
 	text-align: center;
 	color: #fff;
 	margin-top: -4px;
-	font-size: 44px;	
-	border-color: #fff;	
+	font-size: 44px;
+	border-color: #fff;
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;	
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .btn_social2:before {
@@ -1028,12 +1031,12 @@ h4 {
 	font-family: FontAwesome !important;
 	text-align: center;
 	color: #fff;
-	font-size: 40px;	
-	border-color: #fff;	
+	font-size: 40px;
+	border-color: #fff;
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;	
+    -o-transition: all 0.3s ease-in-out;
 }
 
 
@@ -1075,7 +1078,7 @@ h4 {
 }
 
 .delete_pad {
- 
+
 }
 
 
@@ -1090,7 +1093,7 @@ h4 {
 
 
 .small_head {
-	position: relative;	
+	position: relative;
     height: auto !important;
     min-height:400px;
 	width: auto;
@@ -1126,83 +1129,83 @@ h4 {
 	.team_text {
 		text-align: center !important;
 	}
-	
+
 	.space_bottom {
 		margin-bottom: 50px !important;
 	}
-	
+
 	.nav_bottom {
 	text-align: center;
 }
-	
+
 	.img_pad {
 	padding: 20px 48px;
 	}
-	
-	
+
+
 }
 
 @media only screen and (max-width: 768px) {
 
-	
-	
+
+
 	.video_holder {
 	height: 350px;
 	}
-	
-	
-	.text_header_about {	
+
+
+	.text_header_about {
 	padding-top: 75% !important;
 
 }
 
-	
-	
+
+
 	.social_menu {
-	display: none;	
+	display: none;
 	}
-	
+
 	.btn_orange3 {
 		width: 80%;
 		border-radius: 80px;
 	}
-	
+
 .pad_top4 {
 	padding-top: 50px !important;
 }
-	
-	
-	.section8 {  
+
+
+	.section8 {
 	padding-top: 0 !important;
 
 }
-	
-	.btn_slack {  
+
+	.btn_slack {
 	width: 90%;
-	
+
 }
-	
+
 	.ad_pad {
 		padding: 0 80px !important;
-		
+
 	}
-	
+
 	h1 {
 		font-size: 34px !important;
 	}
-	
-	
+
+
 	.btn_orange, .btn_orange2 {
 		width: 100%;
 	}
-		
-	
+
+
 	.img_pad {
 		padding: 40px 140px;
 	}
 
-	
-	.section1 {  
+
+	.section1 {
 		min-height: 700px;
 	}
 
@@ -1211,67 +1214,67 @@ h4 {
 		top: 50%;
 		left: 20%;
 	}
-	
+
 	.planet2 {
 		top: 63%;
 		left: 22%;
 	}
-	
+
 	.planet3 {
 		top: 40%;
 		left: 15%;
 	}
-	
+
 	.planet4 {
 
 		left: 23%;
 	}
-	
+
 	.planet3, .planet2 {
 		display: none;
 		opacity: 0.2;
-	}	
-	
+	}
+
 	.text_header {
 		width: 96%;
 	}
-	
+
 	.pad_top, .pad_top2 {
 		padding-top: 5px!important;
 	}
-	
-	
+
+
 		.p_pos {
 	left: 47%;
 	top: 21%;
 	opacity: 0.2;
-} 
+}
 
 .p_pos3 {
 	left: 28%;
 	top: 24%;
-} 
+}
 
 
 .p_pos4 {
 	left: 50%;
 	top: 40%;
-} 
+}
 
 	.small_head {
 	height:400px !important;
 }
-	
+
 }
 
 
 @media only screen and (max-width: 320px) {
-	
+
 		.video_holder {
 	margin-bottom: 35px;
 	height: 230px;
-	
-	
+
+
 		.img_pad {
 		padding: 40px 80px;
 	}
