@@ -809,7 +809,8 @@ h4 {
 	text-align: right;
 	position: absolute;
 	padding-top: 250px !important;
-	width: 90%;
+	width: auto;
+	margin-left: 59%;
 }
 
 .text_header_about {
@@ -1117,7 +1118,13 @@ h4 {
 
 
 @media only screen and (max-width: 1200px) {
+	
+	.text_header {	
+	width: auto;
+	margin: auto;
+	right: 5%;
 
+}
 }
 
 @media only screen and (max-width: 992px) {
@@ -1233,10 +1240,6 @@ h4 {
 	.planet3, .planet2 {
 		display: none;
 		opacity: 0.2;
-	}
-
-	.text_header {
-		width: 96%;
 	}
 
 	.pad_top, .pad_top2 {
