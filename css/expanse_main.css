@@ -695,20 +695,63 @@ h4 {
 	background-image: url(images/tp_11.jpg) !important;
 }
 .tm12 {
-	background-image: url(images/tp_12.jpg) !important;
+	background-image: url(images/tp_12_dummy.png) !important;
 }
 .tm13 {
-	background-image: url(images/tp_13.png) !important;	
+	background-image: url(images/tp_13.png) !important;
+}
+.asim {
+	background-image: url(images/asim.png) !important;
+}
+.saif {
+	background-image: url(images/saif.jpg) !important;
+}
+.haseeb {
+	background-image: url(images/haseeb.jpg) !important;
+}
+.abdullah {
+	background-image: url(images/abdullah.jpg) !important;
+}
+.adv1 {
+	background-image: url(images/adv1.jpg) !important;
+}
+.adv2 {
+	background-image: url(images/adv2.jpg) !important;
+}
+.adv3 {
+	background-image: url(images/adv3.png) !important;
+}
+.phy {
+	background-image: url(images/phy.jpg) !important;
 }
 
 
 
 
+.custom-margin {
+	margin: 20px 0px !important;
+}
+.main-col .team_text {
+	min-height: 306px !important;
+}
+
+.second-col-dev .team_text {
+	min-height:372px !important;
+}
+.first-col-adv .team_text {
+	min-height: 306px !important;
+}
+
+
+.circles {
+	margin:10px 0px !important;
+}
 
 .team_text {
-	min-height: 220px;
+	/*min-height: 220px;
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 10px; */
+	    padding: 10px 10px;
 	color: #66666d;
 }
 
