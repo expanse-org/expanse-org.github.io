@@ -1,8 +1,12 @@
+<?php
+include 'library.php'; // include the library to get the session values
+?>
 <!DOCTYPE html>
-<html lang="ZXX">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Expanse.tech | Blockchain for everyone</title>
     <meta name="author" content="Expanse">
@@ -55,6 +59,7 @@
     <!-- FontAwesome CDN
 		============================================ -->
     <script src="https://use.fontawesome.com/aea9fc5902.js"></script>
+
 </head>
 
 <body>
@@ -78,7 +83,7 @@
         <div class="container">
             <div class="row">
                 <!-- logo-area-->
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6" >
                     <div class="logo-area">
                         <a href="#">
                             <img src="img/logo.png" alt="logo">
@@ -86,31 +91,41 @@
                     </div>
                 </div>
                 <!-- mainmenu-area-->
-                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-6">
+                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-6" >
                     <div class="menubar">
                         <nav>
-                            <ul class="text-right" id="menu">
-                                <li><a href="#home">home</a></li>
-                                <li><a href="#about">about</a></li>
+                            <ul class="text-right" id="menu" style="white-space: nowrap">
+                                <li><a href="#home"><?php echo $lang["home"]; ?></a></li>
+                                <li><a href="#about"><?php echo $lang["about"]; ?></a></li>
 
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                        Mining <span class="caret"></span>
+                                        <?php echo $lang["Mining"]; ?><span class="caret"></span>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="http://pool.expanse.tech/">EXP.POOL</a></li>
-                                        <li><a href="https://exp.suprnova.cc/">suprnova</a></li>
-                                        <li><a href="http://dwarfpool.com/exp">dwarfpool</a></li>
-                                        <li><a href="http://exp.akasha-pool.eu/">akasha</a></li>
-                                        <li><a href="http://exp.digger.ws/">Digger.ws</a></li>
+                                        <li><a href="http://pool.expanse.tech/"><?php echo $lang["EXP.POOL"]; ?></a></li>
+                                        <li><a href="https://exp.suprnova.cc/"><?php echo $lang["suprnova"]; ?></a></li>
+                                        <li><a href="http://dwarfpool.com/exp"><?php echo $lang["dwarfpool"]; ?></a></li>
+                                        <li><a href="http://exp.akasha-pool.eu/"><?php echo $lang["akasha"]; ?></a></li>
+                                        <li><a href="http://exp.digger.ws/"><?php echo $lang["Digger.ws"]; ?></a></li>
                                     </ul>
                                 </li>
 
-                                <li><a href="#exchanges">buy</a></li>
-                                <li><a href="http://explorer.expanse.tech">explore</a></li>
-                                <li><a href="http://docs.expanse.tech">docs</a></li>
-                                <li><a href="http://blog.expanse.tech">news</a></li>
-                                <li><a href="#contact">contact</a></li>
+                                <li><a href="#exchanges"><?php echo $lang["buy"]; ?></a></li>
+                                <li><a href="http://explorer.expanse.tech"><?php echo $lang["explore"]; ?></a></li>
+                                <li><a href="http://docs.expanse.tech"><?php echo $lang["docs"]; ?></a></li>
+                                <li><a href="http://blog.expanse.tech"><?php echo $lang["news"]; ?></a></li>
+                                <li><a href="#contact"><?php echo $lang["contact"]; ?></a></li>
+
+                                <select style= "color:#f95959" data-style="btn-new" class="btn-cta"onChange="window.location = '?lang='+this.value+''">
+<option value="" selected="selected" disabled="disabled">Select language</option>
+<option value="en">English</option>
+<option value="rus">Russian</option>
+<option value="ch">Chineese</option>
+<option value="jap">Japanese</option>
+<option value="span">Spanish</option>
+<option value="kor">Korean</option>
+</select>
                             </ul>
                         </nav>
                     </div>
@@ -124,10 +139,10 @@
 <section>
     <div class="header-image-area" id="particles-js">
         <div class="intro-text">
-            <h1>welcome to expanse.tech</h1>
-            <h3>Expanse is <span class="element"></span></h3>
+            <h1><?php echo $lang["welcome to expanse.tech"]; ?></h1>
+            <h3><?php echo $lang["Expanse is "]; ?><span class="element"></span></h3>
             <div class="learnmore">
-                <a href="http://www.github.com/expanse-org/mist/releases" class="skill-btn">download wallet</a>
+                <a href="http://www.github.com/expanse-org/mist/releases" class="skill-btn"><?php echo $lang["download wallet"]; ?></a>
             </div>
         </div>
     </div>
@@ -150,42 +165,39 @@
                     <div class="about-text">
                         <!--section heading area-text-->
                         <div class="portion-heading wow fadeInUp" data-wow-delay="0.1s">
-                            <h3>our story</h3>
+                            <h3><?php echo $lang["our story"]; ?></h3>
                         </div>
                         <div class="portion-content">
                             <p>
-                                Expanse.Tech™ was created as the first stable fork of Ethereum by one of the earliest blockchain developers and cryptocurrency entrepreneurs out there, Christopher Franko. Co-founder James Clayton is also the founder of the Cryptocurrency Collectors Club,
-                                (CCC), which is the largest and most popular Cryptocurrency group on Facebook. Dan Conway, another blockchain expert with extensive experience, soon joined the team as the third founder, bringing a great deal of talent,
-                                balance, and expertise to the project.
+                            <?php echo $lang["Expanse.Tech™ was created as the first stable fork of Ethereum by one of the earliest blockchain developers and cryptocurrency entrepreneurs out there, Christopher Franko. Co-founder James Clayton is also the founder of the Cryptocurrency Collectors Club, (CCC), which is the largest and most popular Cryptocurrency group on Facebook. Dan Conway, another blockchain expert with extensive experience, soon joined the team as the third founder, bringing a great deal of talent, balance, and expertise to the project."]; ?>
+                                
                             </p>
                             <p>
-
-                                Expanse was built as a community-based project without an ICO, (Initial Coin Offering), and is blockchain agnostic. The idea is to use cutting-edge blockchain technology to build anything the community and team can imagine—using a Decentralized Autonomous
-                                Organization, (DAO), with a self-funded design to keep it truly decentralized. This way, the Expanse community can evolve and grow while rewarding holders, partners, and investors.
+                                <?php echo $lang["Expanse was built as a community-based project without an ICO, (Initial Coin Offering), and is blockchain agnostic. The idea is to use cutting-edge blockchain technology to build anything the community and team can imagine—using a Decentralized Autonomous Organization, (DAO), with a self-funded design to keep it truly decentralized. This way, the Expanse community can evolve and grow while rewarding holders, partners, and investors."]; ?>
+                                
                             </p>
                             <p>
-                                The Expanse platform now has a two-year history of consistent growth and stability. Starting out small, but with big ideas, the team is growing and other projects are now coming on board to help make the dream a reality—limited only by the imagination
-                                and talent of all the diverse people around the world involved in the journey. Each new community member and partner brings new ideas and visions for the future. Expanse.Tech plans to be one of the top blockchain projects
-                                in the world. Won’t you join us on this adventure? Start learning more about Expanse today!
+                            <?php echo $lang["The Expanse platform now has a two-year history of consistent growth and stability. Starting out small, but with big ideas, the team is growing and other projects are now coming on board to help make the dream a reality—limited only by the imagination and talent of all the diverse people around the world involved in the journey. Each new community member and partner brings new ideas and visions for the future. Expanse.Tech plans to be one of the top blockchain projects in the world. Won’t you join us on this adventure? Start learning more about Expanse today!"]; ?>
+                                
                             </p>
                         </div>
                         <!-- about social icon-area-->
                         <div class="portion-contact-info">
                             <!-- resume button-area-->
                             <div class="resume-btn">
-                                <a href="http://www.github.com/expanse-org/mist/releases">wallet <i class="fa fa-download"></i> </a>
+                                <a href="http://www.github.com/expanse-org/mist/releases"><?php echo $lang["wallet "]; ?><i class="fa fa-download"></i> </a>
                             </div>
 
                             <div class="resume-btn">
-                                <a href="http://www.expanse.tech/docs/roadmap.pdf">roadmap <i class="fa fa-download"></i> </a>
+                                <a href="http://www.expanse.tech/docs/roadmap.pdf"><?php echo $lang["roadmap "]; ?><i class="fa fa-download"></i> </a>
                             </div>
 
                             <div class="resume-btn">
-                                <a href="http://www.expanse.tech/docs/whitepaper.pdf">whitepaper <i class="fa fa-download"></i> </a>
+                                <a href="http://www.expanse.tech/docs/whitepaper.pdf"><?php echo $lang["whitepaper "]; ?><i class="fa fa-download"></i> </a>
                             </div>
 
                             <div class="resume-btn">
-                                <a href="http://www.expanse.tech/docs/Presskit.zip">presskit <i class="fa fa-download"></i> </a>
+                                <a href="http://www.expanse.tech/docs/Presskit.zip"><?php echo $lang["presskit "]; ?><i class="fa fa-download"></i> </a>
                             </div>
 
                             <br><br>
@@ -202,7 +214,7 @@
 
                             <div class="portion-heading wow fadeInUp" data-wow-delay="0.1s">
                                 <br><br><br>
-                                <h3>our partners</h3>
+                                <h3><?php echo $lang["our partners"]; ?></h3>
                             </div>
 
                             <div class="client-carousel owl-partners">
@@ -230,18 +242,17 @@
                 <!--section heading area-text-->
                 <div class="col-lg-12 col-md-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                        <h4>dApps (decentralized applications)</h4>
+                        <h4><?php echo $lang["dApps (decentralized applications)"]; ?></h4>
                     </div>
                 </div>
                 <!--single work experience area-->
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="experience-item service-work-mb">
                         <div class="experience-content">
-                            <h6>Expanse Bond System (EBS)</h6>
-                            <h7>Hold Expanse; Earn Expanse.</h7>
-                            <p>The Expanse Bond System, (EBS), is an innovative method to reward buying and holding Expanse tokens for a pre-defined period of time. Unlike traditional currency-based bond systems, EBS uses only native EXP to reward those
-                                who participate. Functioning similar to a self-funded, secured token savings account, it uses smart contract-based simulated staking on the blockchain with decentralized open source parameters. Find out more by visiting
-                                our website at expanse.tech.</p>
+                            <h6><?php echo $lang["Expanse Bond System (EBS)"]; ?></h6>
+                            <h7><?php echo $lang["Hold Expanse; Earn Expanse."]; ?></h7>
+                            <p> <?php echo $lang["The Expanse Bond System, (EBS), is an innovative method to reward buying and holding Expanse tokens for a pre-defined period of time. Unlike traditional currency-based bond systems, EBS uses only native EXP to reward those who participate. Functioning similar to a self-funded, secured token savings account, it uses smart contract-based simulated staking on the blockchain with decentralized open source parameters. Find out more by visiting our website at expanse.tech."]; ?>
+                            </p>
                             <center><img src="img/dapps/ebs.png" width="120px"></center>
                         </div>
                     </div>
@@ -250,10 +261,9 @@
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="experience-item service-work-mb">
                         <div class="experience-content">
-                            <h6>Borderless Identity Management</h6>
-                            <p>Borderless.tech is a revolutionary decentralized governance services platform—one that can offer a variety of services for free, or at almost no costs, anywhere and easily. Services such as citizenship, identity, notary,
-                                marriage, asset rights management and more, are easily able to adapt to specific needs of various groups that are choosing their own ways to be free. These dApps are just two examples of where the potential of Expanse
-                                is totally superior to any other decentralized blockchain-based application platform.</p>
+                            <h6><?php echo $lang["Borderless Identity Management"]; ?></h6>
+                            <p><?php echo $lang["Borderless.tech is a revolutionary decentralized governance services platform—one that can offer a variety of services for free, or at almost no costs, anywhere and easily. Services such as citizenship, identity, notary, marriage, asset rights management and more, are easily able to adapt to specific needs of various groups that are choosing their own ways to be free. These dApps are just two examples of where the potential of Expanse is totally superior to any other decentralized blockchain-based application platform."]; ?>
+                            </p>
                             <center>
                                 <a href="http://www.borderless.tech/"><img src="img/dapps/borderless.png"></a>
                             </center>
@@ -264,9 +274,9 @@
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="experience-item service-work-mb">
                         <div class="experience-content">
-                            <h6>voting on the blockchain</h6>
-                            <p>The patent-pending blockchain-based voting dApp, VoteLock™, has the power to change the dynamics of elections, instilling trust into the voting process and eliminating the possibility of vote “rigging.” It’s an easy, accurate
-                                and tamper-proof method to employ for elections world-wide. With a true identity system in development, Expanse has prototyped a nearly perfectvoting system. One person, one vote.</p>
+                            <h6><?php echo $lang["voting on the blockchain"]; ?></h6>
+                            <p><?php echo $lang["The patent-pending blockchain-based voting dApp, VoteLock™, has the power to change the dynamics of elections, instilling trust into the voting process and eliminating the possibility of vote “rigging.” It’s an easy, accurate and tamper-proof method to employ for elections world-wide. With a true identity system in development, Expanse has prototyped a nearly perfectvoting system. One person, one vote."]; ?>
+                            </p>
                             <center><img src="img/dapps/votelock.png"></center>
                         </div>
                     </div>
@@ -286,35 +296,35 @@
                 <!--section heading area-text-->
                 <div class="col-lg-12 col-md-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                        <h4>our technology stack</h4>
+                        <h4><?php echo $lang["our technology stack"]; ?></h4>
                     </div>
                 </div>
                 <!--single skill area-->
                 <div class="col-lg-3 col-md-3 col-sm-6 skill-bottom skill-mobile-mb">
                     <canvas id="demo-1"></canvas>
                     <div class="skill-item">
-                        <h5>distributed ledger</h5>
+                        <h5><?php echo $lang["distributed ledger"]; ?></h5>
                     </div>
                 </div>
                 <!--single skill area-->
                 <div class="col-lg-3 col-md-3 col-sm-6 skill-bottom skill-mobile-mb">
                     <canvas id="demo-2"></canvas>
                     <div class="skill-item">
-                        <h5>smart contracts</h5>
+                        <h5><?php echo $lang["smart contracts"]; ?></h5>
                     </div>
                 </div>
                 <!--single skill area-->
                 <div class="col-lg-3 col-md-3 col-sm-6 skill-mobile-mb">
                     <canvas id="demo-3"></canvas>
                     <div class="skill-item">
-                        <h5>ethereum virtual machine</h5>
+                        <h5><?php echo $lang["ethereum virtual machine"]; ?></h5>
                     </div>
                 </div>
                 <!--single skill area-->
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <canvas id="demo-4"></canvas>
                     <div class="skill-item">
-                        <h5>cmd line interface</h5>
+                        <h5><?php echo $lang["cmd line interface"]; ?></h5>
                     </div>
                 </div>
             </div>
@@ -330,7 +340,7 @@
                 <!--section heading area-text-->
                 <div class="col-lg-12 col-md-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                        <h4>Exchanges</h4>
+                        <h4><?php echo $lang["Exchanges"]; ?></h4>
                         <div align="center">
                             <A href="https://www.coinmarketcap.com/currencies/expanse/"><img src="img/chart.png"></a>
                         </div>
@@ -415,7 +425,7 @@
                 <!--section heading area-text-->
                 <div class="col-lg-12 col-md-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                        <h4>our team</h4>
+                        <h4><?php echo $lang["our team"]; ?></h4>
                     </div>
                 </div>
                 <!--testimonial slider area-->
@@ -427,13 +437,11 @@
                                 <img src="img/team/christopherfranko.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Christopher Franko</p>
-                                <p class="profession">Co-founder / Lead Developer</p>
+                                <p class="name"><?php echo $lang["Christopher Franko"]; ?></p>
+                                <p class="profession"><?php echo $lang["Co-founder / Lead Developer"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    An experienced cryptocurrency developer with expert level knowledge of blockchain technology, Chris has a diverse understanding of the industry and a long-standing reputation in the community. Christopher's only mission in life is to empower individuals
-                                    with intuitive and cost effective decentralized software.
+                                <p><?php echo $lang["An experienced cryptocurrency developer with expert level knowledge of blockchain technology, Chris has a diverse understanding of the industry and a long-standing reputation in the community. Christopher's only mission in life is to empower individuals with intuitive and cost effective decentralized software."]; ?>
                                 </p>
                             </div>
                         </div>
@@ -445,13 +453,12 @@
                                 <img src="img/team/james.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">James Clayton</p>
-                                <p class="profession">Co-founder / Community Manager</p>
+                                <p class="name"><?php echo $lang["James Clayton"]; ?></p>
+                                <p class="profession"><?php echo $lang["Co-founder / Community Manager"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    James is a cryptocurrency analyst and investor who founded one of the largest active communities for Cryptocurrency discussion in the world. James is also one of the founders of Expanse, and an experienced crypto markets advisor, writer, and community
-                                    manager, James served on the teams of multiple well-established blockchain technology projects.
+                                <p><?php echo $lang["James is a cryptocurrency analyst and investor who founded one of the largest active communities for Cryptocurrency discussion in the world. James is also one of the founders of Expanse, and an experienced crypto markets advisor, writer, and community manager, James served on the teams of multiple well-established blockchain technology projects."]; ?>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -463,12 +470,12 @@
                                 <img src="img/team/dan.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Dan Conway</p>
-                                <p class="profession">Co-founder / Senior Developer</p>
+                                <p class="name"><?php echo $lang["Dan Conway"]; ?></p>
+                                <p class="profession"><?php echo $lang["Co-founder / Senior Developer"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Dan is a blockchain technology advocate and developer, providing consultancy for a number of projects and companies in the cryptocurrency and blockchain technology space.
+                                <p><?php echo $lang["Dan is a blockchain technology advocate and developer, providing consultancy for a number of projects and companies in the cryptocurrency and blockchain technology space."]; ?>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -480,13 +487,12 @@
                                 <img src="img/team/marcia.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Marcia Danzeisen</p>
-                                <p class="profession">Marketing Strategy</p>
+                                <p class="name"><?php echo $lang["Marcia Danzeisen"]; ?></p>
+                                <p class="profession"><?php echo $lang["Marketing Strategy"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Marcia Danzeisen has led marketing and strategy for some of the largest banks and financial services technology companies in the world. An accomplished writer, Danzeisen saw how crypto currency and blockchain technology have changed the traditional FinTech
-                                    world.
+                                <p><?php echo $lang["Marcia Danzeisen has led marketing and strategy for some of the largest banks and financial services technology companies in the world. An accomplished writer, Danzeisen saw how crypto currency and blockchain technology have changed the traditional FinTech world."]; ?>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -499,12 +505,12 @@
                                 <img src="img/team/sieva.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Sandro Ieva</p>
-                                <p class="profession">Director of Art</p>
+                                <p class="name"><?php echo $lang["Sandro Ieva"]; ?></p>
+                                <p class="profession"><?php echo $lang["Director of Art"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Sandro has worked with several blockchain companies from around the world. He is skilled with visual conceptualization and design. An expert at creating interfaces, websites, motion graphics, 3D, and creative art.
+                                <p><?php echo $lang["Sandro has worked with several blockchain companies from around the world. He is skilled with visual conceptualization and design. An expert at creating interfaces, websites, motion graphics, 3D, and creative art."]; ?>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -517,13 +523,12 @@
                                 <img src="img/team/scott.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Scott Williams</p>
-                                <p class="profession">Director of Brand Awareness</p>
+                                <p class="name"><?php echo $lang["Scott Williams"]; ?></p>
+                                <p class="profession"><?php echo $lang["Director of Brand Awareness"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Scott brings a wealth of experience to Expanse with his business consulting and expertise in brand awareness. He has an MBA from Northeastern University, is currently a Global Liaison for Shared Services, a partner for Briefcaseit Network, and he is the
-                                    Director of Operations for Borderless Charity that was built on the Expanse platform.
+                                <p><?php echo $lang["Scott brings a wealth of experience to Expanse with his business consulting and expertise in brand awareness. He has an MBA from Northeastern University, is currently a Global Liaison for Shared Services, a partner for Briefcaseit Network, and he is the Director of Operations for Borderless Charity that was built on the Expanse platform."]; ?>
+                                   
                                 </p>
                             </div>
                         </div>
@@ -536,13 +541,12 @@
                                 <img src="img/team/ahmad.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Ahmad Siddiqi</p>
-                                <p class="profession">Advisory Board Member</p>
+                                <p class="name"><?php echo $lang["Ahmad Siddiqi"]; ?></p>
+                                <p class="profession"><?php echo $lang["Advisory Board Member"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Ahmad Siddiqi is a successful cryptocurrency investor and enthusiast. He’s been actively involved in the crypto economy since 2013. With a 15 year of software development and finance experience under his belt, he is in a unique position to understand
-                                    the benefits of crypto assets. He’s currently working on growing the Smart-Contract ecosystem on the Expanse and Ethereum blockchains coupled with cutting edge technologies such as ReactJS and Aspnet core.
+                                <p><?php echo $lang["Ahmad Siddiqi is a successful cryptocurrency investor and enthusiast. He’s been actively involved in the crypto economy since 2013. With a 15 year of software development and finance experience under his belt, he is in a unique position to understand the benefits of crypto assets. He’s currently working on growing the Smart-Contract ecosystem on the Expanse and Ethereum blockchains coupled with cutting edge technologies such as ReactJS and Aspnet core."]; ?>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -555,13 +559,12 @@
                                 <img src="img/team/timothysuggs.jpeg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Timothy Suggs</p>
-                                <p class="profession">Advisory Board Member</p>
+                                <p class="name"><?php echo $lang["Timothy Suggs"]; ?></p>
+                                <p class="profession"><?php echo $lang["Advisory Board Member"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Timothy Suggs is a computer software entrepreneur that specializes in Web and TV Video Production, web development and refreshing Internet Marketing (PPC/SEO/Social). Timothy is also experienced with software and Web Application development, Internet
-                                    Marketing Strategy and Marketing Consulting.
+                                <p><?php echo $lang["Timothy Suggs is a computer software entrepreneur that specializes in Web and TV Video Production, web development and refreshing Internet Marketing (PPC/SEO/Social). Timothy is also experienced with software and Web Application development, Internet Marketing Strategy and Marketing Consulting."]; ?>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -574,13 +577,12 @@
                                 <img src="img/team/maurice.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Maurice Beutnagel</p>
-                                <p class="profession">Advisory Board Member</p>
+                                <p class="name"><?php echo $lang["Maurice Beutnagel"]; ?></p>
+                                <p class="profession"><?php echo $lang["Advisory Board Member"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Maurice Beutnagel holds a masters degree in innovation management and has been helping companies in different industries (space, insurance, gaming) to grow their business. Focus is on implementing new products and services in the market. Over 10 years
-                                    of investing experience. Sees cryptos as one of the most promising sectors moving forward.
+                                <p><?php echo $lang["Maurice Beutnagel holds a masters degree in innovation management and has been helping companies in different industries (space, insurance, gaming) to grow their business. Focus is on implementing new products and services in the market. Over 10 years of investing experience. Sees cryptos as one of the most promising sectors moving forward."]; ?>
+                                   
                                 </p>
                             </div>
                         </div>
@@ -593,12 +595,12 @@
                                 <img src="img/team/niko.jpg" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Nikola Šaric</p>
-                                <p class="profession">General Practice Physician</p>
+                                <p class="name"><?php echo $lang["Nikola Šaric"]; ?></p>
+                                <p class="profession"><?php echo $lang["General Practice Physician"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Nikola Šarić works as a medical doctor (physician, general practice) in a small village of Stanišić near Sombor, Serbia. He is interested in alternative currency systems, social networking, collaborative consumption. Community currency developer, 5 years of experience in designing alternative systems for local exchange. Founder of Alva Alternative currency.
+                                <p><?php echo $lang["Nikola Šarić works as a medical doctor (physician, general practice) in a small village of Stanišić near Sombor, Serbia. He is interested in alternative currency systems, social networking, collaborative consumption. Community currency developer, 5 years of experience in designing alternative systems for local exchange. Founder of Alva Alternative currency."]; ?>
+                                   
                                 </p>
                             </div>
                         </div>
@@ -611,13 +613,12 @@
                                 <img src="img/team/noimg.png" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Soopnon</p>
-                                <p class="profession">Chinese Ambassador</p>
+                                <p class="name"><?php echo $lang["Soopnon"]; ?></p>
+                                <p class="profession"><?php echo $lang["Chinese Ambassador"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    Soopnon is the Chinese Ambassador from Hongico.com, he will be working with the Expanse along with his team of marketers in China to spread the news about Expanse, start discussions in China, translate Newsletters, Announcements, and work on getting Expanse
-                                    added to Chinese Exchanges. Soopnon has worked with Supernet, PIVX, Komodo, and has extensive experience with making projects a success in China.
+                                <p><?php echo $lang["Soopnon is the Chinese Ambassador from Hongico.com, he will be working with the Expanse along with his team of marketers in China to spread the news about Expanse, start discussions in China, translate Newsletters, Announcements, and work on getting Expanse added to Chinese Exchanges. Soopnon has worked with Supernet, PIVX, Komodo, and has extensive experience with making projects a success in China."]; ?>
+                                    
                                 </p>
                             </div>
                         </div>
@@ -630,13 +631,12 @@
                                 <img src="img/team/asim.png" alt="client">
                             </div>
                             <div class="client-identity">
-                                <p class="name">Asim Ashfaq</p>
-                                <p class="profession">Senior Developer</p>
+                                <p class="name"><?php echo $lang["Asim Ashfaq"]; ?></p>
+                                <p class="profession"><?php echo $lang["Senior Developer"]; ?></p>
                             </div>
                             <div class="testimonial-content">
-                                <p>
-                                    A cryptocurrency enthusiast by heart, Asim is passionate about creating next generation decentralized apps. He has a vast experience working as a full stack developer in some of the most challenging environments where he helped solve complex problems.
-                                    Asim, along with his team, aims to make Expanse more prevalent and more accessible for a wider audience. As a hobby, he also runs a 30-GPU mining rig at home.
+                                <p><?php echo $lang["A cryptocurrency enthusiast by heart, Asim is passionate about creating next generation decentralized apps. He has a vast experience working as a full stack developer in some of the most challenging environments where he helped solve complex problems. Asim, along with his team, aims to make Expanse more prevalent and more accessible for a wider audience. As a hobby, he also runs a 30-GPU mining rig at home."]; ?>
+                                   
                                 </p>
                             </div>
                         </div>
@@ -660,7 +660,7 @@
                 <!--section heading area-text-->
                 <div class="col-lg-12 col-md-12">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                        <h4>get in touch</h4>
+                        <h4><?php echo $lang["get in touch"]; ?></h4>
                     </div>
                 </div>
 
@@ -670,22 +670,22 @@
                         <form action="mailsender.php" method="post">
                             <div class="col-lg-6 col-md-6 padding-reduce">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="text" name="yname" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" id="text" name="yname" placeholder="<?php echo $lang["Your Name"]; ?>" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="yemail" placeholder="Type Your Email" required>
+                                    <input type="email" class="form-control" id="email" name="yemail" placeholder="<?php echo $lang["Type Your Email"]; ?>" required>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="7" id="comment" name="ycomment" placeholder="Write Message" required></textarea>
+                                    <textarea class="form-control" rows="7" id="comment" name="ycomment" placeholder= "<?php echo $lang["Write Message"]; ?>" required></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="submit-btn">
-                                    <input type="submit" value="send" id="send">
+                                    <input type="submit" value="<?php echo $lang["send"]; ?>" id="send">
                                 </div>
                             </div>
                         </form>
@@ -694,12 +694,12 @@
                 <!--contact info area-->
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="contact-info">
-                        <h5>contact info</h5>
-                        <p>If you have any questions or would like to get in contact with someone from our team use this form.</p>
+                        <h5><?php echo $lang["contact info"]; ?></h5>
+                        <p><?php echo $lang["If you have any questions or would like to get in contact with someone from our team use this form."]; ?></p>
                         <address>
                             www.expanse.tech<br>
-                            Call me +1(252)495-0363 <br>
-                            P.O. Box 2703, Washington, NC. USA
+                             <?php echo $lang["Call me +1(252)495-0363"]; ?><br>
+                            <?php echo $lang["P.O. Box 2703, Washington, NC. USA"]; ?>
                         </address>
                         <div class="social-link">
                             <a href="https://www.facebook.com/groups/expanseofficial"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -716,35 +716,35 @@
             <div class="portion-heading wow fadeInUp" data-wow-delay="0.1s">
                 <br><br>
                 <center>
-                    <h3>upcoming events</h3></center>
+                    <h3><?php echo $lang["upcoming events"]; ?></h3></center>
             </div>
 
             <div class="portion-content">
                 <div class="list-group">
                     <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Collision 2017</h4>
-                        <p class="list-group-item-text">May 2-4, 2017 <br> New Orleans, USA</p>
+                        <h4 class="list-group-item-heading"><?php echo $lang["Collision 2017"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 2-4, 2017 "]; ?> <br> <?php echo $lang["New Orleans, USA"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Consensus</h4>
-                        <p class="list-group-item-text">May 22-24, 2017 <br> NYC, USA</p>
+                        <h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC, USA"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Token Summit</h4>
-                        <p class="list-group-item-text">May 25, 2017 <br> NYC, USA</p>
+                        <h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC, USA"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Money Conf</h4>
-                        <p class="list-group-item-text">June 6th, 2017 <br> NYC, USA</p>
+                        <h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["NYC, USA"]; ?></p>
                     </a>
                 </div>
             </div>
@@ -759,7 +759,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="copyright-text text-right">
-                        <p>@ copyright all right reserved by | expanse.tech</p>
+                        <p>@ <?php echo $lang["copyright all right reserved by | expanse.tech"]; ?></p>
                     </div>
                 </div>
             </div>
@@ -802,7 +802,36 @@
 <script src="js/plugins.js"></script>
 <!-- main JS
     ============================================ -->
-<script src="js/main.js"></script>
+ <?php   if($language == 'ch') {
+
+    ?>
+    <script src="lang/ch/main.js"></script>
+    <?php } 
+    else if($language == 'rus'){
+        ?>
+ <script src="lang/rus/main.js"></script>
+        <?php
+    }
+    else if($language == 'jap'){
+        ?>
+        <script src="lang/jap/main.js"></script>
+        <?php }
+        else if($language == 'span'){
+            ?>
+<script src="lang/span/main.js"></script>
+            <?php
+        }
+        else if($language == 'kor'){
+            ?>
+<script src="lang/kor/main.js"></script>
+            <?php
+        }
+    else{
+
+        ?> 
+        <script src="js/main.js"></script>
+        <?php } ?>
+
 
 <script>
     (function(i, s, o, g, r, a, m) {

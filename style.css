@@ -174,7 +174,7 @@ i {
 .menubar nav ul li {
     display: inline-block;
     line-height: 50px;
-    margin-right: 3px;
+    margin-right: -10px;
 }
 
 .menubar nav ul li a {
