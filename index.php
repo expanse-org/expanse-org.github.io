@@ -801,7 +801,7 @@ include 'library.php'; // include the library to get the session values
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["MADRID, SPAIN"]; ?></h4>
+                        <h4 class="list-group-item-heading"><?php echo $lang["MADRID, SPAIN"]; ?>  </h4>
                         <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
                     </a>
                 </div>
