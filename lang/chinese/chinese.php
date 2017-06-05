@@ -90,7 +90,9 @@ $lang = array(
 "New Orleans, USA"	=> "新奥尔良，美国",
 "Consensus"	=> "共识",
 "Token Summit"	=> "令牌峰会",
-"MADRID, SPAIN"	=> "马德里，西班牙",
+"Money Conf"	=> "钱财",
+"NYC,USA"	=> "纽约，美国",
+
 "MADRID, SPAIN"	=> "马德里，西班牙",
 "May 2-4, 2017 "	=> "2017年5月2日至4日",
 "May 22-24, 2017 "	=> "2017年5月22日至24日",
