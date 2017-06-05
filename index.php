@@ -788,20 +788,20 @@ include 'library.php'; // include the library to get the session values
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
+                        <p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC,USA"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
+                        <p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC,USA"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["MADRID, SPAIN"]; ?>  </h4>
+                        <h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?>  </h4>
                         <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
                     </a>
                 </div>
