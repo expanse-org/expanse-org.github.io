@@ -98,4 +98,4 @@ $lang = array(
 "June 6th, 2017 "	=> "June 6th, 2017 ",
 "copyright all right reserved by | expanse.tech"	=> "copyright all right reserved by | expanse.tech"
 );
-?>
+?> 
