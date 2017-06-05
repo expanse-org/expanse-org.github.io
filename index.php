@@ -20,44 +20,44 @@ include 'library.php'; // include the library to get the session values
     <meta property="og:description" content="Ethereum based blockchain platform for smart contracts." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
-		============================================ -->
+        ============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!-- Google Fonts
-		============================================ -->
+        ============================================ -->
     <style>
         @import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
     </style>
     <!-- Bootstrap CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- owl.carousel CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
     <!-- slickmenu CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/slicknav.css">
     <!-- animate CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- normalize CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- main CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/main.css">
     <!-- style CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="style.css">
     <!-- responsive CSS
-		============================================ -->
+        ============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- modernizr JS
-		============================================ -->
+        ============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- FontAwesome CDN
-		============================================ -->
+        ============================================ -->
     <script src="https://use.fontawesome.com/aea9fc5902.js"></script>
 
 </head>
@@ -117,14 +117,72 @@ include 'library.php'; // include the library to get the session values
                                 <li><a href="http://blog.expanse.tech"><?php echo $lang["news"]; ?></a></li>
                                 <li><a href="#contact"><?php echo $lang["contact"]; ?></a></li>
 
-                                <select style= "color:#f95959" data-style="btn-new" class="btn-cta"onChange="window.location = '?lang='+this.value+''">
-<option value="" selected="selected" disabled="disabled">Select language</option>
-<option value="en">English</option>
-<option value="rus">Russian</option>
-<option value="ch">Chineese</option>
-<option value="jap">Japanese</option>
-<option value="span">Spanish</option>
-<option value="kor">Korean</option>
+                                <select style= "color:#f95959" data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
+<option value=""  disabled="disabled">Select language</option>
+ <?php   if($language == 'chinese') {
+
+    ?>
+    <option value="chinese" selected="selected" >中文</option>
+    <option value="english">English</option>
+<option value="russian">русский</option>
+<option value="japanese">日本語</option>
+<option value="spanish">Español</option>
+<option value="korean">한국어</option>
+    <?php } 
+    else if($language == 'russian'){
+        ?>
+ <option value="russian" selected="selected">русский</option>
+ <option value="english">English</option>
+
+<option value="chinese">中文</option>
+<option value="japanese">日本語</option>
+<option value="spanish">Español</option>
+<option value="korean">한국어</option>
+        <?php
+    }
+    else if($language == 'japanese'){
+        ?>
+        <option value="japanese" selected="selected" >日本語</option>
+        <option value="english">English</option>
+<option value="russian">русский</option>
+<option value="chinese">中文</option>
+
+<option value="spanish">Español</option>
+<option value="korean">한국어</option>
+        <?php }
+        else if($language == 'spanish'){
+            ?>
+<option value="spanish" selected="selected">Español</option>
+<option value="english">English</option>
+<option value="russian">русский</option>
+<option value="chinese">中文</option>
+<option value="japanese">日本語</option>
+
+<option value="korean">한국어</option>
+            <?php
+        }
+        else if($language == 'korean'){
+            ?>
+<option value="korean" selected="selected">한국어</option>
+<option value="english">English</option>
+<option value="russian">русский</option>
+<option value="chinese">中文</option>
+<option value="japanese">日本語</option>
+<option value="spanish">Español</option>
+
+            <?php
+        }
+    else{
+
+        ?> 
+        <option value="english" selected="selected">English</option>
+       
+<option value="russian">русский</option>
+<option value="chinese">中文</option>
+<option value="japanese">日本語</option>
+<option value="spanish">Español</option>
+<option value="korean">한국어</option>
+        <?php } ?>
 </select>
                             </ul>
                         </nav>
@@ -730,21 +788,21 @@ include 'library.php'; // include the library to get the session values
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC, USA"]; ?></p>
+                        <p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC, USA"]; ?></p>
+                        <p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["NYC, USA"]; ?></p>
+                        <h4 class="list-group-item-heading"><?php echo $lang["MADRID, SPAIN"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
                     </a>
                 </div>
             </div>
@@ -802,28 +860,28 @@ include 'library.php'; // include the library to get the session values
 <script src="js/plugins.js"></script>
 <!-- main JS
     ============================================ -->
- <?php   if($language == 'ch') {
+ <?php   if($language == 'chinese') {
 
     ?>
-    <script src="lang/ch/main.js"></script>
+    <script src="lang/chinese/main.js"></script>
     <?php } 
-    else if($language == 'rus'){
+    else if($language == 'russian'){
         ?>
- <script src="lang/rus/main.js"></script>
+ <script src="lang/russian/main.js"></script>
         <?php
     }
-    else if($language == 'jap'){
+    else if($language == 'japanese'){
         ?>
-        <script src="lang/jap/main.js"></script>
+        <script src="lang/japanese/main.js"></script>
         <?php }
-        else if($language == 'span'){
+        else if($language == 'spanish'){
             ?>
-<script src="lang/span/main.js"></script>
+<script src="lang/spanish/main.js"></script>
             <?php
         }
-        else if($language == 'kor'){
+        else if($language == 'korean'){
             ?>
-<script src="lang/kor/main.js"></script>
+<script src="lang/korean/main.js"></script>
             <?php
         }
     else{
@@ -847,6 +905,12 @@ include 'library.php'; // include the library to get the session values
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-99073881-1', 'auto');
     ga('send', 'pageview');
+
+    $(document).ready(function () {
+    $("select").each(function () {
+        $(this).val($(this).find('option[selected]').val());
+    });
+})
 </script>
 </body>
 
