@@ -810,7 +810,7 @@ ini_set('display_errors', 1);
                     </a>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 </section>
 <!--  Footer Area Start
