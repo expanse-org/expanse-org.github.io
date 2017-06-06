@@ -91,7 +91,7 @@ $lang = array(
 "Token Summit"	=> "T토큰 정상 회담",
 "MADRID, SPAIN"	=> "마드리드, 스페인",
 "Money Conf"	=> "머니 회의",
-"NYC,USA"	=> "미국 뉴욕",
+"NYC, USA"	=> "미국 뉴욕",
 
 "May 2-4, 2017 "	=> "2017 년 2-4 월 ",
 "May 22-24, 2017 "	=> "2017 년 22 ~ 24 월 ",
