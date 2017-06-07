@@ -95,10 +95,10 @@ ini_set('display_errors', 1);
                     </div>
                 </div>
                 <!-- mainmenu-area-->
-                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-6" >
+                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-6" >
                     <div class="menubar">
-                        <nav>
-                            <ul class="text-right" id="menu" style="white-space: nowrap">
+                        <nav >
+                            <ul class="text-right" id="menu" >
                                 <li><a href="#home"><?php echo $lang["home"]; ?></a></li>
                                 <li><a href="#about"><?php echo $lang["about"]; ?></a></li>
 
@@ -121,76 +121,52 @@ ini_set('display_errors', 1);
                                 <li><a href="http://blog.expanse.tech"><?php echo $lang["news"]; ?></a></li>
                                 <li><a href="#contact"><?php echo $lang["contact"]; ?></a></li>
 
-                                <select data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
-<option value=""  disabled="disabled">Select language</option>
- <?php   if($language == 'chinese') {
-
-    ?>
-    <option value="chinese" selected="selected" >中文</option>
-    <option value="english">English</option>
-<option value="russian">русский</option>
-<option value="japanese">日本語</option>
-<option value="spanish">Español</option>
-<option value="korean">한국어</option>
-    <?php } 
-    else if($language == 'russian'){
-        ?>
- <option value="russian" selected="selected">русский</option>
- <option value="english">English</option>
-
-<option value="chinese">中文</option>
-<option value="japanese">日本語</option>
-<option value="spanish">Español</option>
-<option value="korean">한국어</option>
-        <?php
-    }
-    else if($language == 'japanese'){
-        ?>
-        <option value="japanese" selected="selected" >日本語</option>
-        <option value="english">English</option>
-<option value="russian">русский</option>
-<option value="chinese">中文</option>
-
-<option value="spanish">Español</option>
-<option value="korean">한국어</option>
-        <?php }
-        else if($language == 'spanish'){
-            ?>
-<option value="spanish" selected="selected">Español</option>
-<option value="english">English</option>
-<option value="russian">русский</option>
-<option value="chinese">中文</option>
-<option value="japanese">日本語</option>
-
-<option value="korean">한국어</option>
-            <?php
-        }
-        else if($language == 'korean'){
-            ?>
-<option value="korean" selected="selected">한국어</option>
-<option value="english">English</option>
-<option value="russian">русский</option>
-<option value="chinese">中文</option>
-<option value="japanese">日本語</option>
-<option value="spanish">Español</option>
-
-            <?php
-        }
-    else{
-
-        ?> 
-        <option value="english" selected="selected">English</option>
-       
-<option value="russian">русский</option>
-<option value="chinese">中文</option>
-<option value="japanese">日本語</option>
-<option value="spanish">Español</option>
-<option value="korean">한국어</option>
-        <?php } ?>
-</select>
+      
                             </ul>
                         </nav>
+                    
                     </div>
+
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" >
+                        <div class="lang-container">
+                    
+                        <select data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
+
+                            <option value=""  disabled="disabled">Select language</option>
+                             <?php   if($language == 'chinese') {
+                                    echo ' <option value="chinese" selected="selected" >中文</option>';
+                                }
+                                else {
+                                    echo ' <option value="chinese"  >中文</option>';
+                                }
+
+                                if($language == 'japanese'){
+                                    
+                                   echo '<option value="japanese" selected="selected" >日本語</option>';
+                                }
+                                else {
+                                    echo '<option value="japanese" >日本語</option>' ;
+                                }
+
+                                if($language == 'spanish'){
+                                    echo '<option value="spanish" selected="selected">Español</option>';
+                                }
+                                else {
+                                    echo '<option value="spanish">Español</option>';
+                                }
+                                       
+                                if($language == 'korean'){
+                                    echo '<option value="korean" selected="selected">한국어</option>';
+                                }
+                                else {   
+                                  echo '<option value="korean">한국어</option>';
+                                }
+                                   
+                            ?>
+
+                        </select>
+                        </div>
                 </div>
             </div>
         </div>
