@@ -689,6 +689,21 @@ i {
     padding-bottom: 15px;
 }
 
+
+
+.btn-cta{
+    background:none;
+    color:#fff;
+    width:80px;
+     
+       height: 100%;
+    font-family: 'Muli', sans-serif;
+
+}
+select > option{
+        background-color: #2c3e50;
+}
+
 address {
     margin-bottom: 20px;
     font-style: normal;

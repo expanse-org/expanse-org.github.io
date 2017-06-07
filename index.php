@@ -121,7 +121,7 @@ ini_set('display_errors', 1);
                                 <li><a href="http://blog.expanse.tech"><?php echo $lang["news"]; ?></a></li>
                                 <li><a href="#contact"><?php echo $lang["contact"]; ?></a></li>
 
-                                <select style= "color:#f95959" data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
+                                <select data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
 <option value=""  disabled="disabled">Select language</option>
  <?php   if($language == 'chinese') {
 
