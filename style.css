@@ -690,11 +690,14 @@ i {
 }
 
 
-
+.lang-container{
+    padding: 25px 0px;
+    
+}
 .btn-cta{
     background:none;
     color:#fff;
-    width:80px;
+    width:90px;
      
        height: 100%;
     font-family: 'Muli', sans-serif;
