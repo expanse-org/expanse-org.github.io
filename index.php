@@ -133,8 +133,15 @@ ini_set('display_errors', 1);
                     
                         <select data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
 
-                            <option value=""  disabled="disabled">Select language</option>
-                             <?php   if($language == 'chinese') {
+                           
+                             <?php   
+                                 if($language == 'english'){
+                                    echo '<option value="english" selected="selected">English</option>';
+                                }
+                                else {   
+                                  echo '<option value="english">English</option>';
+                                }
+                                if($language == 'chinese') {
                                     echo ' <option value="chinese" selected="selected" >中文</option>';
                                 }
                                 else {
@@ -162,6 +169,7 @@ ini_set('display_errors', 1);
                                 else {   
                                   echo '<option value="korean">한국어</option>';
                                 }
+                               
                                    
                             ?>
 
