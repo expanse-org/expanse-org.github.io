@@ -1,4 +1,4 @@
-<?php
+ <?php
 $lang = array(
 "home"		=> "Главная",
 "about"			=> "около",
@@ -102,11 +102,11 @@ $lang = array(
 "Events"	=> "Мероприятия",
 "Upcoming Events"	=> "Предстоящие События",
 "CoinAgenda"	=> "Монета",
-"July 16-18"	=> "16-18 июля",
+"July 16-18, 2017"	=> "16-18 июля 2017 г.",
 "Washington DC Blockchain Conference"	=> "Конференция DC Цепочка блоков в Вашингтоне",
-"July 28"	=> "28 июля",
+"July 28, 2017"	=> "28 июля 2017 г.",
 "Blockchain & Bitcoin Conference Stockholm"	=> "Конференция Цепочка блоков & биткойн Стокгольм",
-"Sept 7"	=> "7 сентября",
+"Sept 7, 2017"	=> "7 сентября 2017 года",
 "Web Summit"	=> "Веб-саммит",
 "Barcelona, SPAIN"	=> "Барселона, ИСПАНИЯ",
 "Lisbon, PORTUGAL"	=> "Лиссабон, ПОРТУГАЛИЯ",

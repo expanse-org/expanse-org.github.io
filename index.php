@@ -820,21 +820,21 @@ ini_set('display_errors', 1);
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["July 16-18"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
+                        <p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["July 28"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
+                        <p class="list-group-item-text"><?php echo $lang["July 28, 2017"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
                     </a>
                 </div>
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["Blockchain & Bitcoin Conference Stockholm"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["Sept 7"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
+                        <p class="list-group-item-text"><?php echo $lang["Sept 7, 2017"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
                     </a>
                 </div>
 
