@@ -23,6 +23,12 @@ ini_set('display_errors', 1);
     <meta property="og:title" content="Expanse.tech" />
     <meta property="og:description" content="Ethereum based blockchain platform for smart contracts." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
     <!-- favicon
         ============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -64,6 +70,8 @@ ini_set('display_errors', 1);
         ============================================ -->
     <script src="https://use.fontawesome.com/aea9fc5902.js"></script>
 
+ 
+
 </head>
 
 <body>
@@ -87,7 +95,7 @@ ini_set('display_errors', 1);
         <div class="container">
             <div class="row">
                 <!-- logo-area-->
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6" >
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5" >
                     <div class="logo-area">
                         <a href="#">
                             <img src="img/logo.png" alt="logo">
@@ -168,6 +176,12 @@ ini_set('display_errors', 1);
                                 }
                                 else {   
                                   echo '<option value="korean">한국어</option>';
+                                }
+                                if($language == 'russian'){
+                                    echo '<option value="russian" selected="selected">русский</option>';
+                                }
+                                else {   
+                                  echo '<option value="russian">русский</option>';
                                 }
                                
                                    
@@ -759,13 +773,22 @@ ini_set('display_errors', 1);
                     </div>
                 </div>
             </div>
-            <div class="portion-heading wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+ <div class="portion-heading wow fadeInUp" data-wow-delay="0.1s">
                 <br><br>
                 <center>
-                    <h3><?php echo $lang["upcoming events"]; ?></h3></center>
+                    <h3><?php echo $lang["Events"]; ?></h3></center>
             </div>
+ <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" data-target="#menu1"><?php echo $lang["Recent Events"]; ?></a></li>
+    <li><a data-toggle="tab" data-target="#menu2"><?php echo $lang["Upcoming Events"]; ?></a></li>
+  </ul>
 
-            <div class="portion-content">
+  <div class="tab-content">
+   
+                 
+
+            <div id="menu1" class="tab-pane fade in active">
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["Collision 2017"]; ?></h4>
@@ -794,6 +817,39 @@ ini_set('display_errors', 1);
                     </a>
                 </div>
             </div>
+    
+    <div id="menu2" class="tab-pane fade">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["July 16-18"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
+                    </a>
+                </div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["July 28"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
+                    </a>
+                </div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Blockchain & Bitcoin Conference Stockholm"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["Sept 7"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
+                    </a>
+                </div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Web Summit"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang[" Nov 6-9, 2017"]; ?><br> <?php echo $lang["Lisbon, PORTUGAL"]; ?></p>
+                    </a>
+                </div>
+            </div>
+  </div>
+  </div>
+ 
         </div> 
     </div>
 </section>

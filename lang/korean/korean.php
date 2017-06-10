@@ -98,6 +98,21 @@ $lang = array(
 "May 25, 2017 "	=> "2017 년 5 월 25 일 ",
 "June 6th, 2017 "	=> "6 월 6 일, 2017 ",
 "send" => "보내",
+"Recent Events"	=> "최근 이벤트",
+"Events"	=> "이벤트",
+"Upcoming Events"	=> "다가오는 이벤트",
+"CoinAgenda"	=> "코인 아젠다",
+"July 16-18"	=> "7 월 16-18 일",
+"Washington DC Blockchain Conference"	=> "워싱턴 DC 블록 체인 회의",
+"July 28"	=> "7 월 28 일",
+"Blockchain & Bitcoin Conference Stockholm"	=> "블록 체인 및 비트 코인 컨퍼런스 스톡홀름",
+"Sept 7"	=> "9 월 7 일",
+"Web Summit"	=> "웹 서밋",
+"Barcelona, SPAIN"	=> "바르셀로나, 스페인",
+"Lisbon, PORTUGAL"	=> "리스본, 포르투갈",
+"Washington DC, USA"	=> "워싱턴 DC, 미국",
+"Stockholm, SWEDEN"	=> "스톡홀름, 스웨덴",
+" Nov 6-9, 2017"	=> "2017 년 11 월 6-9 일",
 "copyright all right reserved by | expanse.tech"	=> "| 저작권 모든 권리가 보유 팽창.기술"
 );
 ?>

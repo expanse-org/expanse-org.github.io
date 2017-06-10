@@ -692,7 +692,7 @@ i {
 
 .lang-container{
     padding: 25px 0px;
-    
+    margin-left: -15px;
 }
 .btn-cta{
     background:none;
@@ -717,7 +717,13 @@ address {
 address a {
     font-weight: 600;
 }
-
+@media (min-width: 768px)
+{
+  .col-sm-7 {
+    width: 65.33333333%;
+}
+  
+}
 
 /*  10. Footer / .main-footer + .copyright-text
 /*----------------------------------------------*/
@@ -732,6 +738,56 @@ address a {
     letter-spacing: 1px;
     color: #fff;
     margin-top: 17px;
+}
+      .nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline;
+     zoom:1;
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+.container > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.container > .nav-tabs > li {
+  margin-right: 2px;
+}
+.container > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.container > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+.container > .nav-tabs > li.open, .container > .nav-tabs > li:hover {
+  border-bottom: 4px solid #f28546;
+}
+.container > .nav-tabs > li.open > a, .container > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tcontainer > .nav-tabs > li.open > a > i, .container > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.container > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.container > .nav-tabs > li.active {
+  border-bottom: 4px solid #DC5100;
+  position: relative;
+}
+.container > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.container > .nav-tabs > li.active > a > i {
+  color: #404040;
 }
 
 

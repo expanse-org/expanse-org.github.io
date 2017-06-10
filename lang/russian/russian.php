@@ -98,6 +98,21 @@ $lang = array(
 "May 25, 2017 "	=> "25 мая 2017 г.",
 "June 6th, 2017 "	=> "6 июня 2017 года",
 "send" => "послать",
+"Recent Events"	=> "Недавние события",
+"Events"	=> "Мероприятия",
+"Upcoming Events"	=> "Предстоящие События",
+"CoinAgenda"	=> "Монета",
+"July 16-18"	=> "16-18 июля",
+"Washington DC Blockchain Conference"	=> "Конференция DC Цепочка блоков в Вашингтоне",
+"July 28"	=> "28 июля",
+"Blockchain & Bitcoin Conference Stockholm"	=> "Конференция Цепочка блоков & биткойн Стокгольм",
+"Sept 7"	=> "7 сентября",
+"Web Summit"	=> "Веб-саммит",
+"Barcelona, SPAIN"	=> "Барселона, ИСПАНИЯ",
+"Lisbon, PORTUGAL"	=> "Лиссабон, ПОРТУГАЛИЯ",
+"Washington DC, USA"	=> "Вашингтон, США",
+"Stockholm, SWEDEN"	=> "Стокгольм, Швеция",
+" Nov 6-9, 2017"	=> "6-9 ноября 2017 г.",
 "copyright all right reserved by | expanse.tech"	=> "Авторское право Все права защищены | раздолье.тек"
 );
 ?>
