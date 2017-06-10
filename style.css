@@ -159,8 +159,8 @@ i {
 /*2.1 header log > .logo-area*/
 
 .logo-area a img {
-    height: 55px;
-    margin-top: 10px;
+   /* height: 55px; */
+    margin-top: 22px;
     display: inline-block;
     transition: .7s;
 }
@@ -227,7 +227,8 @@ i {
 }
 
 .sticky .logo-area a img {
-    height: 45px;
+   /* height: 45px; */
+   margin-top: 17px;
 }
 
 
@@ -689,10 +690,15 @@ i {
     padding-bottom: 15px;
 }
 
-
+.dropdown-menu {
+    
+    min-width: 150px;
+    
+}
 .lang-container{
     padding: 25px 0px;
     margin-left: -15px;
+    margin-top: 0px;
 }
 .btn-cta{
     background:none;
@@ -720,7 +726,7 @@ address a {
 @media (min-width: 768px)
 {
   .col-sm-7 {
-    width: 65.33333333%;
+    width: 70.33333333%;
 }
   
 }
