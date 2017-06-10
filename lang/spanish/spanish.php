@@ -98,6 +98,21 @@ $lang = array(
 "May 25, 2017 "	=> "25 de mayo de 2017",
 "June 6th, 2017 "	=> "6 de junio de 2017",
 "send" => "enviar",
+"Recent Events"	=> "Eventos recientes",
+"Events"	=> "Eventos",
+"Upcoming Events"	=> "Próximos Eventos",
+"CoinAgenda"	=> "Agenda de monedas",
+"July 16-18"	=> "Julio 16-18",
+"Washington DC Blockchain Conference"	=> "Washington DC Cadena de bloqueo Conferencia",
+"July 28"	=> "28 de julio",
+"Blockchain & Bitcoin Conference Stockholm"	=> "Cadena de bloqueo y Moneda binaria Conferencia Estocolmo",
+"Sept 7"	=> "7 de septiembre",
+"Web Summit"	=> "Cumbre Web",
+"Barcelona, SPAIN"	=> "Barcelona, España",
+"Lisbon, PORTUGAL"	=> "Lisboa, Portugal",
+"Washington DC, USA"	=> "Washington DC, Estados Unidos",
+"Stockholm, SWEDEN"	=> "Estocolmo, Suiza",
+" Nov 6-9, 2017"	=> "Del 6 al 9 de noviembre de 2017",
 "copyright all right reserved by | expanse.tech"	=> "Copyright todos los derechos reservados por | extensión.Tecnología"
 );
 ?>

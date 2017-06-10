@@ -97,6 +97,21 @@ $lang = array(
 "May 22-24, 2017 "	=> "May 22-24, 2017 ",
 "May 25, 2017 "	=> "May 25, 2017 ",
 "June 6th, 2017 "	=> "June 6th, 2017 ",
+"Recent Events"	=> "Recent Events ",
+"Events"	=> "Events ",
+"Upcoming Events"	=> "Upcoming Events",
+"CoinAgenda"	=> "CoinAgenda",
+"July 16-18"	=> "July 16-18 ",
+"Washington DC Blockchain Conference"	=> "Washington DC Blockchain Conference",
+"July 28"	=> "July 28",
+"Blockchain & Bitcoin Conference Stockholm"	=> "Blockchain & Bitcoin Conference Stockholm",
+"Sept 7"	=> "Sept 7",
+"Web Summit"	=> "Web Summit",
+"Barcelona, SPAIN"	=> "Barcelona, SPAIN",
+"Lisbon, PORTUGAL"	=> "Lisbon, PORTUGAL",
+"Washington DC, USA"	=> "Washington DC, USA",
+"Stockholm, SWEDEN"	=> "Stockholm, SWEDEN",
+" Nov 6-9, 2017"	=> " Nov 6-9, 2017",
 "copyright all right reserved by | expanse.tech"	=> "copyright all right reserved by | expanse.tech"
 );
 ?> 
