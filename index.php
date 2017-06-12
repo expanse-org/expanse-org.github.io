@@ -282,6 +282,8 @@ ini_set('display_errors', 1);
                                 <div><img src="img/partners/changelly.jpg" alt="image"></div>
                                 <div><img src="img/partners/chankura.jpg" alt="image"></div>
                                 <div><img src="img/partners/hcblockchain.jpg" alt="image"></div>
+                                <div><img src="img/partners/game-board.jpg" alt="image"></div>
+                                <div><img src="img/partners/jaxx.jpg" alt="image"></div>
                             </div>
                         </div>
                     </div>
@@ -817,6 +819,12 @@ ini_set('display_errors', 1);
             </div>
     
     <div id="menu2" class="tab-pane fade">
+    <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Money 20/20"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["June 26-28, 2017"]; ?><br> <?php echo $lang["Copenhagen, Denmark"]; ?></p>
+                    </a>
+                </div>
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
@@ -837,6 +845,7 @@ ini_set('display_errors', 1);
                         <p class="list-group-item-text"><?php echo $lang["Sept 7, 2017"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
                     </a>
                 </div>
+
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">

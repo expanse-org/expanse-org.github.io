@@ -112,6 +112,9 @@ $lang = array(
 "Stockholm, SWEDEN"	=> "スウェーデンのストックホルム",
 " Nov 6-9, 2017"	=> "2017年11月6〜9日",
 "send" => "送ります",
+"Money 20/20"	=> "お金20/20",
+"June 26-28, 2017"	=> "2017年6月26-28日",
+"Copenhagen, Denmark"	=> "コペンハーゲン、デンマーク",
 "copyright all right reserved by | expanse.tech"	=> "著作権はすべて予約| 広がり.ハイテク"
 );
 ?>
