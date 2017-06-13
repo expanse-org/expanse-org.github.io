@@ -858,6 +858,9 @@ address a {
 		{
 			padding-top:0px;
 		}
+		.contact-info p{
+			text-align:left;
+		}
 		p, h6, h4
 		{
 			text-align:center;
