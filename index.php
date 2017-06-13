@@ -688,7 +688,7 @@ ini_set('display_errors', 1);
                     <div class="col-lg-6 col-md-6 full-w">
                         <div class="item">
                             <div class="client-img">
-                                <img src="img/team/asim.png" alt="client">
+                                <img src="img/team/asim.jpg" alt="client">
                             </div>
                             <div class="client-identity">
                                 <p class="name"><?php echo $lang["Asim Ashfaq"]; ?></p>
