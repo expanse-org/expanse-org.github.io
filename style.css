@@ -795,6 +795,9 @@ address a {
 .container > .nav-tabs > li.active > a > i {
   color: #404040;
 }
+.slicknav_btn {
+    margin: 4.5% 4% 4%;
+}
 
 /*CSS Media Queries By sarmad*/
 
