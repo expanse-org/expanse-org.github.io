@@ -1,15 +1,12 @@
 <?php
 
-    if(isset($_POST['yname']) && isset($_POST['yemail']) && isset($_POST['ycomment']))
+    if(isset($_POST['yname']) && isset($_POST['yemail']))
     {
-        
 
         // get values 
         $yname = $_POST['yname'];
         $yemail = $_POST['yemail'];
-        $ycomment = $_POST['ycomment'];
-       $email = "asimizb@gmail.com";
-
+    
         
      $response1 = array();
      $response1['error'] = false;
@@ -25,21 +22,19 @@ $mail->Port = 25; // or 587
 $mail->IsHTML(true);
 $mail->Username = "expanseteam.org@gmail.com";
 $mail->Password = "expanse555&&";
-$mail->SetFrom("expanseteam.org@gmail.com", "Expanse Forward Message");
+$mail->SetFrom("expanseteam.org@gmail.com", "Expanse");
 $mail->isHTML(true);  // Set email format to HTML
 
-$bodyContent = '<h1>Contact Form entered Information</h1>';
-$bodyContent .= '<p>Name: ';
+$bodyContent = '<h1>Successfully Recieved</h1>';
+$bodyContent .= '<p>Hello ';
 $bodyContent .= $yname;
-$bodyContent .= '<p>Email: ';
-$bodyContent .= $yemail;
-$bodyContent .= '<p>Message: ';
-$bodyContent .= $ycomment;
+$bodyContent .= '<p>Thanks for contacting us your message have been recieved by our team';
+
 $bodyContent .= '<p> Sent By <b>Expanse Team</b></p>';
 
-$mail->Subject = 'Expanse Slack Contact Message';
+$mail->Subject = 'Expanse Slack Confirmation';
 $mail->Body    = $bodyContent;
-$mail->AddAddress($email);
+$mail->AddAddress($yemail);
 $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com"; 
  if(!$mail->Send()) {
