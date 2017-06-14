@@ -746,7 +746,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="col-lg-12 col-md-12">
 								<div class="submit-btn">
-									<input type="submit" onclick="addRecord()" value="<?php echo $lang["send"]; ?>" id="send">
+									<input type="button" onclick="addRecord()" value="<?php echo $lang["send"]; ?>" id="send">
 								</div>
 							</div>
 						</form>
