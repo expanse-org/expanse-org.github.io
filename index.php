@@ -134,7 +134,7 @@ ini_set('display_errors', 1);
                     </div>
 
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" >
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" id="expanse_lang" >
                         <div class="lang-container">
                     
                         <select data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
