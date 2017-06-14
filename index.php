@@ -788,74 +788,72 @@ ini_set('display_errors', 1);
   <div class="tab-content">
    
 
-				 
+            <div id="menu1" class="tab-pane fade in active">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Collision 2017"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 2-4, 2017 "]; ?> <br> <?php echo $lang["New Orleans, USA"]; ?></p>
+                    </a>
+                </div>
 
-			<div id="menu1" class="tab-pane fade in active">
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Collision 2017"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["May 2-4, 2017 "]; ?> <br> <?php echo $lang["New Orleans, USA"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC, USA"]; ?></p>
+                    </a>
+                </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC,USA"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC, USA"]; ?></p>
+                    </a>
+                </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC,USA"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?>  </h4>
+                        <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
+                    </a>
+                </div>
+            </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?>  </h4>
-						<p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
-					</a>
-				</div>
-			</div>
-	
-	<div id="menu2" class="tab-pane fade">
-	<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Money 20/20"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["June 26-28, 2017"]; ?><br> <?php echo $lang["Copenhagen, Denmark"]; ?></p>
-					</a>
-				</div>
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
-					</a>
-				</div>
+    <div id="menu2" class="tab-pane fade">
+    <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Money 20/20"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["June 26-28, 2017"]; ?><br> <?php echo $lang["Copenhagen, Denmark"]; ?></p>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
+                    </a>
+                </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["July 28, 2017"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["July 28, 2017"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
+                    </a>
+                </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Blockchain & Bitcoin Conference Stockholm"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["Sept 7, 2017"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Blockchain & Bitcoin Conference Stockholm"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["Sept 7, 2017"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
+                    </a>
+                </div>
 
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Web Summit"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang[" Nov 6-9, 2017"]; ?><br> <?php echo $lang["Lisbon, PORTUGAL"]; ?></p>
-					</a>
-				</div>
-			</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Web Summit"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang[" Nov 6-9, 2017"]; ?><br> <?php echo $lang["Lisbon, PORTUGAL"]; ?></p>
+                    </a>
+                </div>
+            </div>
 
   </div>
   </div>
