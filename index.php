@@ -724,10 +724,15 @@ ini_set('display_errors', 1);
                     </div>
                 </div>
 
+<?php
+    $statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+    unset($_SESSION['msg']);
+    echo $statusMsg;
+?>
                 <!--contact form area-->
                 <div class="col-lg-8 col-md-8 col-sm-8">
                     <div class="row">
-                        <form action="mailsender.php" method="post">
+                        <form action="check.php" method="post">
                             <div class="col-lg-6 col-md-6 padding-reduce">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="text" name="yname" placeholder="<?php echo $lang["Your Name"]; ?>" required>
@@ -735,17 +740,17 @@ ini_set('display_errors', 1);
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="yemail" placeholder="<?php echo $lang["Type Your Email"]; ?>" required>
+                                    <input type="email" class="form-control" id="yemail" name="yemail" placeholder="<?php echo $lang["Type Your Email"]; ?>" required>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="7" id="comment" name="ycomment" placeholder= "<?php echo $lang["Write Message"]; ?>" required></textarea>
+                                    <textarea class="form-control" rows="7" id="ycomment" name="ycomment" placeholder= "<?php echo $lang["Write Message"]; ?>" required></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="submit-btn">
-                                    <input type="submit" value="<?php echo $lang["send"]; ?>" id="send">
+                                    <input type="submit" value="<?php echo $lang["send"]; ?>" id="send" name = "submit">
                                 </div>
                             </div>
                         </form>
