@@ -93,7 +93,7 @@ ini_set('display_errors', 1);
         <div class="container">
             <div class="row">
                 <!-- logo-area-->
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5" >
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-8" id="expanse_logo" >
                     <div class="logo-area">
                         <a href="#">
                             <img src="img/logo.png" alt="logo">
@@ -101,7 +101,7 @@ ini_set('display_errors', 1);
                     </div>
                 </div>
                 <!-- mainmenu-area-->
-                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-6" >
+                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-4" id="expanse_nav" >
                     <div class="menubar">
                         <nav >
                             <ul class="text-right" id="menu" >
@@ -134,7 +134,7 @@ ini_set('display_errors', 1);
                     </div>
 
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" >
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" id="expanse_lang" >
                         <div class="lang-container">
                     
                         <select data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
@@ -242,19 +242,19 @@ ini_set('display_errors', 1);
                         <!-- about social icon-area-->
                         <div class="portion-contact-info">
                             <!-- resume button-area-->
-                            <div class="resume-btn">
+                            <div class="resume-btn" id="wallet">
                                 <a href="http://www.github.com/expanse-org/mist/releases"><?php echo $lang["wallet "]; ?><i class="fa fa-download"></i> </a>
                             </div>
 
-                            <div class="resume-btn">
+                            <div class="resume-btn" id="roadmap">
                                 <a href="http://www.expanse.tech/docs/roadmap.pdf"><?php echo $lang["roadmap "]; ?><i class="fa fa-download"></i> </a>
                             </div>
 
-                            <div class="resume-btn">
+                            <div class="resume-btn" id="whitepaper">
                                 <a href="http://www.expanse.tech/docs/whitepaper.pdf"><?php echo $lang["whitepaper "]; ?><i class="fa fa-download"></i> </a>
                             </div>
 
-                            <div class="resume-btn">
+                            <div class="resume-btn"id="presskit">
                                 <a href="http://www.expanse.tech/docs/Presskit.zip"><?php echo $lang["presskit "]; ?><i class="fa fa-download"></i> </a>
                             </div>
 
@@ -688,7 +688,7 @@ ini_set('display_errors', 1);
                     <div class="col-lg-6 col-md-6 full-w">
                         <div class="item">
                             <div class="client-img">
-                                <img src="img/team/asim.png" alt="client">
+                                <img src="img/team/asim.jpg" alt="client">
                             </div>
                             <div class="client-identity">
                                 <p class="name"><?php echo $lang["Asim Ashfaq"]; ?></p>
@@ -967,6 +967,18 @@ ini_set('display_errors', 1);
         $(this).val($(this).find('option[selected]').val());
     });
 })
+
+function check() {
+    if (!jQuery("div.sticky-header").hasClass("sticky")) {
+  jQuery("div.slicknav_menu>a.slicknav_btn").removeClass("sticky_nav")
+}else{
+	jQuery("div.slicknav_menu>a.slicknav_btn").addClass("sticky_nav")
+}
+
+}
+jQuery(window).scroll(function() {
+     check();
+});
 
 </script>
 </body>

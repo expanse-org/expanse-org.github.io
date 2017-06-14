@@ -795,7 +795,124 @@ address a {
 .container > .nav-tabs > li.active > a > i {
   color: #404040;
 }
+.slicknav_btn {
+    margin: 4.5% 4% 4%;
+}
 
+/*CSS Media Queries By sarmad*/
+
+
+@media only screen and (min-width : 320px) and (max-width: 480px) {
+		div#expanse_logo
+		{
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+		div.lang-container
+		{
+			margin-left: 0px;
+		}
+		select.btn-cta
+		{
+			width: 100%;
+		}
+		a.sticky_nav
+		{
+			margin-top: 25px;
+		}
+		div#wallet
+		{
+			width: 49.5%;
+		}
+		div#wallet a
+		{
+			padding: 11px 29px;
+		}
+		div#roadmap
+		{
+			width: 49%;
+		}
+		div#roadmap a
+		{
+			    padding: 11px 15.5px;
+		}
+		div#presskit
+		{
+			width: 45%;
+		}
+		div#presskit a
+		{
+			padding: 11px 19px;
+		}
+		.portion-heading h3
+		{
+			text-align:center;
+		}
+		.social-link a i
+		{
+			font-size: 21px;
+		}
+		.social-link a i.fa-telegram
+		{
+			padding: 11px 9px;
+			margin-top: 2%;
+		}
+		.portion-contact-info
+		{
+			padding-top:0px;
+		}
+		.contact-info p{
+			text-align:left;
+		}
+		p, h6, h4
+		{
+			text-align:center;
+		}
+		.item
+		{
+			 min-height: 772px;
+		}
+ }
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  {
+	  #expanse_lang
+	  {
+	  width: 100% !important;
+	 }
+	  
+	  .btn-cta
+	  {
+		    width: 75%;
+			margin: 0 13%;  
+	 }
+	 .item
+		{
+			 min-height: 400px;
+		}
+	.social-link a i
+	{
+		    margin-top: 3%;
+			padding: 11px 14.5px;
+	}
+	div.contact-info .social-link a i.fa-slack 
+	{
+		padding: 11px 11.5px;
+	}
+	div.contact-info .social-link a i.fa-telegram
+	{
+		padding: 11px 13.5px;
+	}
+	div.contact-info .social-link a i.fa-bitcoin 
+	{
+		padding: 11px 16.5px;
+	}
+  }
 
 /*  CSS END
 /*----------------------------------------*/
+
+
+
+
