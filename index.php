@@ -877,6 +877,30 @@ ini_set('display_errors', 1);
 		<div id="scrollUp"></div>
 	</div>
 </footer>
+
+<!-----sign up popup form starts here---->
+<div id="wd1_nlpopup_overlay"></div>
+<div id="wd1_nlpopup" data-expires="30" data-delay="5">
+    <a href="#closepopup" id="wd1_nlpopup_close">x</a>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+            <div class="content">
+				<div class="ebook clearfix">
+					<img class="ebookpic" alt="E-Book" width="auto" height="197" src="img/logo.png">
+				</div>
+				<div class="ebook">
+					<p class="centered arrowbelow"><strong>Just enter your name and email below and click Get Updates!</strong></p>
+				</div>
+			</div>
+				<div class="nlsubscribe">
+					<form action="#" method="post" target="_new">
+						<input type="text" name="name" id="wd1_nlpopup_name" placeholder="Name" value="" class="textinput" tabindex="500">
+						<input type="email" name="email" id="wd1_nlpopup_mail" placeholder="Your email" value="" class="textinput" tabindex="501">
+						<input type="submit" name="submit" id="wd1_nlpopup_submit" value="Subscribe" class="btn btn-orange btn-large">
+					</form>
+				</div>
+</div>
+<!-----sign up popup form ends here---->
+
 <!--  All JS Start
 =================================-->
 <!-- jquery
@@ -1016,6 +1040,45 @@ alert("successfully send");
 
 
 </script>
+<!----newsletter popup js starts here----->
+<script>
+
+jQuery(document).ready(function($){
+    var wd1_nlpopup_expires = $("#wd1_nlpopup").data("expires");
+    var wd1_nlpopup_delay = $("#wd1_nlpopup").data("delay") * 1000;
+
+    $('#wd1_nlpopup_close').on('click', function(e){
+        $.cookie('wd1_nlpopup', 'closed', { expires: wd1_nlpopup_expires, path: '/' });
+        $('#wd1_nlpopup,#wd1_nlpopup_overlay').fadeOut(200);
+        e.preventDefault();
+    });
+
+    if($.cookie('wd1_nlpopup') != 'closed' ){
+        setTimeout(wd1_open_nlpopup, wd1_nlpopup_delay);
+    }
+
+    function wd1_open_nlpopup(){
+        var topoffset = $(document).scrollTop(),
+            viewportHeight = $(window).height(),
+            $popup = $('#wd1_nlpopup');
+        var calculatedOffset = (topoffset + (Math.round(viewportHeight/2))) - (Math.round($popup.outerHeight()/2));
+
+        if(calculatedOffset <= 40){
+            calculatedOffset = 40;
+        }
+
+        $popup.css('top', calculatedOffset);
+        $('#wd1_nlpopup,#wd1_nlpopup_overlay').fadeIn(200);
+    }
+
+});
+
+
+
+/* jQuery Cookie Plugin v1.3.1 */
+(function(a){if(typeof define==="function"&&define.amd){define(["jquery"],a);}else{a(jQuery);}}(function(e){var a=/\+/g;function d(g){return g;}function b(g){return decodeURIComponent(g.replace(a," "));}function f(g){if(g.indexOf('"')===0){g=g.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\");}try{return c.json?JSON.parse(g):g;}catch(h){}}var c=e.cookie=function(p,o,u){if(o!==undefined){u=e.extend({},c.defaults,u);if(typeof u.expires==="number"){var q=u.expires,s=u.expires=new Date();s.setDate(s.getDate()+q);}o=c.json?JSON.stringify(o):String(o);return(document.cookie=[c.raw?p:encodeURIComponent(p),"=",c.raw?o:encodeURIComponent(o),u.expires?"; expires="+u.expires.toUTCString():"",u.path?"; path="+u.path:"",u.domain?"; domain="+u.domain:"",u.secure?"; secure":""].join(""));}var g=c.raw?d:b;var r=document.cookie.split("; ");var v=p?undefined:{};for(var n=0,k=r.length;n<k;n++){var m=r[n].split("=");var h=g(m.shift());var j=g(m.join("="));if(p&&p===h){v=f(j);break;}if(!p){v[h]=f(j);}}return v;};c.defaults={};e.removeCookie=function(h,g){if(e.cookie(h)!==undefined){e.cookie(h,"",e.extend(g,{expires:-1}));return true;}return false;};}));
+</script>
+<!----newsletter popup js ends----->
 </body>
 
 </html>
