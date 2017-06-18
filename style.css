@@ -698,7 +698,31 @@ i {
 .lang-container{
     padding: 25px 0px;
     margin-left: -15px;
-    margin-top: 0px;
+    margin-top: -5px;
+}
+.lang-container .dropdown-toggle
+{
+	background-color: rgba(255, 132, 72, .5);
+}
+.lang-container .dropdown-toggle span
+{
+	font-weight: 700;
+	color: white;
+}
+
+.bootstrap-select .dropdown-menu
+{
+	background-color: rgba(255, 132, 72, .5);	
+}
+
+.bootstrap-select .dropdown-menu ul
+{
+	background-color: rgba(255, 132, 72, .5);	
+}
+.bootstrap-select .dropdown-menu ul a
+{
+	font-weight: 700;
+	color: white;	
 }
 .btn-cta{
     background:none;
@@ -797,6 +821,10 @@ address a {
 }
 .slicknav_btn {
     margin: 4.5% 4% 4%;
+}
+.lang-container ..dropdown-menu
+{
+	padding: 0;
 }
 
 /*CSS Media Queries By sarmad*/

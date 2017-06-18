@@ -37,6 +37,10 @@ ini_set('display_errors', 1);
 	<!-- Bootstrap CSS
 		============================================ -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+
 	<!-- owl.carousel CSS
 		============================================ -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
@@ -60,9 +64,14 @@ ini_set('display_errors', 1);
 	<!-- responsive CSS
 		============================================ -->
 	<link rel="stylesheet" href="css/responsive.css">
+	
+	<!-- Select  CSS
+		============================================ -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
 	<!-- modernizr JS
 		============================================ -->
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	
 	<!-- FontAwesome CDN
 		============================================ -->
 	<script src="https://use.fontawesome.com/aea9fc5902.js"></script>
@@ -93,7 +102,7 @@ ini_set('display_errors', 1);
 		<div class="container">
 			<div class="row">
 				<!-- logo-area-->
-				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-5" >
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-10" id="expanse_logo">
 					<div class="logo-area">
 						<a href="#">
 							<img src="img/logo.png" alt="logo">
@@ -101,7 +110,7 @@ ini_set('display_errors', 1);
 					</div>
 				</div>
 				<!-- mainmenu-area-->
-				<div class="col-lg-8 col-md-8 col-sm-7 col-xs-6" >
+				<div class="col-lg-8 col-md-8 col-sm-7 col-xs-2" >
 					<div class="menubar">
 						<nav >
 							<ul class="text-right" id="menu" >
@@ -134,58 +143,54 @@ ini_set('display_errors', 1);
 					</div>
 
 				</div>
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" >
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" id="expanse_lang" >
 						<div class="lang-container">
-					
-						<select data-style="btn-new" class="btn-cta" onChange="window.location = '?lang='+this.value+''">
+							<select data-style="btn-new" class="selectpicker btn-cta" data-width="fit" onChange="window.location = '?lang='+this.value+''">
+								 <?php   
+									if($language == 'english'){?>
+									<option value="english" selected="selected" data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+									<?php }
+									else { ?>  
+									  <option value="english" data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+									<?php }
+									if($language == 'chinese') {?>
+										<option  value="chinese" selected="selected" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
+										
+									<?php }
+									else {?>
+										<option  value="chinese" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
+									<?php }?>
+									<?php if($language == 'japanese'){?>
 
-						   
-							 <?php   
-								 if($language == 'english'){
-									echo '<option value="english" selected="selected">English</option>';
-								}
-								else {   
-								  echo '<option value="english">English</option>';
-								}
-								if($language == 'chinese') {
-									echo ' <option value="chinese" selected="selected" >中文</option>';
-								}
-								else {
-									echo ' <option value="chinese"  >中文</option>';
-								}
+									   <option value="japanese" selected="selected"  data-content='<span class="flag-icon flag-icon-jp"></span> 日本語'>日本語</option>
+									<?php }
+									else {?>
+										<option value="japanese" data-content='<span class="flag-icon flag-icon-jp"></span> 日本語'>日本語</option>
+									<?php }
 
-								if($language == 'japanese'){
+									if($language == 'spanish'){?>
+										<option  value="spanish" selected="selected" data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+									<?php }
+									else {?>
+										<option  value="spanish" data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+									<?php } 
 									
-								   echo '<option value="japanese" selected="selected" >日本語</option>';
-								}
-								else {
-									echo '<option value="japanese" >日本語</option>' ;
-								}
-
-								if($language == 'spanish'){
-									echo '<option value="spanish" selected="selected">Español</option>';
-								}
-								else {
-									echo '<option value="spanish">Español</option>';
-								}
-									   
-								if($language == 'korean'){
-									echo '<option value="korean" selected="selected">한국어</option>';
-								}
-								else {   
-								  echo '<option value="korean">한국어</option>';
-								}
-								if($language == 'russian'){
-									echo '<option value="russian" selected="selected">русский</option>';
-								}
-								else {   
-								  echo '<option value="russian">русский</option>';
-								}
-							   
-								   
-							?>
-
-						</select>
+									if($language == 'korean'){?>
+										<option  value="korean" selected="selected" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어'>한국어</option>
+									<?php }
+									else {?>
+										<option  value="korean" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어'>한국어</option>
+									<?php } 
+									
+									if($language == 'russian'){?>
+										<option  value="russian" selected="selected" data-content='<span class="flag-icon flag-icon-ru"></span> русский'>русский</option>
+									<?php }
+									else {?>
+										<option  value="russian" data-content='<span class="flag-icon flag-icon-ru"></span> русский'>русский</option>
+									<?php } ?>
+																
+										
+							</select>
 						</div>
 				</div>
 			</div>
@@ -909,6 +914,10 @@ ini_set('display_errors', 1);
 <!-- bootstrap JS
 	============================================ -->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+	
 <!-- wow JS
 	============================================ -->
 <script src="js/wow.min.js"></script>
