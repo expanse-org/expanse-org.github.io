@@ -23,8 +23,10 @@ ini_set('display_errors', 1);
 	<meta property="og:title" content="Expanse.tech" />
 	<meta property="og:description" content="Ethereum based blockchain platform for smart contracts." />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+<!-- sweetalert
+		============================================ -->
+    <script src="dist/js/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="dist/css/sweetalert.css">
 
 	<!-- favicon
 		============================================ -->
@@ -75,6 +77,9 @@ ini_set('display_errors', 1);
 	<!-- FontAwesome CDN
 		============================================ -->
 	<script src="https://use.fontawesome.com/aea9fc5902.js"></script>
+
+	 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+     <script src="send.js"></script>
 
  
 
@@ -187,7 +192,21 @@ ini_set('display_errors', 1);
 									<?php }
 									else {?>
 										<option  value="russian" data-content='<span class="flag-icon flag-icon-ru"></span> русский'>русский</option>
+									<?php } 
+									if($language == 'german'){?>
+										<option  value="german" selected="selected" data-content='<span class="flag-icon flag-icon-ru"></span> Deutsche'>Deutsche</option>
+									<?php }
+									else {?>
+										<option  value="german" data-content='<span class="flag-icon flag-icon-de"></span> Deutsche'>Deutsche</option>
+									<?php } 
+									if($language == 'french'){?>
+										<option  value="french" selected="selected" data-content='<span class="flag-icon flag-icon-fr"></span> français'>français</option>
+									<?php }
+									else {?>
+										<option  value="french" data-content='<span class="flag-icon flag-icon-fr"></span> français'>français</option>
 									<?php } ?>
+
+
 																
 										
 							</select>
@@ -751,7 +770,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="col-lg-12 col-md-12">
 								<div class="submit-btn">
-									<input type="submit" onclick="addRecord()" value="<?php echo $lang["send"]; ?>" id="send">
+									<input type="submit"  value="<?php echo $lang["send"]; ?>" id="send">
 								</div>
 							</div>
 						</form>
@@ -945,29 +964,40 @@ ini_set('display_errors', 1);
 <script src="js/plugins.js"></script>
 <!-- main JS
 	============================================ -->
- <?php   if($language == 'chinese') {
+ <?php 
+   if($language == 'chinese') {
 
-	?>
+	    ?>
 	<script src="lang/chinese/main.js"></script>
 	<?php } 
-	else if($language == 'russian'){
+   else if($language == 'russian'){
 		?>
- <script src="lang/russian/main.js"></script>
-		<?php
+    <script src="lang/russian/main.js"></script>
+ <?php
 	}
-	else if($language == 'japanese'){
+   else if($language == 'japanese'){
 		?>
-		<script src="lang/japanese/main.js"></script>
-		<?php }
-		else if($language == 'spanish'){
-			?>
-<script src="lang/spanish/main.js"></script>
-			<?php
+    <script src="lang/japanese/main.js"></script>
+ <?php }
+   else if($language == 'spanish'){
+		?>
+     <script src="lang/spanish/main.js"></script>
+ <?php
 		}
-		else if($language == 'korean'){
-			?>
-<script src="lang/korean/main.js"></script>
-			<?php
+   else if($language == 'korean'){
+	    ?>
+     <script src="lang/korean/main.js"></script>
+ <?php
+		}
+   else if ($language == 'german'){
+	    ?>
+	 <script src="lang/german/main.js"></script>
+ <?php
+		}
+	else if($language == 'french'){
+		?>
+	 <script src="lang/french/main.js"></script>
+ <?php
 		}
 	else{
 
@@ -998,58 +1028,7 @@ ini_set('display_errors', 1);
 })
 
 </script>
-<script type="text/javascript">
-	function addRecord() {
-	   
-	// get values
-	var yname = $("#yname").val();
-	var yemail = $("#yemail").val();
-	var ycomment = $("#ycomment").val();
 
-	// Add record
-	$.post("check.php", {
-		yname: yname,
-		yemail: yemail,
-		ycomment: ycomment,
-		
-		
-	}, function (data) {
-	  if(data.error === true){
-			
-			alert("A problem occur..NOT send");
-			
-		 }
-		 else{
-		
-	}
- });
-	
-		// Add record
-	$.post("check2.php", {
-		yname: yname,
-		yemail: yemail,
-		
-	}, function (data) {
-	  if(data.error === true){
-			
-			alert("A problem occur..NOT send");
-			
-		 }
-		 else{
-
-alert("successfully send");		
-	}
-	$("#yname").val("");
-        $("#yemail").val("");
-        $("#ycomment").val("");	
- });
-	
-}
-
-
-
-</script>
-<!----newsletter popup js starts here----->
 <script>
 
 jQuery(document).ready(function($){
@@ -1087,7 +1066,7 @@ jQuery(document).ready(function($){
 /* jQuery Cookie Plugin v1.3.1 */
 (function(a){if(typeof define==="function"&&define.amd){define(["jquery"],a);}else{a(jQuery);}}(function(e){var a=/\+/g;function d(g){return g;}function b(g){return decodeURIComponent(g.replace(a," "));}function f(g){if(g.indexOf('"')===0){g=g.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\");}try{return c.json?JSON.parse(g):g;}catch(h){}}var c=e.cookie=function(p,o,u){if(o!==undefined){u=e.extend({},c.defaults,u);if(typeof u.expires==="number"){var q=u.expires,s=u.expires=new Date();s.setDate(s.getDate()+q);}o=c.json?JSON.stringify(o):String(o);return(document.cookie=[c.raw?p:encodeURIComponent(p),"=",c.raw?o:encodeURIComponent(o),u.expires?"; expires="+u.expires.toUTCString():"",u.path?"; path="+u.path:"",u.domain?"; domain="+u.domain:"",u.secure?"; secure":""].join(""));}var g=c.raw?d:b;var r=document.cookie.split("; ");var v=p?undefined:{};for(var n=0,k=r.length;n<k;n++){var m=r[n].split("=");var h=g(m.shift());var j=g(m.join("="));if(p&&p===h){v=f(j);break;}if(!p){v[h]=f(j);}}return v;};c.defaults={};e.removeCookie=function(h,g){if(e.cookie(h)!==undefined){e.cookie(h,"",e.extend(g,{expires:-1}));return true;}return false;};}));
 </script>
-<!----newsletter popup js ends----->
+
 </body>
 
 </html>
