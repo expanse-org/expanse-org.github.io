@@ -829,6 +829,20 @@ address a {
 
 /*CSS Media Queries By sarmad*/
 @media only screen and (min-width : 320px) and (max-width: 480px) {
+		
+		.container {
+			width: 95% !important;
+			overflow-x: hidden;
+		}
+		.js .slicknav_menu {
+			display: block;
+			position: fixed;
+			top: 2%;
+			right: 4%;
+			z-index: 99999999;
+			background-color: transparent;
+			width: 12%;
+		}
 		div#expanse_logo
 		{
 			padding-right: 0px;
@@ -898,7 +912,34 @@ address a {
 		{
 			 min-height: 772px;
 		}
+		.lang-container .btn-cta
+		{
+			width: 100% !important;
+		}
+		.lang-container .dropdown-toggle {
+			background-color: #2980b9 ;
+			border: 2px solid white;
+		}
+		.bootstrap-select .dropdown-menu {
+			background-color: #2980b9;
+		}
+		.bootstrap-select .dropdown-menu ul {
+			background-color: #2980b9;
+		}
+		
+		.lang-container .dropdown-menu
+		{
+			position: relative;
+		}
+		.slicknav_menu.top-margin {
+			margin-top: 6%;
+		}
+		.lang-container .sticky-color
+		{
+		    background-color: #DC5100 !important;	
+		}	
  }
+ 
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px) 
