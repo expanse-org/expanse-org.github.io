@@ -771,6 +771,7 @@ ini_set('display_errors', 1);
 							<div class="col-lg-12 col-md-12">
 								<div class="submit-btn">
 									<input type="submit"  value="<?php echo $lang["send"]; ?>" id="send">
+
 								</div>
 							</div>
 						</form>
@@ -811,74 +812,74 @@ ini_set('display_errors', 1);
 
   <div class="tab-content">
    
-				 
 
-			<div id="menu1" class="tab-pane fade in active">
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Collision 2017"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["May 2-4, 2017 "]; ?> <br> <?php echo $lang["New Orleans, USA"]; ?></p>
-					</a>
-				</div>
+            <div id="menu1" class="tab-pane fade in active">
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Collision 2017"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 2-4, 2017 "]; ?> <br> <?php echo $lang["New Orleans, USA"]; ?></p>
+                    </a>
+                </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC,USA"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC, USA"]; ?></p>
+                    </a>
+                </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC,USA"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC, USA"]; ?></p>
+                    </a>
+                </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?>  </h4>
-						<p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
-					</a>
-				</div>
-			</div>
-	
-	<div id="menu2" class="tab-pane fade">
-	<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Money 20/20"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["June 26-28, 2017"]; ?><br> <?php echo $lang["Copenhagen, Denmark"]; ?></p>
-					</a>
-				</div>
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?>  </h4>
+                        <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
+                    </a>
+                </div>
+            </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["July 28, 2017"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
-					</a>
-				</div>
+    <div id="menu2" class="tab-pane fade">
+    <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Money 20/20"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["June 26-28, 2017"]; ?><br> <?php echo $lang["Copenhagen, Denmark"]; ?></p>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
+                    </a>
+                </div>
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Blockchain & Bitcoin Conference Stockholm"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang["Sept 7, 2017"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
-					</a>
-				</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["July 28, 2017"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
+                    </a>
+                </div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Blockchain & Bitcoin Conference Stockholm"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang["Sept 7, 2017"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
+                    </a>
+                </div>
 
 
-				<div class="list-group">
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><?php echo $lang["Web Summit"]; ?></h4>
-						<p class="list-group-item-text"><?php echo $lang[" Nov 6-9, 2017"]; ?><br> <?php echo $lang["Lisbon, PORTUGAL"]; ?></p>
-					</a>
-				</div>
-			</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading"><?php echo $lang["Web Summit"]; ?></h4>
+                        <p class="list-group-item-text"><?php echo $lang[" Nov 6-9, 2017"]; ?><br> <?php echo $lang["Lisbon, PORTUGAL"]; ?></p>
+                    </a>
+                </div>
+            </div>
+
   </div>
   </div>
  
@@ -1066,7 +1067,6 @@ jQuery(document).ready(function($){
 /* jQuery Cookie Plugin v1.3.1 */
 (function(a){if(typeof define==="function"&&define.amd){define(["jquery"],a);}else{a(jQuery);}}(function(e){var a=/\+/g;function d(g){return g;}function b(g){return decodeURIComponent(g.replace(a," "));}function f(g){if(g.indexOf('"')===0){g=g.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\");}try{return c.json?JSON.parse(g):g;}catch(h){}}var c=e.cookie=function(p,o,u){if(o!==undefined){u=e.extend({},c.defaults,u);if(typeof u.expires==="number"){var q=u.expires,s=u.expires=new Date();s.setDate(s.getDate()+q);}o=c.json?JSON.stringify(o):String(o);return(document.cookie=[c.raw?p:encodeURIComponent(p),"=",c.raw?o:encodeURIComponent(o),u.expires?"; expires="+u.expires.toUTCString():"",u.path?"; path="+u.path:"",u.domain?"; domain="+u.domain:"",u.secure?"; secure":""].join(""));}var g=c.raw?d:b;var r=document.cookie.split("; ");var v=p?undefined:{};for(var n=0,k=r.length;n<k;n++){var m=r[n].split("=");var h=g(m.shift());var j=g(m.join("="));if(p&&p===h){v=f(j);break;}if(!p){v[h]=f(j);}}return v;};c.defaults={};e.removeCookie=function(h,g){if(e.cookie(h)!==undefined){e.cookie(h,"",e.extend(g,{expires:-1}));return true;}return false;};}));
 </script>
-<<<<<<< HEAD
 <!----newsletter popup js ends----->
 <script>
 $(document).ready(function(jQuery) {
@@ -1100,9 +1100,7 @@ $(document).ready(function(jQuery) {
 
 
 </script>
-=======
 
->>>>>>> 6df1b650b155911aba840dd322b0e86fb7359541
 </body>
 
 </html>

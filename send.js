@@ -3,7 +3,11 @@ $(function () {
         $('form').on('submit', function (e) {
 
           e.preventDefault();
-
+            swal({
+                title: "Please wait",
+                text: "While your message is sending.",
+                imageUrl: "img/favicon.ico"
+            });
           $.ajax({
             type: 'post',
             url: 'ajax/check.php',
