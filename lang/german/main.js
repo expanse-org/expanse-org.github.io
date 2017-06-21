@@ -51,7 +51,7 @@
     ------------------------------ */
     $(function () {
         $(".element").typed({
-            strings: ["a blockchain for smart contracts", "based on Ethereum", "for everyone"],
+            strings: [" Eine Blockkette für intelligente Verträge", " Basierend auf Ethereum", " für jeden"],
             typeSpeed: 100,
             loop: true
         });
@@ -59,7 +59,7 @@
     /*----------------------------
      Smooth Scrool
     ------------------------------ */
-    $('ul#menu > li > a').on('click', function (event) {
+    $('a').on('click', function (event) {
         var $anchor = $($(this).attr('href')).offset().top - 60;
         $('body, html').animate({
             scrollTop: $anchor
