@@ -907,7 +907,7 @@ ini_set('display_errors', 1);
 <div id="wd1_nlpopup_overlay"></div>
 <div id="wd1_nlpopup" data-expires="30" data-delay="5">
     <a href="#closepopup" id="wd1_nlpopup_close">x</a>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+        <h2>Signup to receive regular updates on all the exciting technology we're building at Expanse</h2>
             <div class="content">
 				<div class="ebook clearfix">
 					<img class="ebookpic" alt="E-Book" width="auto" height="197" src="img/logo.png">
