@@ -194,7 +194,7 @@ ini_set('display_errors', 1);
 										<option  value="russian" data-content='<span class="flag-icon flag-icon-ru"></span> русский'>русский</option>
 									<?php } 
 									if($language == 'german'){?>
-										<option  value="german" selected="selected" data-content='<span class="flag-icon flag-icon-ru"></span> Deutsche'>Deutsche</option>
+										<option  value="german" selected="selected" data-content='<span class="flag-icon flag-icon-de"></span> Deutsche'>Deutsche</option>
 									<?php }
 									else {?>
 										<option  value="german" data-content='<span class="flag-icon flag-icon-de"></span> Deutsche'>Deutsche</option>
@@ -844,12 +844,7 @@ ini_set('display_errors', 1);
             </div>
 
     <div id="menu2" class="tab-pane fade">
-    <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Money 20/20"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["June 26-28, 2017"]; ?><br> <?php echo $lang["Copenhagen, Denmark"]; ?></p>
-                    </a>
-                </div>
+    
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
