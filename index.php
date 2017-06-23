@@ -271,7 +271,7 @@ ini_set('display_errors', 1);
 							</div>
 
 							<div class="resume-btn">
-								<a href="http://www.expanse.tech/docs/roadmap.pdf"><?php echo $lang["roadmap "]; ?><i class="fa fa-download"></i> </a>
+								<a href="https://docs.google.com/document/d/1XcJNygLspYbpgI6RKX1gZekavz2lViYBWZF8574k_60/pub"><?php echo $lang["roadmap "]; ?><i class="fa fa-download"></i> </a>
 							</div>
 
 							<div class="resume-btn">
