@@ -898,7 +898,7 @@ ini_set('display_errors', 1);
 	</div>
 </footer>
 
-<!-----sign up popup form starts here---->
+<!-----sign up popup form starts here
 <div id="wd1_nlpopup_overlay"></div>
 <div id="wd1_nlpopup" data-expires="30" data-delay="5">
     <a href="#closepopup" id="wd1_nlpopup_close">x</a>
@@ -919,7 +919,7 @@ ini_set('display_errors', 1);
 					</form>
 				</div>
 </div>
-<!-----sign up popup form ends here---->
+sign up popup form ends here---->
 
 <!--  All JS Start
 =================================-->
