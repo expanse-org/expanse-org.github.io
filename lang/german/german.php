@@ -91,7 +91,7 @@ $lang = array(
 "Consensus"	=> "Konsens",
 "Token Summit"	=> "Token-Gipfel",
 "Money Conf"	=> "Geld Conf",
-"NYC,USA"	=> "NYC,USA",
+"NYC, USA"	=> "NYC, USA",
 "MADRID, SPAIN"	=> "MADRID, SPANIEN",
 "May 2-4, 2017 "	=> "Mai 2-4, 2017",
 "May 22-24, 2017 "	=> "Mai 22-24, 2017 ",
@@ -112,9 +112,6 @@ $lang = array(
 "Washington DC, USA"	=> "Washington DC, USA",
 "Stockholm, SWEDEN"	=> "Stockholm, Schweden",
 " Nov 6-9, 2017"	=> "6. bis 9. November 2017",
-"Money 20/20"	=> "Geld 20/20",
-"June 26-28, 2017"	=> "26.-28. Juni 2017",
-"Copenhagen, Denmark"	=> "Kopenhagen, Dänemark",
 "copyright all right reserved by | expanse.tech"	=> "Urheberrecht alle Rechte vorbehalten | Expanse.tech"
 );
 ?> 
