@@ -1051,8 +1051,8 @@ jQuery(document).ready(function($){
             calculatedOffset = 40;
         }
 
-        $popup.css('top', calculatedOffset);
-        $('#wd1_nlpopup,#wd1_nlpopup_overlay').fadeIn(200);
+       /* $popup.css('top', calculatedOffset);
+        $('#wd1_nlpopup,#wd1_nlpopup_overlay').fadeIn(200);*/
     }
 
 });
