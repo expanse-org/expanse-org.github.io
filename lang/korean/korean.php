@@ -113,9 +113,6 @@ $lang = array(
 "Washington DC, USA"	=> "워싱턴 DC, 미국",
 "Stockholm, SWEDEN"	=> "스톡홀름, 스웨덴",
 " Nov 6-9, 2017"	=> "2017 년 11 월 6-9 일",
-"Money 20/20"	=> "돈 20/20",
-"June 26-28, 2017"	=> "2017 년 6 월 26-28 일",
-"Copenhagen, Denmark"	=> "코펜하겐, 덴마크",
 "copyright all right reserved by | expanse.tech"	=> "| 저작권 모든 권리가 보유 팽창.기술"
 );
 ?>

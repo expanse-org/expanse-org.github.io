@@ -114,9 +114,6 @@ $lang = array(
 "Stockholm, SWEDEN"	=> "瑞典斯德哥尔摩",
 "Web Summit"	=> "网站峰会",
 " Nov 6-9, 2017"	=> "2017年11月6日-9日",
-"Money 20/20"	=> "钱20/20",
-"June 26-28, 2017"	=> "2017年6月26日至28日",
-"Copenhagen, Denmark"	=> "哥本哈根，丹麦",
 "copyright all right reserved by | expanse.tech"	=> "版权保留所有权利 广阔.高科技"
 );
 ?>
