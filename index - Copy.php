@@ -23,10 +23,8 @@ ini_set('display_errors', 1);
 	<meta property="og:title" content="Expanse.tech" />
 	<meta property="og:description" content="Ethereum based blockchain platform for smart contracts." />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- sweetalert
-		============================================ -->
-    <script src="dist/js/sweetalert-dev.js"></script>
-    <link rel="stylesheet" href="dist/css/sweetalert.css">
+
+
 
 	<!-- favicon
 		============================================ -->
@@ -78,9 +76,6 @@ ini_set('display_errors', 1);
 		============================================ -->
 	<script src="https://use.fontawesome.com/aea9fc5902.js"></script>
 
-	 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-     <script src="send.js"></script>
-
  
 
 </head>
@@ -107,7 +102,7 @@ ini_set('display_errors', 1);
 		<div class="container">
 			<div class="row">
 				<!-- logo-area-->
-				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-10" id="expanse_logo">
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-5" >
 					<div class="logo-area">
 						<a href="#">
 							<img src="img/logo.png" alt="logo">
@@ -115,7 +110,7 @@ ini_set('display_errors', 1);
 					</div>
 				</div>
 				<!-- mainmenu-area-->
-				<div class="col-lg-8 col-md-8 col-sm-7 col-xs-2" >
+				<div class="col-lg-8 col-md-8 col-sm-7 col-xs-6" >
 					<div class="menubar">
 						<nav >
 							<ul class="text-right" id="menu" >
@@ -148,67 +143,53 @@ ini_set('display_errors', 1);
 					</div>
 
 				</div>
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" id="expanse_lang" >
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" >
 						<div class="lang-container">
 							<select data-style="btn-new" class="selectpicker btn-cta" data-width="fit" onChange="window.location = '?lang='+this.value+''">
 								 <?php   
-									if($language == 'english'){?>
-									<option value="english" selected="selected" data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-									<?php }
-									else { ?>  
-									  <option value="english" data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-									<?php }
-									if($language == 'chinese') {?>
-										<option  value="chinese" selected="selected" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
+									if($language == 'english'){
+						echo '<option value="english" selected="selected"  data-content="<span class="flag-icon flag-icon-us"></span>English">English</option>';
 										
-									<?php }
-									else {?>
-										<option  value="chinese" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
-									<?php }?>
-									<?php if($language == 'japanese'){?>
+									}
+									else {   
+									  //echo '<option value="english">English</option>';
+						echo '<option value="english" data-content="<span class="flag-icon flag-icon-us"></span> English">English</option>';
+									}
+									if($language == 'chinese') {
+										echo ' <option value="chinese" selected="selected" data-content="<span class="flag-icon flag-icon-cn"></span> 中文">中文</option>';
+									}
+									else {
+										echo ' <option value="chinese"  >中文</option>';
+									}
 
-									   <option value="japanese" selected="selected"  data-content='<span class="flag-icon flag-icon-jp"></span> 日本語'>日本語</option>
-									<?php }
-									else {?>
-										<option value="japanese" data-content='<span class="flag-icon flag-icon-jp"></span> 日本語'>日本語</option>
-									<?php }
-
-									if($language == 'spanish'){?>
-										<option  value="spanish" selected="selected" data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
-									<?php }
-									else {?>
-										<option  value="spanish" data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
-									<?php } 
-									
-									if($language == 'korean'){?>
-										<option  value="korean" selected="selected" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어'>한국어</option>
-									<?php }
-									else {?>
-										<option  value="korean" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어'>한국어</option>
-									<?php } 
-									
-									if($language == 'russian'){?>
-										<option  value="russian" selected="selected" data-content='<span class="flag-icon flag-icon-ru"></span> русский'>русский</option>
-									<?php }
-									else {?>
-										<option  value="russian" data-content='<span class="flag-icon flag-icon-ru"></span> русский'>русский</option>
-									<?php } 
-									if($language == 'german'){?>
-										<option  value="german" selected="selected" data-content='<span class="flag-icon flag-icon-de"></span> Deutsche'>Deutsche</option>
-									<?php }
-									else {?>
-										<option  value="german" data-content='<span class="flag-icon flag-icon-de"></span> Deutsche'>Deutsche</option>
-									<?php } 
-									if($language == 'french'){?>
-										<option  value="french" selected="selected" data-content='<span class="flag-icon flag-icon-fr"></span> français'>français</option>
-									<?php }
-									else {?>
-										<option  value="french" data-content='<span class="flag-icon flag-icon-fr"></span> français'>français</option>
-									<?php } ?>
-
-
-																
+									if($language == 'japanese'){
 										
+									   echo '<option value="japanese" selected="selected" >日本語</option>';
+									}
+									else {
+										echo '<option value="japanese" >日本語</option>' ;
+									}
+
+									if($language == 'spanish'){
+										echo '<option value="spanish" selected="selected">Español</option>';
+									}
+									else {
+										echo '<option value="spanish">Español</option>';
+									}
+										   
+									if($language == 'korean'){
+										echo '<option value="korean" selected="selected">한국어</option>';
+									}
+									else {   
+									  echo '<option value="korean">한국어</option>';
+									}
+									if($language == 'russian'){
+										echo '<option value="russian" selected="selected">русский</option>';
+									}
+									else {   
+									  echo '<option value="russian">русский</option>';
+									}
+								?>	
 							</select>
 						</div>
 				</div>
@@ -271,7 +252,7 @@ ini_set('display_errors', 1);
 							</div>
 
 							<div class="resume-btn">
-								<a href="https://docs.google.com/document/d/1XcJNygLspYbpgI6RKX1gZekavz2lViYBWZF8574k_60/pub"><?php echo $lang["roadmap "]; ?><i class="fa fa-download"></i> </a>
+								<a href="http://www.expanse.tech/docs/roadmap.pdf"><?php echo $lang["roadmap "]; ?><i class="fa fa-download"></i> </a>
 							</div>
 
 							<div class="resume-btn">
@@ -770,8 +751,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="col-lg-12 col-md-12">
 								<div class="submit-btn">
-									<input type="submit"  value="<?php echo $lang["send"]; ?>" id="send">
-
+									<input type="submit" onclick="addRecord()" value="<?php echo $lang["send"]; ?>" id="send">
 								</div>
 							</div>
 						</form>
@@ -812,69 +792,74 @@ ini_set('display_errors', 1);
 
   <div class="tab-content">
    
+				 
 
-            <div id="menu1" class="tab-pane fade in active">
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Collision 2017"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["May 2-4, 2017 "]; ?> <br> <?php echo $lang["New Orleans, USA"]; ?></p>
-                    </a>
-                </div>
+			<div id="menu1" class="tab-pane fade in active">
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["Collision 2017"]; ?></h4>
+						<p class="list-group-item-text"><?php echo $lang["May 2-4, 2017 "]; ?> <br> <?php echo $lang["New Orleans, USA"]; ?></p>
+					</a>
+				</div>
 
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC, USA"]; ?></p>
-                    </a>
-                </div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["Consensus"]; ?></h4>
+						<p class="list-group-item-text"><?php echo $lang["May 22-24, 2017 "]; ?> <br> <?php echo $lang["NYC,USA"]; ?></p>
+					</a>
+				</div>
 
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC, USA"]; ?></p>
-                    </a>
-                </div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["Token Summit"]; ?></h4>
+						<p class="list-group-item-text"><?php echo $lang["May 25, 2017 "]; ?><br> <?php echo $lang["NYC,USA"]; ?></p>
+					</a>
+				</div>
 
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?>  </h4>
-                        <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
-                    </a>
-                </div>
-            </div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["Money Conf"]; ?>  </h4>
+						<p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
+					</a>
+				</div>
+			</div>
+	
+	<div id="menu2" class="tab-pane fade">
+	<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["Money 20/20"]; ?></h4>
+						<p class="list-group-item-text"><?php echo $lang["June 26-28, 2017"]; ?><br> <?php echo $lang["Copenhagen, Denmark"]; ?></p>
+					</a>
+				</div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
+						<p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
+					</a>
+				</div>
 
-    <div id="menu2" class="tab-pane fade">
-    
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
-                    </a>
-                </div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
+						<p class="list-group-item-text"><?php echo $lang["July 28, 2017"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
+					</a>
+				</div>
 
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["July 28, 2017"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
-                    </a>
-                </div>
-
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Blockchain & Bitcoin Conference Stockholm"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang["Sept 7, 2017"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
-                    </a>
-                </div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["Blockchain & Bitcoin Conference Stockholm"]; ?></h4>
+						<p class="list-group-item-text"><?php echo $lang["Sept 7, 2017"]; ?><br> <?php echo $lang["Stockholm, SWEDEN"]; ?></p>
+					</a>
+				</div>
 
 
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading"><?php echo $lang["Web Summit"]; ?></h4>
-                        <p class="list-group-item-text"><?php echo $lang[" Nov 6-9, 2017"]; ?><br> <?php echo $lang["Lisbon, PORTUGAL"]; ?></p>
-                    </a>
-                </div>
-            </div>
-
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading"><?php echo $lang["Web Summit"]; ?></h4>
+						<p class="list-group-item-text"><?php echo $lang[" Nov 6-9, 2017"]; ?><br> <?php echo $lang["Lisbon, PORTUGAL"]; ?></p>
+					</a>
+				</div>
+			</div>
   </div>
   </div>
  
@@ -960,40 +945,29 @@ ini_set('display_errors', 1);
 <script src="js/plugins.js"></script>
 <!-- main JS
 	============================================ -->
- <?php 
-   if($language == 'chinese') {
+ <?php   if($language == 'chinese') {
 
-	    ?>
+	?>
 	<script src="lang/chinese/main.js"></script>
 	<?php } 
-   else if($language == 'russian'){
+	else if($language == 'russian'){
 		?>
-    <script src="lang/russian/main.js"></script>
- <?php
+ <script src="lang/russian/main.js"></script>
+		<?php
 	}
-   else if($language == 'japanese'){
+	else if($language == 'japanese'){
 		?>
-    <script src="lang/japanese/main.js"></script>
- <?php }
-   else if($language == 'spanish'){
-		?>
-     <script src="lang/spanish/main.js"></script>
- <?php
+		<script src="lang/japanese/main.js"></script>
+		<?php }
+		else if($language == 'spanish'){
+			?>
+<script src="lang/spanish/main.js"></script>
+			<?php
 		}
-   else if($language == 'korean'){
-	    ?>
-     <script src="lang/korean/main.js"></script>
- <?php
-		}
-   else if ($language == 'german'){
-	    ?>
-	 <script src="lang/german/main.js"></script>
- <?php
-		}
-	else if($language == 'french'){
-		?>
-	 <script src="lang/french/main.js"></script>
- <?php
+		else if($language == 'korean'){
+			?>
+<script src="lang/korean/main.js"></script>
+			<?php
 		}
 	else{
 
@@ -1024,7 +998,58 @@ ini_set('display_errors', 1);
 })
 
 </script>
+<script type="text/javascript">
+	function addRecord() {
+	   
+	// get values
+	var yname = $("#yname").val();
+	var yemail = $("#yemail").val();
+	var ycomment = $("#ycomment").val();
 
+	// Add record
+	$.post("check.php", {
+		yname: yname,
+		yemail: yemail,
+		ycomment: ycomment,
+		
+		
+	}, function (data) {
+	  if(data.error === true){
+			
+			alert("A problem occur..NOT send");
+			
+		 }
+		 else{
+		
+	}
+ });
+	
+		// Add record
+	$.post("check2.php", {
+		yname: yname,
+		yemail: yemail,
+		
+	}, function (data) {
+	  if(data.error === true){
+			
+			alert("A problem occur..NOT send");
+			
+		 }
+		 else{
+
+alert("successfully send");		
+	}
+	$("#yname").val("");
+        $("#yemail").val("");
+        $("#ycomment").val("");	
+ });
+	
+}
+
+
+
+</script>
+<!----newsletter popup js starts here----->
 <script>
 
 jQuery(document).ready(function($){
@@ -1063,39 +1088,6 @@ jQuery(document).ready(function($){
 (function(a){if(typeof define==="function"&&define.amd){define(["jquery"],a);}else{a(jQuery);}}(function(e){var a=/\+/g;function d(g){return g;}function b(g){return decodeURIComponent(g.replace(a," "));}function f(g){if(g.indexOf('"')===0){g=g.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\");}try{return c.json?JSON.parse(g):g;}catch(h){}}var c=e.cookie=function(p,o,u){if(o!==undefined){u=e.extend({},c.defaults,u);if(typeof u.expires==="number"){var q=u.expires,s=u.expires=new Date();s.setDate(s.getDate()+q);}o=c.json?JSON.stringify(o):String(o);return(document.cookie=[c.raw?p:encodeURIComponent(p),"=",c.raw?o:encodeURIComponent(o),u.expires?"; expires="+u.expires.toUTCString():"",u.path?"; path="+u.path:"",u.domain?"; domain="+u.domain:"",u.secure?"; secure":""].join(""));}var g=c.raw?d:b;var r=document.cookie.split("; ");var v=p?undefined:{};for(var n=0,k=r.length;n<k;n++){var m=r[n].split("=");var h=g(m.shift());var j=g(m.join("="));if(p&&p===h){v=f(j);break;}if(!p){v[h]=f(j);}}return v;};c.defaults={};e.removeCookie=function(h,g){if(e.cookie(h)!==undefined){e.cookie(h,"",e.extend(g,{expires:-1}));return true;}return false;};}));
 </script>
 <!----newsletter popup js ends----->
-<script>
-$(document).ready(function(jQuery) {
-   
-    jQuery(window).scroll(function() {
-        if (jQuery("div.main-navigation").hasClass("sticky")) {
-            jQuery(".slicknav_menu").addClass("top-margin")
-        }
-		else{
-			jQuery(".slicknav_menu").removeClass("top-margin")
-		}
-		
-		if (jQuery("div.main-navigation").hasClass("sticky")) {
-            jQuery("button.btn-new").addClass("sticky-color")
-        }
-		else{
-			jQuery("button.btn-new").removeClass("sticky-color")
-		}
-		
-		if (jQuery("div.main-navigation").hasClass("sticky")) {
-            jQuery("div.lang-container div.dropdown-menu").addClass("sticky-color"),
-			jQuery("div.lang-container div.dropdown-menu ul").addClass("sticky-color")
-        }
-		else{
-			jQuery("div.lang-container div.dropdown-menu").removeClass("sticky-color"),
-			jQuery("div.lang-container div.dropdown-menu ul").removeClass("sticky-color")
-		}
-    });
-});
-
-
-
-</script>
-
 </body>
 
 </html>

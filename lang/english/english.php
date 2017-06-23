@@ -112,9 +112,6 @@ $lang = array(
 "Washington DC, USA"	=> "Washington DC, USA",
 "Stockholm, SWEDEN"	=> "Stockholm, SWEDEN",
 " Nov 6-9, 2017"	=> " Nov 6-9, 2017",
-"Money 20/20"	=> "Money 20/20",
-"June 26-28, 2017"	=> "June 26-28, 2017",
-"Copenhagen, Denmark"	=> "Copenhagen, Denmark",
 "copyright all right reserved by | expanse.tech"	=> "copyright all right reserved by | expanse.tech"
 );
 ?> 

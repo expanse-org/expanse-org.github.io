@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: application/json');
     if(isset($_POST['yname']) && isset($_POST['yemail']))
     {
 
@@ -38,12 +38,11 @@ $mail->AddAddress($yemail);
 $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com"; 
  if(!$mail->Send()) {
-   $response1['message'] ="SomeError occur"; 
 $response1['error'] = true;
 echo json_encode($response1);
 return;
  } else {
-    $response1['message'] ="Email has sent"; 
+
 $response1['error'] = false;
 echo json_encode($response1);
 return;

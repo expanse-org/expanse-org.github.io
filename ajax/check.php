@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: application/json');
     if(isset($_POST['yname']) && isset($_POST['yemail']) && isset($_POST['ycomment']))
     {
         
@@ -8,7 +8,7 @@
         $yname = $_POST['yname'];
         $yemail = $_POST['yemail'];
         $ycomment = $_POST['ycomment'];
-       $email = "asimizb@gmail.com";
+        $email = "asimizb@gmail.com";
 
         
      $response1 = array();
@@ -17,7 +17,7 @@ include_once('PHPMailer/class.phpmailer.php');
 require 'PHPMailer/PHPMailerAutoload.php';
 require_once('PHPMailer/class.smtp.php');
 $mail = new PHPMailer(true);
- $mail->IsSMTP();
+$mail->IsSMTP();
 $mail->SMTPDebug  = true;
 $mail->SMTPAuth = true; // authentication enabled
 
@@ -29,11 +29,11 @@ $mail->SetFrom("expanseteam.org@gmail.com", "Expanse Forward Message");
 $mail->isHTML(true);  // Set email format to HTML
 
 $bodyContent = '<h1>Contact Form entered Information</h1>';
-$bodyContent .= '<p>Name: ';
+$bodyContent .= '<p><b>Name: </b>';
 $bodyContent .= $yname;
-$bodyContent .= '<p>Email: ';
+$bodyContent .= '<p><b>Email: </b>';
 $bodyContent .= $yemail;
-$bodyContent .= '<p>Message: ';
+$bodyContent .= '<p><b>Message: </b>';
 $bodyContent .= $ycomment;
 $bodyContent .= '<p> Sent By <b>Expanse Team</b></p>';
 
@@ -43,12 +43,10 @@ $mail->AddAddress($email);
 $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com"; 
  if(!$mail->Send()) {
-   $response1['message'] ="SomeError occur"; 
 $response1['error'] = true;
 echo json_encode($response1);
 return;
- } else {
-    $response1['message'] ="Email has sent"; 
+ } else { 
 $response1['error'] = false;
 echo json_encode($response1);
 return;
