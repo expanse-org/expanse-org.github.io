@@ -1,9 +1,13 @@
 $(function () {
 
         $('form').on('submit', function (e) {
-
+        
           e.preventDefault();
-            
+            swal({
+                    title: "Wait",
+                    text: "Message Sending is in process",
+                    imageUrl: "img/favicon.ico"
+                    });
           $.ajax({
             type: 'post',
             url: 'ajax/check.php',
@@ -13,6 +17,17 @@ $(function () {
 
                    swal('ERROR!', data.message, 'error');
                    
+            }
+            else{
+                 swal({
+                 title: "Thank you for contacting us.",
+                 text: "Your message has been successfully sent.",
+                 imageUrl: "img/favicon.ico"
+                 });
+                 $("#yname").val("");
+                 $("#yemail").val("");
+                 $("#ycomment").val("");
+
             }
         
             }, 
@@ -44,7 +59,7 @@ $(function () {
             url: 'ajax/check2.php',
             data: $('form').serialize(),
             success: function (data) {
-                
+            
             }
             
           });

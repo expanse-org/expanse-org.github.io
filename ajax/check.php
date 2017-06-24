@@ -83,6 +83,7 @@ $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com"; 
  if(!$mail->Send()) {
 $response1['error'] = true;
+$response1['message'] ="Some problem occur while sending your message!!Please try again with valid values"; 
 echo json_encode($response1);
 return;
  } else { 
