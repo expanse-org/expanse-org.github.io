@@ -919,7 +919,7 @@ ini_set('display_errors', 1);
 					</form>
 				</div>
 </div>
-sign up popup form ends here---->
+sign up popup form ends here-->
 
 <!--  All JS Start
 =================================-->
@@ -1092,10 +1092,10 @@ $(document).ready(function(jQuery) {
     });
 });
 
--->
+
 
 </script>
-
+-->
 </body>
 
 </html>
