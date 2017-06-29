@@ -23,12 +23,23 @@ echo json_encode($response1);
 return;
 }
 
+if (strlen($yname) < 3 OR strlen($yname) > 50) {
+$response1['message'] ="Name length should be within 3-50 characters long"; 
+$response1['error'] = true;
+echo json_encode($response1);
+return;
+}
 if(empty($ycomment)){
 $response1['message'] ="Please Enter Message Field"; 
 $response1['error'] = true;
 echo json_encode($response1);
 }
-
+if (strlen($ycomment) < 8 OR strlen($ycomment) > 300) {
+$response1['message'] ="Message length should be within 8-300 characters long"; 
+$response1['error'] = true;
+echo json_encode($response1);
+return;
+}
 else{
 
 include_once('PHPMailer/class.phpmailer.php');
