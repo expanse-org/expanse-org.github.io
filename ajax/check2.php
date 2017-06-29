@@ -1,15 +1,52 @@
 <?php
 header('Content-Type: application/json');
-    if(isset($_POST['yname']) && isset($_POST['yemail']))
+    if(isset($_POST['yname']) && isset($_POST['yemail']) && isset($_POST['ycomment']))
     {
 
         // get values 
         $yname = $_POST['yname'];
         $yemail = $_POST['yemail'];
-    
-        
-     $response1 = array();
+        $ycomment = $_POST['ycomment'];
+        $response1 = array();
      $response1['error'] = false;
+    
+    if(empty($yname)){
+$response1['message'] ="Please Enter Name Field"; 
+$response1['error'] = true;
+echo json_encode($response1);
+return;
+}
+if(empty($yemail)){
+$response1['message'] ="Please Enter Email Field"; 
+$response1['error'] = true;
+echo json_encode($response1);
+return;
+}
+if (!(eregi('^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.([a-zA-Z]{2,4})$', $yemail))){
+$response1['message'] ="Invalid Email";   
+$response1['error'] = true;
+echo json_encode($response1);
+return;
+}
+if (strlen($yname) < 3 OR strlen($yname) > 50) {
+$response1['message'] ="Name length should be within 3-50 characters long"; 
+$response1['error'] = true;
+echo json_encode($response1);
+return;
+}
+if(empty($ycomment)){
+$response1['message'] ="Please Enter Message Field"; 
+$response1['error'] = true;
+echo json_encode($response1);
+}
+if (strlen($ycomment) < 8 OR strlen($ycomment) > 300) {
+$response1['message'] ="Message length should be within 8-300 characters long"; 
+$response1['error'] = true;
+echo json_encode($response1);
+return;
+}
+else{
+
 include_once('PHPMailer/class.phpmailer.php');
 require 'PHPMailer/PHPMailerAutoload.php';
 require_once('PHPMailer/class.smtp.php');
@@ -50,6 +87,7 @@ return;
 
     //echo json_encode($response);
     }
+}
     else{
         echo "A problem occured";
     }
