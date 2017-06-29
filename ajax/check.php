@@ -1,7 +1,5 @@
 <?php
 header('Content-Type: application/json');
-$response1 = array();
-$response1['error'] = false;
     if(isset($_POST['yname']) && isset($_POST['yemail']) && isset($_POST['ycomment']))
     {
         
@@ -10,48 +8,11 @@ $response1['error'] = false;
         $yname = $_POST['yname'];
         $yemail = $_POST['yemail'];
         $ycomment = $_POST['ycomment'];
-        $email = "asimizb@gmail.com";
+        $email = "benazirashraf@ymail.com";
 
-if(empty($yname)){
-$response1['message'] ="Please Enter Name Field"; 
-$response1['error'] = true;
-echo json_encode($response1);
-return;
-}
-if(empty($yemail)){
-$response1['message'] ="Please Enter Email Field"; 
-$response1['error'] = true;
-echo json_encode($response1);
-return;
-}
-if(empty($ycomment)){
-$response1['message'] ="Please Enter Message Field"; 
-$response1['error'] = true;
-echo json_encode($response1);
-return;
-}
-if (!(eregi('^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.([a-zA-Z]{2,4})$', $yemail))){
-$response1['message'] ="Invalid Email";   
-$response1['error'] = true;
-echo json_encode($response1);
-return;
-}
-if (strlen($yname) < 3 OR strlen($yname) > 50) {
-$response1['message'] ="Name length should be within 3-50 characters long"; 
-$response1['error'] = true;
-echo json_encode($response1);
-return;
-}
-if (strlen($ycomment) < 8 OR strlen($ycomment) > 300) {
-$response1['message'] ="Message length should be within 8-300 characters long"; 
-$response1['error'] = true;
-echo json_encode($response1);
-return;
-}
-
-else{
-
-       
+        
+     $response1 = array();
+     $response1['error'] = false;
 include_once('PHPMailer/class.phpmailer.php');
 require 'PHPMailer/PHPMailerAutoload.php';
 require_once('PHPMailer/class.smtp.php');
@@ -83,7 +44,6 @@ $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com"; 
  if(!$mail->Send()) {
 $response1['error'] = true;
-$response1['message'] ="Some problem occur while sending your message!!Please try again with valid values"; 
 echo json_encode($response1);
 return;
  } else { 
@@ -92,7 +52,6 @@ echo json_encode($response1);
 return;
  }
 
-}
     //echo json_encode($response);
     }
     else{
