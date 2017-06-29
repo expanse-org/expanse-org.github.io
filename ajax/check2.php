@@ -1,5 +1,7 @@
 <?php
 header('Content-Type: application/json');
+     $response1 = array();
+     $response1['error'] = false;
     if(isset($_POST['yname']) && isset($_POST['yemail']) && isset($_POST['ycomment']))
     {
 
@@ -7,8 +9,6 @@ header('Content-Type: application/json');
         $yname = $_POST['yname'];
         $yemail = $_POST['yemail'];
         $ycomment = $_POST['ycomment'];
-        $response1 = array();
-     $response1['error'] = false;
     
     if(empty($yname)){
 $response1['message'] ="Please Enter Name Field"; 
@@ -22,7 +22,12 @@ $response1['error'] = true;
 echo json_encode($response1);
 return;
 }
-
+if (!filter_var($yemail, FILTER_VALIDATE_EMAIL)) {
+  $response1['message'] ="Invalid Email";   
+$response1['error'] = true;
+echo json_encode($response1);
+return;
+}
 if (strlen($yname) < 3 OR strlen($yname) > 50) {
 $response1['message'] ="Name length should be within 3-50 characters long"; 
 $response1['error'] = true;
@@ -41,6 +46,8 @@ echo json_encode($response1);
 return;
 }
 else{
+
+        
 
 include_once('PHPMailer/class.phpmailer.php');
 require 'PHPMailer/PHPMailerAutoload.php';
@@ -79,10 +86,9 @@ $response1['error'] = false;
 echo json_encode($response1);
 return;
  }
-
+}
     //echo json_encode($response);
     }
-}
     else{
         echo "A problem occured";
     }
