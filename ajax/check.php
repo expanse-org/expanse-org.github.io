@@ -10,7 +10,7 @@ $response1['error'] = false;
         $yname = $_POST['yname'];
         $yemail = $_POST['yemail'];
         $ycomment = $_POST['ycomment'];
-        $email = "benazirashraf@ymail.com";
+        $email = "contact@expanse.tech";
 
 if(empty($yname)){
 $response1['message'] ="Please Enter Name Field"; 
