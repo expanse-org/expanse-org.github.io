@@ -14,7 +14,11 @@ $(function () {
             data: $('form').serialize(),
             success: function (data) {
             if(data.error === true){
-                      swal('ERROR!', data.message, 'error');
+                      swal({
+                    title: "OOpss!!Something went wrong",
+                    text: "A problem occur your message has not been sent. Please try again later",
+                    imageUrl: "img/favicon.ico"
+                    });
             }
             else{
                  swal({
