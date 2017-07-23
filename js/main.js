@@ -59,7 +59,7 @@
     /*----------------------------
      Smooth Scrool
     ------------------------------ */
-    $('a').on('click', function (event) {
+    $('ul#menu > li > a').on('click', function (event) {
         var $anchor = $($(this).attr('href')).offset().top - 60;
         $('body, html').animate({
             scrollTop: $anchor
