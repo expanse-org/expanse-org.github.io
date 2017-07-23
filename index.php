@@ -841,16 +841,17 @@ ini_set('display_errors', 1);
                         <p class="list-group-item-text"><?php echo $lang["June 6th, 2017 "]; ?><br> <?php echo $lang["MADRID, SPAIN"]; ?></p>
                     </a>
                 </div>
-            </div>
-
-    <div id="menu2" class="tab-pane fade">
-    
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
                         <p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
                     </a>
                 </div>
+            </div>
+
+    <div id="menu2" class="tab-pane fade">
+    
+                
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
