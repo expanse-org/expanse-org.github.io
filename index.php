@@ -847,18 +847,15 @@ ini_set('display_errors', 1);
                         <p class="list-group-item-text"><?php echo $lang["July 16-18, 2017"]; ?><br> <?php echo $lang["Barcelona, SPAIN"]; ?></p>
                     </a>
                 </div>
-            </div>
-
-    <div id="menu2" class="tab-pane fade">
-    
-                
-
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["Washington DC Blockchain Conference"]; ?></h4>
                         <p class="list-group-item-text"><?php echo $lang["July 28, 2017"]; ?><br> <?php echo $lang["Washington DC, USA"]; ?></p>
                     </a>
                 </div>
+            </div>
+
+    <div id="menu2" class="tab-pane fade">
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
