@@ -8,6 +8,7 @@ $lang = array(
 "dwarfpool"			=> "난쟁이",
 "akasha"			=> "아카샤",
 "Digger.ws"			=> "파는 사람.ws",
+"MinandoAndo"			=> "MinandoAndo",
 "buy"			=> "사기",
 "explore"			=> "탐구",
 "docs"			=> "문서",
