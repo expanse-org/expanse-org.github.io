@@ -133,6 +133,7 @@ ini_set('display_errors', 1);
 										<li><a href="http://exp.akasha-pool.eu/"><?php echo $lang["akasha"]; ?></a></li>
 										<li><a href="http://exp.digger.ws/"><?php echo $lang["Digger.ws"]; ?></a></li>
 										<li><a href="http://exp.minandoando.com/"><?php echo $lang["MinandoAndo"]; ?></a></li>
+										<li><a href="http://exp.minerpool.net/"><?php echo $lang["Minerpool.net"]; ?></a></li>
 									</ul>
 								</li>
 
