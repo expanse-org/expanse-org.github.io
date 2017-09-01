@@ -9,6 +9,7 @@ $lang = array(
 "akasha"			=> "акаша",
 "Digger.ws"			=> "копатель.ws",
 "MinandoAndo"			=> "MinandoAndo",
+"Minerpool.net"			=> "Minerpool.net",
 "buy"			=> "купить",
 "explore"			=> "исследовать",
 "docs"			=> "документы",
