@@ -128,6 +128,7 @@ ini_set('display_errors', 1);
 									</a>
 									<ul class="dropdown-menu">
 										<li><a href="http://pool.expanse.tech/"><?php echo $lang["EXP.POOL"]; ?></a></li>
+										<li><a href="http://exp.ethertrench.com/"><?php echo $lang["ethertrench"]; ?></a></li>
 										<li><a href="http://exp.hodlpool.com/">HODLPool</a></li>
 										<li><a href="https://exp.suprnova.cc/"><?php echo $lang["suprnova"]; ?></a></li>
 										<li><a href="http://dwarfpool.com/exp"><?php echo $lang["dwarfpool"]; ?></a></li>
