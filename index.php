@@ -333,9 +333,9 @@ ini_set('display_errors', 1);
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="experience-item service-work-mb">
 						<div class="experience-content">
-							<h6><?php echo $lang["Expanse Bond System (EBS)"]; ?></h6>
+							<h6><?php echo $lang["Expanse Rewards (EXR)"]; ?></h6>
 							<h7><?php echo $lang["Hold Expanse; Earn Expanse."]; ?></h7>
-							<p> <?php echo $lang["The Expanse Bond System, (EBS), is an innovative method to reward buying and holding Expanse tokens for a pre-defined period of time. Unlike traditional currency-based bond systems, EBS uses only native EXP to reward those who participate. Functioning similar to a self-funded, secured token savings account, it uses smart contract-based simulated staking on the blockchain with decentralized open source parameters. Find out more by visiting our website at expanse.tech."]; ?>
+							<p> <?php echo $lang["The Expanse Rewards, (EXR), is an innovative method to reward buying and holding Expanse tokens for a pre-defined period of time. Unlike traditional currency-based bond systems, EXR uses only native EXP to reward those who participate. Functioning similar to a self-funded, secured token savings account, it uses smart contract-based simulated staking on the blockchain with decentralized open source parameters. Find out more by visiting our website at expanse.tech."]; ?>
 							</p>
 							<center><img src="img/dapps/ebs.png" width="120px"></center>
 						</div>
