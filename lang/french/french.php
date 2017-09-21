@@ -114,4 +114,4 @@ $lang = array(
 " Nov 6-9, 2017"	=> "6-9 novembre 2017",
 "copyright all right reserved by | expanse.tech"	=> "Droit d'auteur réservé par | Expanse.tech"
 );
-?> 
+?>

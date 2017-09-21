@@ -66,14 +66,14 @@ ini_set('display_errors', 1);
 	<!-- responsive CSS
 		============================================ -->
 	<link rel="stylesheet" href="css/responsive.css">
-	
+
 	<!-- Select  CSS
 		============================================ -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
 	<!-- modernizr JS
 		============================================ -->
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	
+
 	<!-- FontAwesome CDN
 		============================================ -->
 	<script src="https://use.fontawesome.com/aea9fc5902.js"></script>
@@ -81,7 +81,7 @@ ini_set('display_errors', 1);
 	 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
      <script src="send.js"></script>
 
- 
+
 
 </head>
 
@@ -145,26 +145,26 @@ ini_set('display_errors', 1);
 								<li><a href="http://blog.expanse.tech"><?php echo $lang["news"]; ?></a></li>
 								<li><a href="#contact"><?php echo $lang["contact"]; ?></a></li>
 
-	  
+
 							</ul>
 						</nav>
-					
+
 					</div>
 
 				</div>
 				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" id="expanse_lang" >
 						<div class="lang-container">
 							<select data-style="btn-new" class="selectpicker btn-cta" data-width="fit" onChange="window.location = '?lang='+this.value+''">
-								 <?php   
+								 <?php
 									if($language == 'english'){?>
 									<option value="english" selected="selected" data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
 									<?php }
-									else { ?>  
+									else { ?>
 									  <option value="english" data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
 									<?php }
 									if($language == 'chinese') {?>
 										<option  value="chinese" selected="selected" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
-										
+
 									<?php }
 									else {?>
 										<option  value="chinese" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
@@ -182,27 +182,27 @@ ini_set('display_errors', 1);
 									<?php }
 									else {?>
 										<option  value="spanish" data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
-									<?php } 
-									
+									<?php }
+
 									if($language == 'korean'){?>
 										<option  value="korean" selected="selected" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어'>한국어</option>
 									<?php }
 									else {?>
 										<option  value="korean" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어'>한국어</option>
-									<?php } 
-									
+									<?php }
+
 									if($language == 'russian'){?>
 										<option  value="russian" selected="selected" data-content='<span class="flag-icon flag-icon-ru"></span> русский'>русский</option>
 									<?php }
 									else {?>
 										<option  value="russian" data-content='<span class="flag-icon flag-icon-ru"></span> русский'>русский</option>
-									<?php } 
+									<?php }
 									if($language == 'german'){?>
 										<option  value="german" selected="selected" data-content='<span class="flag-icon flag-icon-de"></span> Deutsche'>Deutsche</option>
 									<?php }
 									else {?>
 										<option  value="german" data-content='<span class="flag-icon flag-icon-de"></span> Deutsche'>Deutsche</option>
-									<?php } 
+									<?php }
 									if($language == 'french'){?>
 										<option  value="french" selected="selected" data-content='<span class="flag-icon flag-icon-fr"></span> français'>français</option>
 									<?php }
@@ -211,8 +211,8 @@ ini_set('display_errors', 1);
 									<?php } ?>
 
 
-																
-										
+
+
 							</select>
 						</div>
 				</div>
@@ -256,15 +256,15 @@ ini_set('display_errors', 1);
 						<div class="portion-content">
 							<p>
 							<?php echo $lang["Expanse.Tech™ was created as the first stable fork of Ethereum by one of the earliest blockchain developers and cryptocurrency entrepreneurs out there, Christopher Franko. Co-founder James Clayton is also the founder of the Cryptocurrency Collectors Club, (CCC), which is the largest and most popular Cryptocurrency group on Facebook. Dan Conway, another blockchain expert with extensive experience, soon joined the team as the third founder, bringing a great deal of talent, balance, and expertise to the project."]; ?>
-								
+
 							</p>
 							<p>
 								<?php echo $lang["Expanse was built as a community-based project without an ICO, (Initial Coin Offering), and is blockchain agnostic. The idea is to use cutting-edge blockchain technology to build anything the community and team can imagine—using a Decentralized Autonomous Organization, (DAO), with a self-funded design to keep it truly decentralized. This way, the Expanse community can evolve and grow while rewarding holders, partners, and investors."]; ?>
-								
+
 							</p>
 							<p>
 							<?php echo $lang["The Expanse platform now has a two-year history of consistent growth and stability. Starting out small, but with big ideas, the team is growing and other projects are now coming on board to help make the dream a reality—limited only by the imagination and talent of all the diverse people around the world involved in the journey. Each new community member and partner brings new ideas and visions for the future. Expanse.Tech plans to be one of the top blockchain projects in the world. Won’t you join us on this adventure? Start learning more about Expanse today!"]; ?>
-								
+
 							</p>
 						</div>
 						<!-- about social icon-area-->
@@ -546,7 +546,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["James is a cryptocurrency analyst and investor who founded one of the largest active communities for Cryptocurrency discussion in the world. James is also one of the founders of Expanse, and an experienced crypto markets advisor, writer, and community manager, James served on the teams of multiple well-established blockchain technology projects."]; ?>
-									
+
 								</p>
 							</div>
 						</div>
@@ -563,7 +563,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Dan is a blockchain technology advocate and developer, providing consultancy for a number of projects and companies in the cryptocurrency and blockchain technology space."]; ?>
-									
+
 								</p>
 							</div>
 						</div>
@@ -580,7 +580,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Marcia Danzeisen has led marketing and strategy for some of the largest banks and financial services technology companies in the world. An accomplished writer, Danzeisen saw how crypto currency and blockchain technology have changed the traditional FinTech world."]; ?>
-									
+
 								</p>
 							</div>
 						</div>
@@ -598,7 +598,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Sandro has worked with several blockchain companies from around the world. He is skilled with visual conceptualization and design. An expert at creating interfaces, websites, motion graphics, 3D, and creative art."]; ?>
-									
+
 								</p>
 							</div>
 						</div>
@@ -616,7 +616,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Scott brings a wealth of experience to Expanse with his business consulting and expertise in brand awareness. He has an MBA from Northeastern University, is currently a Global Liaison for Shared Services, a partner for Briefcaseit Network, and he is the Director of Operations for Borderless Charity that was built on the Expanse platform."]; ?>
-								   
+
 								</p>
 							</div>
 						</div>
@@ -634,7 +634,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Ahmad Siddiqi is a successful cryptocurrency investor and enthusiast. He’s been actively involved in the crypto economy since 2013. With a 15 year of software development and finance experience under his belt, he is in a unique position to understand the benefits of crypto assets. He’s currently working on growing the Smart-Contract ecosystem on the Expanse and Ethereum blockchains coupled with cutting edge technologies such as ReactJS and Aspnet core."]; ?>
-									
+
 								</p>
 							</div>
 						</div>
@@ -652,7 +652,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Timothy Suggs is a computer software entrepreneur that specializes in Web and TV Video Production, web development and refreshing Internet Marketing (PPC/SEO/Social). Timothy is also experienced with software and Web Application development, Internet Marketing Strategy and Marketing Consulting."]; ?>
-									
+
 								</p>
 							</div>
 						</div>
@@ -670,7 +670,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Maurice Beutnagel holds a masters degree in innovation management and has been helping companies in different industries (space, insurance, gaming) to grow their business. Focus is on implementing new products and services in the market. Over 10 years of investing experience. Sees cryptos as one of the most promising sectors moving forward."]; ?>
-								   
+
 								</p>
 							</div>
 						</div>
@@ -688,7 +688,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Nikola Šarić works as a medical doctor (physician, general practice) in a small village of Stanišić near Sombor, Serbia. He is interested in alternative currency systems, social networking, collaborative consumption. Community currency developer, 5 years of experience in designing alternative systems for local exchange. Founder of Alva Alternative currency."]; ?>
-								   
+
 								</p>
 							</div>
 						</div>
@@ -706,7 +706,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["Soopnon is the Chinese Ambassador from Hongico.com, he will be working with the Expanse along with his team of marketers in China to spread the news about Expanse, start discussions in China, translate Newsletters, Announcements, and work on getting Expanse added to Chinese Exchanges. Soopnon has worked with Supernet, PIVX, Komodo, and has extensive experience with making projects a success in China."]; ?>
-									
+
 								</p>
 							</div>
 						</div>
@@ -724,7 +724,7 @@ ini_set('display_errors', 1);
 							</div>
 							<div class="testimonial-content">
 								<p><?php echo $lang["A cryptocurrency enthusiast by heart, Asim is passionate about creating next generation decentralized apps. He has a vast experience working as a full stack developer in some of the most challenging environments where he helped solve complex problems. Asim, along with his team, aims to make Expanse more prevalent and more accessible for a wider audience. As a hobby, he also runs a 30-GPU mining rig at home."]; ?>
-								   
+
 								</p>
 							</div>
 						</div>
@@ -815,7 +815,7 @@ ini_set('display_errors', 1);
   </ul>
 
   <div class="tab-content">
-   
+
 
             <div id="menu1" class="tab-pane fade in active">
                 <div class="list-group">
@@ -848,7 +848,7 @@ ini_set('display_errors', 1);
             </div>
 
     <div id="menu2" class="tab-pane fade">
-    
+
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading"><?php echo $lang["CoinAgenda"]; ?></h4>
@@ -881,8 +881,8 @@ ini_set('display_errors', 1);
 
   </div>
   </div>
- 
-		</div> 
+
+		</div>
 	</div>
 </section>
 <!--  Footer Area Start
@@ -936,7 +936,7 @@ sign up popup form ends here-->
 
 <!-- Latest compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
-	
+
 <!-- wow JS
 	============================================ -->
 <script src="js/wow.min.js"></script>
@@ -964,12 +964,12 @@ sign up popup form ends here-->
 <script src="js/plugins.js"></script>
 <!-- main JS
 	============================================ -->
- <?php 
+ <?php
    if($language == 'chinese') {
 
 	    ?>
 	<script src="lang/chinese/main.js"></script>
-	<?php } 
+	<?php }
    else if($language == 'russian'){
 		?>
     <script src="lang/russian/main.js"></script>
@@ -1001,7 +1001,7 @@ sign up popup form ends here-->
 		}
 	else{
 
-		?> 
+		?>
 		<script src="js/main.js"></script>
 		<?php } ?>
 
@@ -1066,10 +1066,10 @@ jQuery(document).ready(function($){
 /* jQuery Cookie Plugin v1.3.1 */
 (function(a){if(typeof define==="function"&&define.amd){define(["jquery"],a);}else{a(jQuery);}}(function(e){var a=/\+/g;function d(g){return g;}function b(g){return decodeURIComponent(g.replace(a," "));}function f(g){if(g.indexOf('"')===0){g=g.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\");}try{return c.json?JSON.parse(g):g;}catch(h){}}var c=e.cookie=function(p,o,u){if(o!==undefined){u=e.extend({},c.defaults,u);if(typeof u.expires==="number"){var q=u.expires,s=u.expires=new Date();s.setDate(s.getDate()+q);}o=c.json?JSON.stringify(o):String(o);return(document.cookie=[c.raw?p:encodeURIComponent(p),"=",c.raw?o:encodeURIComponent(o),u.expires?"; expires="+u.expires.toUTCString():"",u.path?"; path="+u.path:"",u.domain?"; domain="+u.domain:"",u.secure?"; secure":""].join(""));}var g=c.raw?d:b;var r=document.cookie.split("; ");var v=p?undefined:{};for(var n=0,k=r.length;n<k;n++){var m=r[n].split("=");var h=g(m.shift());var j=g(m.join("="));if(p&&p===h){v=f(j);break;}if(!p){v[h]=f(j);}}return v;};c.defaults={};e.removeCookie=function(h,g){if(e.cookie(h)!==undefined){e.cookie(h,"",e.extend(g,{expires:-1}));return true;}return false;};}));
 </script>
-<!-- newsletter popup js ends 
+<!-- newsletter popup js ends
 <script>
 $(document).ready(function(jQuery) {
-   
+
     jQuery(window).scroll(function() {
         if (jQuery("div.main-navigation").hasClass("sticky")) {
             jQuery(".slicknav_menu").addClass("top-margin")
@@ -1077,14 +1077,14 @@ $(document).ready(function(jQuery) {
 		else{
 			jQuery(".slicknav_menu").removeClass("top-margin")
 		}
-		
+
 		if (jQuery("div.main-navigation").hasClass("sticky")) {
             jQuery("button.btn-new").addClass("sticky-color")
         }
 		else{
 			jQuery("button.btn-new").removeClass("sticky-color")
 		}
-		
+
 		if (jQuery("div.main-navigation").hasClass("sticky")) {
             jQuery("div.lang-container div.dropdown-menu").addClass("sticky-color"),
 			jQuery("div.lang-container div.dropdown-menu ul").addClass("sticky-color")

@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db53c47b-3048-4cbf-9fb4-59e895d47a8b" name="Default" comment="" />
+    <list default="true" id="db53c47b-3048-4cbf-9fb4-59e895d47a8b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/chinese/chinese.php" afterPath="$PROJECT_DIR$/lang/chinese/chinese.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/chinese/main.js" afterPath="$PROJECT_DIR$/lang/chinese/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/english/english.php" afterPath="$PROJECT_DIR$/lang/english/english.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/french/french.php" afterPath="$PROJECT_DIR$/lang/french/french.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/german/german.php" afterPath="$PROJECT_DIR$/lang/german/german.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/japanese/japanese.php" afterPath="$PROJECT_DIR$/lang/japanese/japanese.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/japanese/main.js" afterPath="$PROJECT_DIR$/lang/japanese/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/korean/korean.php" afterPath="$PROJECT_DIR$/lang/korean/korean.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/korean/main.js" afterPath="$PROJECT_DIR$/lang/korean/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/russian/main.js" afterPath="$PROJECT_DIR$/lang/russian/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/russian/russian.php" afterPath="$PROJECT_DIR$/lang/russian/russian.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/spanish/main.js" afterPath="$PROJECT_DIR$/lang/spanish/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/spanish/spanish.php" afterPath="$PROJECT_DIR$/lang/spanish/spanish.php" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,17 +31,133 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="579" column="34" lean-forward="true" selection-start-line="579" selection-start-column="34" selection-end-line="579" selection-end-column="34" />
+            <state relative-caret-position="123">
+              <caret line="635" column="183" lean-forward="false" selection-start-line="635" selection-start-column="183" selection-end-line="635" selection-end-column="183" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chinese.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/chinese/chinese.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="english.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/english/english.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="french.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/french/french.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="german.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/german/german.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="japanese.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/japanese/japanese.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="korean.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/korean/korean.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="117" column="2" lean-forward="false" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/russian/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="russian.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/russian/russian.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="117" column="2" lean-forward="false" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spanish.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lang/spanish/spanish.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="117" column="2" lean-forward="false" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>exr</find>
+      <find>130</find>
+      <find>php</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/lang/chinese/chinese.php" />
+        <option value="$PROJECT_DIR$/lang/english/english.php" />
+        <option value="$PROJECT_DIR$/lang/french/french.php" />
+        <option value="$PROJECT_DIR$/lang/german/german.php" />
+        <option value="$PROJECT_DIR$/lang/japanese/japanese.php" />
+        <option value="$PROJECT_DIR$/lang/korean/korean.php" />
+        <option value="$PROJECT_DIR$/lang/russian/main.js" />
+        <option value="$PROJECT_DIR$/lang/russian/russian.php" />
+        <option value="$PROJECT_DIR$/lang/spanish/spanish.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -61,6 +194,29 @@
               <item name="expanse-org.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="expanse-org.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="expanse-org.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expanse-org.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="expanse-org.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expanse-org.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="korean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="expanse-org.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expanse-org.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="russian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="expanse-org.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expanse-org.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="spanish" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -96,12 +252,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505996588574</updated>
-      <workItem from="1505996593797" duration="78000" />
+      <workItem from="1505996593797" duration="1679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78000" />
+    <option name="totallyTimeSpent" value="1679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -127,6 +283,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -135,10 +294,90 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/library.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="579" column="34" lean-forward="true" selection-start-line="579" selection-start-column="34" selection-end-line="579" selection-end-column="34" />
+        <state relative-caret-position="123">
+          <caret line="635" column="183" lean-forward="false" selection-start-line="635" selection-start-column="183" selection-end-line="635" selection-end-column="183" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/chinese/chinese.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/english/english.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/french/french.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/german/german.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/japanese/japanese.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/korean/korean.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="117" column="2" lean-forward="false" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/russian/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/russian/russian.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="117" column="2" lean-forward="false" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/spanish/spanish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="117" column="2" lean-forward="false" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
           <folding />
         </state>
       </provider>
