@@ -553,23 +553,7 @@ ini_set('display_errors', 1);
 							</div>
 						</div>
 					</div>
-					<!--single testimonial area 3-->
-					<div class="col-lg-6 col-md-6 full-w">
-						<div class="item">
-							<div class="client-img">
-								<img src="img/team/dan.jpg" alt="client">
-							</div>
-							<div class="client-identity">
-								<p class="name"><?php echo $lang["Dan Conway"]; ?></p>
-								<p class="profession"><?php echo $lang["Co-founder / Senior Developer"]; ?></p>
-							</div>
-							<div class="testimonial-content">
-								<p><?php echo $lang["Dan is a blockchain technology advocate and developer, providing consultancy for a number of projects and companies in the cryptocurrency and blockchain technology space."]; ?>
 
-								</p>
-							</div>
-						</div>
-					</div>
 					<!--single testimonial area 4-->
 					<div class="col-lg-6 col-md-6 full-w">
 						<div class="item">
