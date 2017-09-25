@@ -140,7 +140,7 @@ ini_set('display_errors', 1);
 								</li>
 
 								<li><a href="#exchanges"><?php echo $lang["buy"]; ?></a></li>
-								<li><a href="http://explorer.expanse.tech"><?php echo $lang["explore"]; ?></a></li>
+								<li><a href="http://www.gander.tech"><?php echo $lang["explore"]; ?></a></li>
 								<li><a href="http://docs.expanse.tech"><?php echo $lang["docs"]; ?></a></li>
 								<li><a href="http://blog.expanse.tech"><?php echo $lang["news"]; ?></a></li>
 								<li><a href="#contact"><?php echo $lang["contact"]; ?></a></li>
@@ -337,11 +337,13 @@ ini_set('display_errors', 1);
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="experience-item service-work-mb">
 						<div class="experience-content">
-							<h6><?php echo $lang["Expanse Rewards (EXR)"]; ?></h6>
+							<h6><a href="https://expanse-org.github.io/exr-dapp/"><?php echo $lang["Expanse Rewards (EXR)"]; ?></a></h6>
 							<h7><?php echo $lang["Hold Expanse; Earn Expanse."]; ?></h7>
 							<p> <?php echo $lang["The Expanse Rewards, (EXR), is an innovative method to reward buying and holding Expanse tokens for a pre-defined period of time. Unlike traditional currency-based bond systems, EXR uses only native EXP to reward those who participate. Functioning similar to a self-funded, secured token savings account, it uses smart contract-based simulated staking on the blockchain with decentralized open source parameters. Find out more by visiting our website at expanse.tech."]; ?>
+								<br>
+
 							</p>
-							<center><img src="img/dapps/ebs.png" width="120px"></center>
+							<center><img src="https://github.com/expanse-org/exr-dapp/raw/master/app/public/img/EXR_Logo.png" width="120px"></center>
 						</div>
 					</div>
 				</div>
@@ -590,24 +592,6 @@ ini_set('display_errors', 1);
 					<div class="col-lg-6 col-md-6 full-w">
 						<div class="item">
 							<div class="client-img">
-								<img src="img/team/sieva.jpg" alt="client">
-							</div>
-							<div class="client-identity">
-								<p class="name"><?php echo $lang["Sandro Ieva"]; ?></p>
-								<p class="profession"><?php echo $lang["Director of Art"]; ?></p>
-							</div>
-							<div class="testimonial-content">
-								<p><?php echo $lang["Sandro has worked with several blockchain companies from around the world. He is skilled with visual conceptualization and design. An expert at creating interfaces, websites, motion graphics, 3D, and creative art."]; ?>
-
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<!--single testimonial area 4-->
-					<div class="col-lg-6 col-md-6 full-w">
-						<div class="item">
-							<div class="client-img">
 								<img src="img/team/scott.jpg" alt="client">
 							</div>
 							<div class="client-identity">
@@ -676,23 +660,6 @@ ini_set('display_errors', 1);
 						</div>
 					</div>
 
-					<!--single testimonial area 4-->
-					<div class="col-lg-6 col-md-6 full-w">
-						<div class="item">
-							<div class="client-img">
-								<img src="img/team/niko.jpg" alt="client">
-							</div>
-							<div class="client-identity">
-								<p class="name"><?php echo $lang["Nikola Šaric"]; ?></p>
-								<p class="profession"><?php echo $lang["General Practice Physician"]; ?></p>
-							</div>
-							<div class="testimonial-content">
-								<p><?php echo $lang["Nikola Šarić works as a medical doctor (physician, general practice) in a small village of Stanišić near Sombor, Serbia. He is interested in alternative currency systems, social networking, collaborative consumption. Community currency developer, 5 years of experience in designing alternative systems for local exchange. Founder of Alva Alternative currency."]; ?>
-
-								</p>
-							</div>
-						</div>
-					</div>
 
 					<!--single testimonial area 4-->
 					<div class="col-lg-6 col-md-6 full-w">
