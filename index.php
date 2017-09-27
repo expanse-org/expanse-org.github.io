@@ -493,14 +493,7 @@ ini_set('display_errors', 1);
 				</div>
 				<!--single service area-->
 				<div class="col-lg-4 col-md-4 col-sm-4">
-					<div class="single-service">
-						<div class="service-icon">
-							<i class="fa fa-line-chart" aria-hidden="true"></i>
-						</div>
-						<div class="service-content">
-							<h5><a href="https://alcurex.com/#EXP-BTC"><img src="img/alcurex.png"></a></h5>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>
