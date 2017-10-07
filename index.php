@@ -78,7 +78,7 @@ ini_set('display_errors', 1);
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- main CSS
 		============================================ -->
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.v1.css">
 	<!-- style CSS
 		============================================ -->
 	<link rel="stylesheet" href="style.css">
@@ -129,7 +129,7 @@ ini_set('display_errors', 1);
 		<div class="container">
             		<div class="row">
             		<a class="tklab" href="https://tokenlab.io" target="blank">
-                 
+
                     </a>
             		</div>
             </div>
@@ -165,8 +165,8 @@ ini_set('display_errors', 1);
 										<li><a href="https://exp.suprnova.cc/"><?php echo $lang["suprnova"]; ?></a></li>
 										<li><a href="http://dwarfpool.com/exp"><?php echo $lang["dwarfpool"]; ?></a></li>
 										<li><a href="http://exp.akasha-pool.eu/"><?php echo $lang["akasha"]; ?></a></li>
-										<li><a href="http://exp.minandoando.com/"><?php echo $lang["MinandoAndo"]; ?></a></li>
-										<li><a href="http://exp.minerpool.net/"><?php echo $lang["Minerpool.net"]; ?></a></li>
+										<li><a href="http://exp.minandoando.com/">MinandoAndo</a></li>
+										<li><a href="http://exp.minerpool.net/">Minerpool.net</a></li>
 										<li><a href="http://exppool.servehttp.com/#/">ServeHttp</a></li>
 									</ul>
 								</li>
