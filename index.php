@@ -159,15 +159,15 @@ ini_set('display_errors', 1);
 										<?php echo $lang["Mining"]; ?><span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu">
-										<li><a href="http://pool.expanse.tech/"><?php echo $lang["EXP.POOL"]; ?></a></li>
-										<li><a href="http://exp.ethertrench.com/">ethertrench</a></li>
-										<li><a href="http://exp.hodlpool.com/">HODLPool</a></li>
-										<li><a href="https://exp.suprnova.cc/"><?php echo $lang["suprnova"]; ?></a></li>
-										<li><a href="http://dwarfpool.com/exp"><?php echo $lang["dwarfpool"]; ?></a></li>
-										<li><a href="http://exp.akasha-pool.eu/"><?php echo $lang["akasha"]; ?></a></li>
-										<li><a href="http://exp.minandoando.com/">MinandoAndo</a></li>
-										<li><a href="http://exp.minerpool.net/">Minerpool.net</a></li>
-										<li><a href="http://exppool.servehttp.com/#/">ServeHttp</a></li>
+										<li><a href="http://pool.expanse.tech/" target="blank"><?php echo $lang["EXP.POOL"]; ?></a></li>
+										<li><a href="http://exp.ethertrench.com/" target="blank">ethertrench</a></li>
+										<li><a href="http://exp.hodlpool.com/" target="blank">HODLPool</a></li>
+										<li><a href="https://exp.suprnova.cc/" target="blank"><?php echo $lang["suprnova"]; ?></a></li>
+										<li><a href="http://dwarfpool.com/exp" target="blank"><?php echo $lang["dwarfpool"]; ?></a></li>
+										<li><a href="http://exp.akasha-pool.eu/" target="blank"><?php echo $lang["akasha"]; ?></a></li>
+										<li><a href="http://exp.minandoando.com/" target="blank">MinandoAndo</a></li>
+										<li><a href="http://exp.minerpool.net/" target="blank">Minerpool.net</a></li>
+										<li><a href="http://exppool.servehttp.com/#/" target="blank">ServeHttp</a></li>
 									</ul>
 								</li>
 
