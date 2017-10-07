@@ -278,3 +278,13 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.tk-bg{
+    background: #0f1b23;
+}
+.tklab{
+    width: 1170px;
+    height: 75px;
+    display: block;
+    background: url("../img/Expanse-Top-Bar.gif") no-repeat center;
+}
