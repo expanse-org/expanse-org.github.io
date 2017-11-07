@@ -159,6 +159,7 @@ ini_set('display_errors', 1);
 										<?php echo $lang["Mining"]; ?><span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu">
+										<li><a href="http://exp.cryptopool.io" target="blank"><?php echo $lang["Cryptopool"]; ?></a></li>
 										<li><a href="http://pool.expanse.tech/" target="blank"><?php echo $lang["EXP.POOL"]; ?></a></li>
 										<li><a href="http://exp.ethertrench.com/" target="blank">ethertrench</a></li>
 										<li><a href="http://exp.hodlpool.com/" target="blank">HODLPool</a></li>
