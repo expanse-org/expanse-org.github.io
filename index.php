@@ -125,15 +125,7 @@ ini_set('display_errors', 1);
 <header id="home">
 
 	<div class="main-navigation sticky-header">
-	<div class="tk-bg">
-		<div class="container">
-            		<div class="row">
-            		<a class="tklab" href="https://tokenlab.io" target="blank">
-
-                    </a>
-            		</div>
-            </div>
-	</div>
+	
 
 		<div class="container">
 
