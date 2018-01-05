@@ -1,325 +1,627 @@
-
 <!DOCTYPE html>
-<html lang=en-us class=no-js>
-<head>
-<meta charset=utf-8>
-<title>Expanse.tech | Blockchain for everyone</title>
-<meta name=author content=Expanse>
-<meta name=robots content="index,follow">
-<meta name=keywords content="expanse, blockchain, smart contracts, cloud computer, cryptocurrency, crypto, ethereum">
-<meta name=description content="Expanse is an Ethereum based blockchain platform for smart contracts.">
-<meta property=og:url content="https://www.expanse.tech">
-<meta property=og:image content="https://www.expanse.tech/images/expanse-newsletter-hero.jpg">
-<meta property=og:title content=Expanse.tech />
-<meta property=og:description content="Ethereum based blockchain platform for smart contracts."/>
-<meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-<link rel=stylesheet href="css/style.css"/>
-<script src="js/modernizr.custom.js"></script>
-</head>
-<body>
-<!--[if lt IE 8]>
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>Expanse.tech | Blockchain for everyone</title>
+		<meta name="author" content="Expanse">
+		<meta name="robots" content="index,follow">
+		<meta name="keywords" content="expanse, blockchain, smart contracts, cloud computer, cryptocurrency, crypto, ethereum">
+		<meta name="description" content="Expanse is an Ethereum based blockchain platform for smart contracts.">
+
+		<meta property="og:url" content="https://www.expanse.tech">
+		<meta property="og:image" content="https://www.expanse.tech/images/expanse-newsletter-hero.jpg">
+		<meta property="og:title" content="Expanse.tech" />
+		<meta property="og:description" content="Ethereum based blockchain platform for smart contracts." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Facebook Pixel Code -->
+	    <script>
+	      !function(f,b,e,v,n,t,s)
+	      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=‘2.0’;
+	      n.queue=[];t=b.createElement(e);t.async=!0;
+	      t.src=v;s=b.getElementsByTagName(e)[0];
+	      s.parentNode.insertBefore(t,s)}(window, document,‘script’,
+	      ‘https://connect.facebook.net/en_US/fbevents.js');
+	      fbq(‘init’, ‘1812059432410671’);
+	      fbq(‘track’, ‘PageView’);
+	    </script>
+	    <noscript><img height=“1” width=“1" style=“display:none”
+	      src=“https://www.facebook.com/tr?id=1812059432410671&ev=PageView&noscript=1"
+	    /></noscript>
+	    <!-- End Facebook Pixel Code -->
+
+
+       <!-- favicon
+		============================================ -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+
+	<body>
+
+	<!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<a id=bgndVideo class=player data-property="{videoURL:'https://youtu.be/Qu45OJ4n8qQ',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
-<div class=global-overlay>
-<div class="overlay skew-part light-overlay">
-<div id=stars></div>
-<div id=stars2></div>
-<div id=stars3></div>
-</div>
-</div>
-<section id=left-side>
-<div class=content>
-<img src="img/logo.png" alt=""/>
-<h1 class="text-intro opacity-0">Coming Soon...</h1>
-<h2 class="text-intro opacity-0">We are refreshing our website, please comeback soon. You can follow us on our media channels. </h2>
-<nav>
-<ul>
-<li>
-<a href="#" id=open-more-info data-target=right-side class="light-btn text-intro opacity-0">Info</a>
-</li>
-<li>
-<a href="https://www.github.com/expanse-org/mist/releases" target=_blank class="action-btn text-intro opacity-0">Download Wallet</a>
-</li>
-</ul>
-</nav>
-</div>
-<div class=social-icons>
-<a href="https://www.facebook.com/groups/expanseofficial"><i class="fa fa-facebook"></i></a>
-<a href="https://www.reddit.com/r/ExpanseOfficial"><i class="fa fa-reddit"></i></a>
-<a href="https://www.github.com/expanse-org"><i class="fa fa-github"></i></a>
-<a href="http://slack.expanse.tech/"><i class="fa fa-slack"></i></a>
-<a href="https://twitter.com/expanseofficial"><i class="fa fa-twitter"></i></a>
-<a href="https://bitcointalk.org/index.php?topic=1173722.new#new"><i class="fa fa-btc"></i></a>
-</div>
-</section>
-<nav id=player-nav>
-<ul>
-<li data-toggle=tooltip data-placement=top data-title=Play data-trigger=hover>
-<a onclick="$('#bgndVideo').playYTP()"><i class="fa fa-play"></i></a>
-</li>
-<li data-toggle=tooltip data-placement=top data-title=Pause data-trigger=hover>
-<a onclick="$('#bgndVideo').pauseYTP()"><i class="fa fa-pause"></i></a>
-</li>
-<li class=full-play data-toggle=tooltip data-placement=top data-title=Fullscreen data-trigger=hover>
-<a class=expand-player><i class="fa fa-expand"></i></a>
-</li>
-<li class="comp-play display-none" data-toggle=tooltip data-placement=top data-title=Reduce data-trigger=hover>
-<a class=compress-player><i class="fa fa-compress"></i></a>
-</li>
-</ul>
-</nav>
-<section id=right-side class=hide-right>
-<div class=content>
-<div class=row>
-<div class="col-xs-12 col-sm-12 col-lg-12">
-<div class=pull-right>
-<nav>
-<ul>
-<li>
-<a href="https://www.github.com/expanse-org/mist/releases" target=_blank class="action-btn text-intro opacity-0">Download Wallet</a>
-</li>
-</ul>
-</nav>
-</div>
-<br>
-</div>
-</div>
-<h3>OUR STORY</h3>
-<p>The Expanse platform now has a two-year history of consistent growth and stability. Starting out small, but with big ideas, the team is growing and other projects are now coming on board to help make the dream a reality—limited only by the imagination and talent of all the diverse people around the world involved in the journey. Each new community member and partner brings new ideas and visions for the future. Expanse.Tech plans to be one of the top blockchain projects in the world. Won’t you join us on this adventure? Start learning more about Expanse today!</p><br>
-<p><strong>Christopher Franko & James Clayton </strong></p>
-<span class=separator></span>
-<div class=photo-line>
-<div class=row>
-<div class="col-xs-12 col-sm-6 col-lg-6 clear-second">
-<a href="https://tokenlab.io/">
-<img src="img/logotokenlab.jpg" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-<div class=photo-details>
-<h4>Raise Funds for Your Ideas</h4>
-<span class=border></span>
-<p>We believe that anyone with a great idea should be able to start a fundraising campaign. With Tokenlab, you can start your campaign with just a few clicks. Once the campaign starts, it's easy to track performance and gauge your interest. At the end of the campaign, you as the owner, issue tradable tokens to investors who have invested in your project.</p> <br>
-</div>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-6 clear-second">
-<a href="#">
-<img src="img/logovotelock.jpg" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-<div class=photo-details>
-<h4>The power to change the dynamics of elections</h4>
-<span class=border></span>
-<p>The patent-pending blockchain-based voting dApp, VoteLock™, has the power to change the dynamics of elections, instilling trust into the voting process and eliminating the possibility of vote “rigging.” It’s an easy, accurate and tamper-proof method to employ for elections world-wide. With a true identity system in development, Expanse has prototyped a nearly perfectvoting system. One person, one vote.</p> <br>
-</div>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-6 clear-second">
-<a href="#">
-<img src="img/logoexr.jpg" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-<div class=photo-details>
-<h4>Hold Expanse; Earn Expanse.</h4>
-<span class=border></span>
-<p>The Expanse Rewards, (EXR), is an innovative method to reward buying and holding Expanse tokens for a pre-defined period of time. Unlike traditional currency-based bond systems, EXR uses only native EXP to reward those who participate. </p> <br>
-</div>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-6 clear-second">
-<a href="https://tokenlab.io/">
-<img src="img/logodao.jpg" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-<div class=photo-details>
-<h4>Democracy Reinvented.</h4>
-<span class=border></span>
-<p>We believe that anyone with a great idea should be able to start a fundraising campaign. With Tokenlab, you can start your campaign with just a few clicks. Once the campaign starts, it's easy to track performance and gauge your interest. At the end of the campaign, you as the owner, issue tradable tokens to investors who have invested in your project.</p> <br>
-</div>
-</div>
-</div>
-</div>
-<span class=separator></span>
-<h3>Exchanges</h3>
-<div class=row>
-<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
-<a href="https://poloniex.com/exchange#btc_exp">
-<img src="img/poloniex.png" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
-<a href="https://bittrex.com/Market/Index?MarketName=BTC-EXP">
-<img src="img/Bittrex.png" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
-<a href="https://changelly.com/exchange/btc/exp">
-<img src="img/changelly.png" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
-<a href="http://www.coinvc.com/market/trade/exp">
-<img src="img/coinvc-logo.png" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
-<a href="https://bleutrade.com/exchange/EXP/BTC">
-<img src="img/bleutrade.png" itemprop=thumbnail alt="This is my work" class=img-responsive />
-</a>
-</div>
-</div>
-<span class=separator></span>
-<h3>Pools</h3>
-<div class=row>
-<div class="col-xs-12 col-sm-6 col-lg-6">
-<ul class=pool-links>
-<li><a href="http://pool.expanse.tech/" target=blank>EXP.POOL</a></li>
-<li><a href="http://exp.ethertrench.com/" target=blank>Ethertrench</a></li>
-<li><a href="http://exp.hodlpool.com/" target=blank>HODLPool</a></li>
-<li><a href="https://exp.suprnova.cc/" target=blank>Suprnova</a></li>
-<li><a href="http://dwarfpool.com/exp" target=blank>Dwarfpool</a></li>
-</ul>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-6">
-<ul class=pool-links>
-<li><a href="http://exp.akasha-pool.eu/" target=blank>Akasha</a></li>
-<li><a href="http://exp.minandoando.com/" target=blank>MinandoAndo</a></li>
-<li><a href="http://exp.minerpool.net/" target=blank>Minerpool.net</a></li>
-<li><a href="http://exppool.servehttp.com/#/" target=blank>ServeHttp</a></li>
-</ul>
-</div>
-</div>
-<span class=separator></span>
-<h3>Get in touch with us!</h3>
-<p>If you have any questions or would like to get in contact with someone from our team use this form. For support go to <a href="https://expanse.freshdesk.com/support/home" target=_blank>expanse.freshdesk.com</a></p>
-<form id=contact-form name=contact-form method=POST data-name="Contact Form">
-<div class=row>
-<div class="col-xs-12 col-sm-6 col-lg-6">
-<div class=form-group>
-<input id=name class="form form-control" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" name=name data-name=Name required>
-</div>
-</div>
-<div class="col-xs-12 col-sm-6 col-lg-6">
-<div class=form-group>
-<input type=email id=email class="form form-control" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" name=email-address data-name="Email Address" required>
-</div>
-</div>
-<div class="col-xs-12 col-sm-12 col-lg-12">
-<div class=form-group>
-<input id=subject class="form form-control" placeholder="Write the subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write the subject'" name=subject data-name=Subject>
-</div>
-</div>
-<div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
-<div class=form-group>
-<textarea id=text-area class="form textarea form-control" placeholder="Your message here... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here... 20 characters Min.'" name=message data-name="Text Area" required></textarea>
-</div>
-</div>
-</div>
-<button type=submit id=valid-form class="btn btn-color">Send</button>
-</form>
-<div id=block-answer>
-<div id=answer></div>
-</div>
-<div class="info-contact row">
-<div class="col-xs-12 col-sm-4 col-lg-4 item-map">
-<div class=contact-item><i class="icon ion-ios-telephone"></i>
-<p>Phone: +1(252)495-0363
-</p>
-</div>
-</div>
-<div class="col-xs-12 col-sm-4 col-lg-4 item-map">
-<div class=contact-item><i class="icon ion-ios-location"></i>
-<p>P.O. Box 2703,
-<br>Washington, NC. USA</p>
-</div>
-</div>
-<div class="col-xs-12 col-sm-4 col-lg-4 item-map">
-<div class=contact-item><i class="icon ion-ios-email"></i>
-<p><a href="mailto:info@expanse.tech">info@expanse.tech</a>
-</p>
-</div>
-</div>
-</div>
-</div>
-<footer>
-<p>@ COPYRIGHT ALL RIGHT RESERVED BY | EXPANSE.TECH</p>
-</footer>
-</section>
-<button id=close-more-info class=hide-close><i class="icon ion-ios-close-outline"></i></button>
-<div id=somedialog class=dialog>
-<div class=dialog__overlay></div>
-<div class=dialog__content>
-<div class=dialog-inner>
-<h4>Subscribe to our newsletter</h4>
-<p>Being the first to know always feels great...</p>
-<div id=subscribe>
-<form action="php/notify-me.php" id=notifyMe method=POST>
-<div class=form-group>
-<div class=controls>
-<input id=mail-sub name=email placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField"/>
-<i class="fa fa-spinner opacity-0"></i>
-<button class="btn btn-lg submit">Get notified</button>
-<div class=clear></div>
-</div>
-</div>
-</form>
-<div class=block-message>
-<div class=message>
-<p class=notify-valid></p>
-</div>
-</div>
-</div>
-</div>
-<button class=close-newsletter data-dialog-close><i class="icon ion-close-round"></i></button>
-</div>
-</div>
-<div class=pswp tabindex=-1 role=dialog aria-hidden=true>
-<div class=pswp__bg></div>
-<div class=pswp__scroll-wrap>
-<div class=pswp__container>
-<div class=pswp__item></div>
-<div class=pswp__item></div>
-<div class=pswp__item></div>
-</div>
-<div class="pswp__ui pswp__ui--hidden">
-<div class=pswp__top-bar>
-<div class=pswp__counter></div>
-<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-<button class="pswp__button pswp__button--share" title=Share></button>
-<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-<div class=pswp__preloader>
-<div class=pswp__preloader__icn>
-<div class=pswp__preloader__cut>
-<div class=pswp__preloader__donut></div>
-</div>
-</div>
-</div>
-</div>
-<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-<div class=pswp__share-tooltip></div>
-</div>
-<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-</button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-</button>
-<div class=pswp__caption>
-<div class=pswp__caption__center></div>
-</div>
-</div>
-</div>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easings.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/velocity.ui.min.js"></script>
-<script src="js/notifyMe.js"></script>
-<script src="js/contact-me.js"></script>
-<script src="js/vegas-youtube-mobile.js"></script>
-<script src="js/jquery.mb.YTPlayer.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
-<script src="js/jquery.mCustomScrollbar.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/dialogFx.js"></script>
-<script src="js/photoswipe.js"></script>
-<script src="js/photoswipe-ui-default.js"></script>
-<script src="js/main.js"></script>
-<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-</body>
+
+		<!-- YouTube link -->
+		<a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/Qu45OJ4n8qQ',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
+
+		<!-- Page preloader -->
+		<!--
+<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+-->
+
+		<!-- Overlay and Star effect -->
+		<div class="global-overlay">
+			<div class="overlay skew-part light-overlay">
+
+				<div id='stars'></div>
+				<div id='stars2'></div>
+				<div id='stars3'></div>
+
+			</div>
+		</div>
+
+		<!-- START - Home/Left Part -->
+		<section id="left-side">
+
+
+
+			<div class="content">
+			<!-- Your logo -->
+			<img src="img/logo.png" alt="" />
+
+				<h1 class="text-intro opacity-0">Coming Soon...</h1>
+
+				<h2 class="text-intro opacity-0">We are refreshing our website, please comeback soon. You can follow us on our media channels. </h2>
+
+				<nav>
+					<ul>
+						<li>
+							<a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">Info</a>
+						</li>
+						<li>
+							<a href="https://www.github.com/expanse-org/mist/releases" target="_blank" class="action-btn text-intro opacity-0">Download Wallet</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<!-- Social icons -->
+			<div class="social-icons">
+
+				<a href="https://www.facebook.com/groups/expanseofficial"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.reddit.com/r/ExpanseOfficial"><i class="fa fa-reddit"></i></a>
+				<a href="https://www.github.com/expanse-org"><i class="fa fa-github"></i></a>
+				<a href="http://slack.expanse.tech/"><i class="fa fa-slack"></i></a>
+				<a href="https://twitter.com/expanseofficial"><i class="fa fa-twitter"></i></a>
+				<a href="https://bitcointalk.org/index.php?topic=1173722.new#new"><i class="fa fa-btc"></i></a>
+
+			</div>
+
+		</section>
+		<!-- END - Home/Left Part -->
+
+		<!-- OPEN - Player control -->
+		<nav id="player-nav">
+			<ul>
+				<li data-toggle="tooltip" data-placement="top" data-title="Play" data-trigger="hover">
+					<a onclick="$('#bgndVideo').playYTP()"><i class="fa fa-play"></i></a>
+				</li>
+
+				<li data-toggle="tooltip" data-placement="top" data-title="Pause" data-trigger="hover">
+					<a onclick="$('#bgndVideo').pauseYTP()"><i class="fa fa-pause"></i></a>
+				</li>
+
+				<li class="full-play" data-toggle="tooltip" data-placement="top" data-title="Fullscreen" data-trigger="hover">
+					<a class="expand-player"><i class="fa fa-expand"></i></a>
+				</li>
+
+				<li class="comp-play display-none" data-toggle="tooltip" data-placement="top" data-title="Reduce" data-trigger="hover">
+					<a class="compress-player"><i class="fa fa-compress"></i></a>
+				</li>
+
+			</ul>
+		</nav> <!-- CLOSE - Player control -->
+
+		<!-- START - More Informations/Right Part -->
+		<section id="right-side" class="hide-right">
+
+
+			<div class="content">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-lg-12">
+				  <div class="pull-right">
+				    <nav>
+						<ul>
+							<li>
+								<a href="https://www.github.com/expanse-org/mist/releases" target="_blank" class="action-btn text-intro opacity-0">Download Wallet</a>
+							</li>
+						</ul>
+					</nav>
+				  </div>
+				<br>
+				</div>
+			</div>
+
+				<h3>OUR STORY</h3>
+
+				<p>The Expanse platform now has a two-year history of consistent growth and stability. Starting out small, but with big ideas, the team is growing and other projects are now coming on board to help make the dream a reality—limited only by the imagination and talent of all the diverse people around the world involved in the journey. Each new community member and partner brings new ideas and visions for the future. Expanse.Tech plans to be one of the top blockchain projects in the world. Won’t you join us on this adventure? Start learning more about Expanse today!</p><br>
+				<p><strong>Christopher Franko & James Clayton </strong></p>
+
+
+
+				<span class="separator"></span>
+
+				<div class="photo-line">
+
+
+					<div class="row">
+
+						<!-- Item -->
+						<div class="col-xs-12 col-sm-6 col-lg-6 clear-second">
+
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a href="https://tokenlab.io/">
+
+								<!-- Your picture -->
+								<img src="img/logotokenlab.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+
+
+							</a>
+
+							<!-- Picture's description below this one -->
+
+
+								<div class="photo-details">
+
+									<h4>Raise Funds for Your Ideas</h4>
+
+									<span class="border"></span>
+
+									<p>We believe that anyone with a great idea should be able to start a fundraising campaign. With Tokenlab, you can start your campaign with just a few clicks. Once the campaign starts, it's easy to track performance and gauge your interest. At the end of the campaign, you as the owner, issue tradable tokens to investors who have invested in your project.</p> <br>
+
+								</div>
+
+
+
+						</div>
+
+						<!-- Item -->
+						<div class="col-xs-12 col-sm-6 col-lg-6 clear-second">
+
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a href="#">
+
+								<!-- Your picture -->
+								<img src="img/logovotelock.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+
+
+							</a>
+
+							<!-- Picture's description below this one -->
+
+
+								<div class="photo-details">
+
+									<h4>The power to change the dynamics of elections</h4>
+
+									<span class="border"></span>
+
+									<p>The patent-pending blockchain-based voting dApp, VoteLock™, has the power to change the dynamics of elections, instilling trust into the voting process and eliminating the possibility of vote “rigging.” It’s an easy, accurate and tamper-proof method to employ for elections world-wide. With a true identity system in development, Expanse has prototyped a nearly perfectvoting system. One person, one vote.</p> <br>
+
+								</div>
+
+
+
+						</div>
+
+						<!-- Item -->
+						<div class="col-xs-12 col-sm-6 col-lg-6 clear-second">
+
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a href="#">
+
+								<!-- Your picture -->
+								<img src="img/logoexr.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+
+
+							</a>
+
+							<!-- Picture's description below this one -->
+
+
+								<div class="photo-details">
+
+									<h4>Hold Expanse; Earn Expanse.</h4>
+
+									<span class="border"></span>
+
+									<p>The Expanse Rewards, (EXR), is an innovative method to reward buying and holding Expanse tokens for a pre-defined period of time. Unlike traditional currency-based bond systems, EXR uses only native EXP to reward those who participate. </p> <br>
+
+								</div>
+
+
+
+						</div>
+
+						<!-- Item -->
+						<div class="col-xs-12 col-sm-6 col-lg-6 clear-second">
+
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a href="https://tokenlab.io/">
+
+								<!-- Your picture -->
+								<img src="img/logodao.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+
+
+							</a>
+
+							<!-- Picture's description below this one -->
+
+
+								<div class="photo-details">
+
+									<h4>Democracy Reinvented.</h4>
+
+									<span class="border"></span>
+
+									<p>We believe that anyone with a great idea should be able to start a fundraising campaign. With Tokenlab, you can start your campaign with just a few clicks. Once the campaign starts, it's easy to track performance and gauge your interest. At the end of the campaign, you as the owner, issue tradable tokens to investors who have invested in your project.</p> <br>
+
+								</div>
+
+
+
+						</div>
+
+					</div>
+
+				</div>
+				<span class="separator"></span>
+
+				<h3>Exchanges</h3>
+				 <div class="row">
+				 	<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
+				 	 <a href="https://poloniex.com/exchange#btc_exp">
+						<img src="img/poloniex.png" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+					 </a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
+				 	 <a href="https://bittrex.com/Market/Index?MarketName=BTC-EXP">
+						<img src="img/Bittrex.png" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+					 </a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
+				 	 <a href="https://changelly.com/exchange/btc/exp">
+						<img src="img/changelly.png" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+					 </a>
+					</div>
+
+				 	<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
+				 	 <a href="http://www.coinvc.com/market/trade/exp">
+						<img src="img/coinvc-logo.png" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+					 </a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-2 clear-second">
+				 	 <a href="https://bleutrade.com/exchange/EXP/BTC">
+						<img src="img/bleutrade.png" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+					 </a>
+					</div>
+				 </div>
+
+				<span class="separator"></span>
+
+				<h3>Pools</h3>
+				 <div class="row">
+				 	<div class="col-xs-12 col-sm-6 col-lg-6">
+					 	<ul class="pool-links">
+							<li><a href="http://pool.expanse.tech/" target="blank">EXP.POOL</a></li>
+							<li><a href="http://exp.ethertrench.com/" target="blank">Ethertrench</a></li>
+							<li><a href="http://exp.hodlpool.com/" target="blank">HODLPool</a></li>
+							<li><a href="https://exp.suprnova.cc/" target="blank">Suprnova</a></li>
+							<li><a href="http://dwarfpool.com/exp" target="blank">Dwarfpool</a></li>
+						</ul>
+				 	</div>
+				 	<div class="col-xs-12 col-sm-6 col-lg-6">
+					 	<ul class="pool-links">
+							<li><a href="http://exp.akasha-pool.eu/" target="blank">Akasha</a></li>
+							<li><a href="http://exp.minandoando.com/" target="blank">MinandoAndo</a></li>
+							<li><a href="http://exp.minerpool.net/" target="blank">Minerpool.net</a></li>
+							<li><a href="http://exppool.servehttp.com/#/" target="blank">ServeHttp</a></li>
+						</ul>
+				 	</div>
+				 </div>
+				<span class="separator"></span>
+
+				<h3>Get in touch with us!</h3>
+
+				<p>If you have any questions or would like to get in contact with someone from our team use this form. For support go to <a href="https://expanse.freshdesk.com/support/home" target="_blank">expanse.freshdesk.com</a></p>
+
+                <!-- START - Contact Form -->
+            	<form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
+
+            		<div class="row">
+
+                        <!-- Full name -->
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form form-control" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" name="name" data-name="Name" required>
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form form-control" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" name="email-address" data-name="Email Address" required>
+                            </div>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="col-xs-12 col-sm-12 col-lg-12">
+                            <div class="form-group">
+                                <input type="text" id="subject" class="form form-control" placeholder="Write the subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write the subject'" name="subject" data-name="Subject">
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+                            <div class="form-group">
+                                <textarea id="text-area" class="form textarea form-control" placeholder="Your message here... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                	<!-- Button submit -->
+                	<button type="submit" id="valid-form" class="btn btn-color">Send</button>
+
+                </form>
+                <!-- END - Contact Form -->
+
+	            <!-- Answer for the contact form is displayed in the next div, do not remove it. -->
+                <div id="block-answer">
+
+					<div id="answer"></div>
+
+				</div>
+
+				<div class="info-contact row">
+
+                    <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+                        <div class="contact-item"><i class="icon ion-ios-telephone"></i>
+                            <p>Phone: +1(252)495-0363
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+                        <div class="contact-item"><i class="icon ion-ios-location"></i>
+                            <p>P.O. Box 2703,
+                                <br>Washington, NC. USA</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+                        <div class="contact-item"><i class="icon ion-ios-email"></i>
+                            <p><a href="mailto:info@expanse.tech">info@expanse.tech</a>
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+			</div>
+			<!-- /. Content -->
+
+			<footer>
+
+				<p>@ COPYRIGHT ALL RIGHT RESERVED BY | EXPANSE.TECH</p>
+
+			</footer>
+
+		</section>
+		<!-- START - More Informations/Right Part -->
+
+		<!-- Button Cross to close the More Informations/Right Part -->
+		<button id="close-more-info" class="hide-close"><i class="icon ion-ios-close-outline"></i></button>
+
+		<!-- START - Newsletter Popup -->
+		<div id="somedialog" class="dialog">
+
+			<div class="dialog__overlay"></div>
+
+			<div class="dialog__content">
+
+				<div class="dialog-inner">
+
+					<h4>Subscribe to our newsletter</h4>
+
+					<p>Being the first to know always feels great...</p>
+
+					<!-- Newsletter Form -->
+					<div id="subscribe">
+
+		                <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+		                    <div class="form-group">
+
+		                        <div class="controls">
+
+		                        	<!-- Field  -->
+		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+		                        	<!-- Spinner top left during the submission -->
+		                        	<i class="fa fa-spinner opacity-0"></i>
+
+		                            <!-- Button -->
+		                            <button class="btn btn-lg submit">Get notified</button>
+
+		                            <div class="clear"></div>
+
+		                        </div>
+
+		                    </div>
+
+		                </form>
+
+						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+						<div class="block-message">
+
+							<div class="message">
+
+								<p class="notify-valid"></p>
+
+							</div>
+
+						</div>
+
+        			</div>
+        			<!-- /. Newsletter Form -->
+
+				</div>
+				<!-- /. dialog-inner -->
+
+				<!-- Button Cross to close the Newsletter Popup -->
+				<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
+
+			</div>
+			<!-- /. dialog__content -->
+
+		</div>
+		<!-- END - Newsletter Popup -->
+
+		<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		    <!-- Background of PhotoSwipe.
+	        	It's a separate element as animating opacity is faster than rgba(). -->
+		    <div class="pswp__bg"></div>
+
+		    <!-- Slides wrapper with overflow:hidden. -->
+		    <div class="pswp__scroll-wrap">
+
+		        <!-- Container that holds slides.
+		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+		            Don't modify these 3 pswp__item elements, data is added later on. -->
+		        <div class="pswp__container">
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		        </div>
+
+		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		        <div class="pswp__ui pswp__ui--hidden">
+
+		            <div class="pswp__top-bar">
+
+		                <!--  Controls are self-explanatory. Order can be changed. -->
+
+		                <div class="pswp__counter"></div>
+
+		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+		                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+		                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+		                <!-- element will get class pswp__preloader--active when preloader is running -->
+		                <div class="pswp__preloader">
+		                    <div class="pswp__preloader__icn">
+		                      <div class="pswp__preloader__cut">
+		                        <div class="pswp__preloader__donut"></div>
+		                      </div>
+		                    </div>
+		                </div>
+
+		            </div>
+
+		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+		                <div class="pswp__share-tooltip"></div>
+		            </div>
+
+		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+		            </button>
+
+		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+		            </button>
+
+		            <div class="pswp__caption">
+		                <div class="pswp__caption__center"></div>
+		            </div>
+
+		        </div>
+
+		    </div>
+
+		</div>
+		<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
+
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Accelerated JavaScript animation JS file -->
+	<script src="js/velocity.min.js"></script>
+
+	<!-- Accelerated JavaScript animation UI JS file -->
+	<script src="js/velocity.ui.min.js"></script>
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Contact form plugin -->
+	<script src="js/contact-me.js"></script>
+
+	<!-- Slideshow/Image plugin -->
+	<script src="js/vegas-youtube-mobile.js"></script>
+
+	<!-- YouTube plugin -->
+	<script src="js/jquery.mb.YTPlayer.js"></script>
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
+
+	<!-- PhotoSwipe Core JS file -->
+	<script src="js/photoswipe.js"></script>
+
+	<!-- PhotoSwipe UI JS file -->
+	<script src="js/photoswipe-ui-default.js"></script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
 </html>
