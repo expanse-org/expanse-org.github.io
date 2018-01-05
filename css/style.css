@@ -35,7 +35,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
 /*
-* http://meyerweb.com/eric/tools/css/reset/ 
+* http://meyerweb.com/eric/tools/css/reset/
 * v2.0 | 20110126
 * License: none (public domain)
 */
@@ -261,7 +261,7 @@ a {
   text-decoration: none;
   color: #FFFFFF; }
   a:hover {
-    color: #820e04;
+    color: #00af94;
     text-decoration: none !important;
     outline: none !important; }
   a:active, a:focus {
@@ -880,7 +880,7 @@ sup {
   z-index: 5;
   opacity: 0;
   overflow: hidden;
-  /* background: url(../img/background-newsletter.jpg) center; */
+  background: url(../img/background-newsletter.jpg) center;
   background-size: cover;
   border: 10px solid #2B2D35; }
   .dialog__content::before {
@@ -1000,7 +1000,7 @@ sup {
       -o-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
       transition: all 0.3s cubic-bezier(0, 0, 0.58, 1); }
       #subscribe #notifyMe .form-group button.submit:hover {
-        background: #820e04;
+        background: #00af94;
         color: #FFFFFF; }
 #subscribe .block-message {
   min-height: 50px;
@@ -1791,10 +1791,3 @@ canvas {
     padding: 5px 2px; }
   #subscribe p.notify-valid {
     font-size: 12px; } }
-.pool-links a{
- color: #000;
-	
-}
-.pool-links ul {
-    list-style-type: circle;
-}

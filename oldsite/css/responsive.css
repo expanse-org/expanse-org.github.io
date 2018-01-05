@@ -1,0 +1,210 @@
+
+
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .intro-text h1 {
+        font-size: 35px;
+    }
+    .intro-text h3 span {
+        font-size: 25px;
+    }
+    .intro-text h3 {
+        font-size: 25px;
+    }
+    .learnmore {
+        margin-top: 50px;
+    }
+}
+
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menubar nav ul li a {
+        padding: 12px 7px;
+    }
+    .sticky .menubar nav ul li a {
+        padding: 6px 7px;
+    }
+    .intro-text h1 {
+        font-size: 32px;
+        letter-spacing: 2px
+    }
+    .intro-text h3 span {
+        font-size: 22px;
+    }
+    .intro-text h3 {
+        font-size: 22px;
+    }
+    .learnmore {
+        margin-top: 40px;
+    }
+    .skill-bottom {
+        margin-bottom: 30px;
+    }
+    .contact-area .padding-reduce {
+        padding-right: 15px !important;
+    }
+}
+
+
+/* small mobile :320px. */
+
+@media (max-width: 767px) {
+    .container {
+        width: 300px
+    }
+    .main-navigation {
+        background-color: #2980b9;
+    }
+    .js #menu {
+        display: none;
+    }
+    .js .slicknav_menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999999;
+        background-color: transparent;
+        width: 50%
+    }
+    .slicknav_menu .slicknav_icon {
+        width: 25px;
+        height: 14px;
+    }
+    .logo-area a img {
+        margin-top: 0px;
+        padding: 6px;
+    }
+    .intro-text h1 {
+        font-size: 21px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    .intro-text h3 span {
+        font-size: 15px;
+    }
+    .intro-text h3 {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+    .learnmore {
+        margin-top: 40px;
+    }
+    .learnmore a {
+        font-size: 11px;
+    }
+    .intro-text {
+        top: 37%;
+    }
+    .portion-heading h3 {
+        font-size: 21px;
+    }
+    #status {
+        position: absolute;
+        left: 60%;
+    }
+    .about-image {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .resume-btn a {
+        margin-top: 20px;
+    }
+    .service-work-mb {
+        margin-bottom: 30px;
+    }
+    .skill-mobile-mb {
+        margin-bottom: 30px;
+    }
+    .contact-area .padding-reduce {
+        padding-right: 15px !important;
+    }
+    .submit-btn #send {
+        margin-bottom: 30px;
+        padding: 15px 117px;
+    }
+    .copyright-text p {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+
+/* Large Mobile :480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 450px
+    }
+    #status {
+        position: absolute;
+        left: 55%;
+    }
+    .main-navigation {
+        background-color: #2980b9;
+    }
+    .js #menu {
+        display: none;
+    }
+    .js .slicknav_menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        z-index: 99999999;
+        background-color: transparent;
+        width: 50%
+    }
+    .slicknav_menu .slicknav_icon {
+        width: 25px;
+        height: 14px;
+    }
+    .logo-area a img {
+        margin-top: 2px;
+        padding: 7px;
+    }
+    .intro-text h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    .intro-text h3 span {
+        font-size: 18px;
+    }
+    .intro-text h3 {
+        font-size: 18px;
+    }
+    .learnmore {
+        margin-top: 35px;
+    }
+    .learnmore a {
+        font-size: 13px;
+    }
+    .about-image {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .service-work-mb {
+        margin-bottom: 30px;
+    }
+    .skill-mobile-mb {
+        margin-bottom: 30px;
+    }
+    .contact-area .padding-reduce {
+        padding-right: 15px !important;
+    }
+    .submit-btn #send {
+        margin-bottom: 30px;
+    }
+    .copyright-text p {
+        text-align: center;
+    }
+}
+
+
+/* Responsive CSS END
+/*----------------------------------------*/
